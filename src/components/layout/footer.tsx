@@ -8,6 +8,7 @@ const exploreLinks = [
   { key: 'casinos', href: '/casinos' },
   { key: 'bonuses', href: '/bonuses' },
   { key: 'guides', href: '/guides' },
+  { key: 'about', href: '/about' },
   { key: 'methodology', href: '/methodology' },
 ] as const;
 

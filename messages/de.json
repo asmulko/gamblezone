@@ -216,6 +216,7 @@
       "casinos": "Casinos",
       "bonuses": "Boni",
       "guides": "Ratgeber",
+      "about": "Über uns",
       "methodology": "Bewertung",
       "privacy": "Datenschutz",
       "cookies": "Cookie-Richtlinie",
@@ -270,6 +271,29 @@
       "messageLabel": "Nachricht",
       "submit": "Nachricht senden",
       "success": "Danke! (Nur Demo – es wurde keine Nachricht gesendet.)"
+    },
+    "about": {
+      "eyebrow": "Über uns",
+      "title": "Von Branchenkennern für Spieler gebaut",
+      "lead": "Bei GambleZone sind wir mehr als nur eine weitere Glücksspiel-Website — wir sind selbst Spieler.",
+      "experienceValue": "10+",
+      "experienceLabel": "Jahre in der Glücksspielbranche",
+      "paragraphs": [
+        "Unser Team besteht aus leidenschaftlichen Spielern mit über 10 Jahren Erfahrung in der Glücksspielbranche. In unseren Rollen als Product Manager, Product Owner und Key Account Manager haben wir gesehen, wie die Branche hinter den Kulissen funktioniert. Wir haben gelernt, was ein großartiges Spielerlebnis ausmacht — und auch, welche Praktiken das Vertrauen beschädigen können.",
+        "Genau deshalb haben wir GambleZone geschaffen.",
+        "Unser Ziel ist einfach: eine Plattform aufzubauen, die Spieler an erste Stelle setzt. Jedes Casino, jeder Sportwettenanbieter und jede Aktion, die wir vorstellen, wird sorgfältig anhand von Qualität, Zuverlässigkeit, Spielerlebnis und Gesamtwert bewertet — nicht anhand leerer Marketingversprechen.",
+        "Wir wissen, was Spieler erwarten, weil wir selbst Spieler sind. Wir kennen die Aufregung eines großen Gewinns, den Frust über schlechten Kundensupport und die Bedeutung eines vertrauenswürdigen Anbieters.",
+        "Ob du ehrliche Bewertungen, exklusive Angebote oder die besten Orte zum Spielen suchst — GambleZone hilft dir, fundierte Entscheidungen mit Zuversicht zu treffen."
+      ],
+      "valuesTitle": "Wir glauben, Glücksspiel sollte sein",
+      "values": {
+        "fair": "Fair",
+        "transparent": "Transparent",
+        "entertaining": "Unterhaltsam",
+        "responsible": "Verantwortungsvoll"
+      },
+      "closing": "Willkommen bei GambleZone — von Branchenprofis geschaffen, für Spieler gebaut.",
+      "cta": "Casinos entdecken"
     }
   },
   "notFound": {

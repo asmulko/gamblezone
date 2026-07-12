@@ -216,6 +216,7 @@
       "casinos": "Kasyna",
       "bonuses": "Bonusy",
       "guides": "Poradniki",
+      "about": "O nas",
       "methodology": "Jak oceniamy",
       "privacy": "Polityka prywatności",
       "cookies": "Polityka plików cookie",
@@ -270,6 +271,29 @@
       "messageLabel": "Wiadomość",
       "submit": "Wyślij wiadomość",
       "success": "Dziękujemy! (Tylko demo — nie wysłano żadnej wiadomości.)"
+    },
+    "about": {
+      "eyebrow": "O nas",
+      "title": "Stworzone przez znawców branży, dla graczy",
+      "lead": "W GambleZone jesteśmy czymś więcej niż kolejną stroną o hazardzie — sami jesteśmy graczami.",
+      "experienceValue": "10+",
+      "experienceLabel": "lat w branży hazardowej",
+      "paragraphs": [
+        "Nasz zespół tworzą pasjonaci gry z ponad 10-letnim doświadczeniem w branży hazardowej. Podczas naszych karier jako Product Managerowie, Product Ownerzy i Key Account Managerowie widzieliśmy, jak branża działa za kulisami. Nauczyliśmy się, co tworzy świetne doświadczenie gracza, ale widzieliśmy też praktyki, które mogą podważyć zaufanie.",
+        "Właśnie dlatego stworzyliśmy GambleZone.",
+        "Nasz cel jest prosty: zbudować platformę, która stawia graczy na pierwszym miejscu. Każde kasyno, bukmacher i promocja, które prezentujemy, są starannie oceniane pod kątem jakości, niezawodności, doświadczenia gracza i ogólnej wartości — a nie pustych obietnic marketingowych.",
+        "Wiemy, czego oczekują gracze, bo sami nimi jesteśmy. Rozumiemy emocje dużej wygranej, frustrację słabej obsługi klienta i znaczenie wyboru godnego zaufania operatora.",
+        "Niezależnie od tego, czy szukasz uczciwych recenzji, ekskluzywnych ofert, czy najlepszych miejsc do gry, GambleZone pomaga Ci podejmować świadome decyzje z pewnością."
+      ],
+      "valuesTitle": "Wierzymy, że hazard powinien być",
+      "values": {
+        "fair": "Uczciwy",
+        "transparent": "Przejrzysty",
+        "entertaining": "Wciągający",
+        "responsible": "Odpowiedzialny"
+      },
+      "closing": "Witaj w GambleZone — stworzone przez profesjonalistów z branży, zbudowane dla graczy.",
+      "cta": "Przeglądaj kasyna"
     }
   },
   "notFound": {

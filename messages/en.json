@@ -216,6 +216,7 @@
       "casinos": "Casinos",
       "bonuses": "Bonuses",
       "guides": "Guides",
+      "about": "About Us",
       "methodology": "How we rate",
       "privacy": "Privacy Policy",
       "cookies": "Cookie Policy",
@@ -270,6 +271,29 @@
       "messageLabel": "Message",
       "submit": "Send message",
       "success": "Thanks! (Demo only — no message was sent.)"
+    },
+    "about": {
+      "eyebrow": "About Us",
+      "title": "Built by industry insiders, for players",
+      "lead": "At GambleZone, we're more than just another gambling website — we're gamblers ourselves.",
+      "experienceValue": "10+",
+      "experienceLabel": "years inside the gambling industry",
+      "paragraphs": [
+        "Our team consists of passionate players with over 10 years of experience working inside the gambling industry. Throughout our careers as Product Managers, Product Owners and Key Account Managers, we've seen how the industry operates behind the scenes. We've learned what creates a great player experience, and we've also seen the practices that can damage trust.",
+        "That's why we created GambleZone.",
+        "Our goal is simple: build a platform that puts players first. Every casino, sportsbook and promotion we feature is carefully evaluated based on quality, reliability, player experience and overall value — not on empty marketing promises.",
+        "We know what players expect because we are players too. We understand the excitement of a big win, the frustration of poor customer support, and the importance of choosing a trustworthy operator.",
+        "Whether you're looking for honest reviews, exclusive offers or the best places to play, GambleZone is committed to helping you make informed decisions with confidence."
+      ],
+      "valuesTitle": "We believe gambling should be",
+      "values": {
+        "fair": "Fair",
+        "transparent": "Transparent",
+        "entertaining": "Entertaining",
+        "responsible": "Responsible"
+      },
+      "closing": "Welcome to GambleZone — created by industry professionals, built for gamblers.",
+      "cta": "Explore casinos"
     }
   },
   "notFound": {

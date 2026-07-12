@@ -216,6 +216,7 @@
       "casinos": "Casinos",
       "bonuses": "Bonos",
       "guides": "Guías",
+      "about": "Sobre nosotros",
       "methodology": "Cómo evaluamos",
       "privacy": "Política de privacidad",
       "cookies": "Política de cookies",
@@ -270,6 +271,29 @@
       "messageLabel": "Mensaje",
       "submit": "Enviar mensaje",
       "success": "¡Gracias! (Solo demostración: no se envió ningún mensaje.)"
+    },
+    "about": {
+      "eyebrow": "Sobre nosotros",
+      "title": "Creado por profesionales del sector, para jugadores",
+      "lead": "En GambleZone somos más que otra web de juego: somos jugadores nosotros mismos.",
+      "experienceValue": "10+",
+      "experienceLabel": "años dentro de la industria del juego",
+      "paragraphs": [
+        "Nuestro equipo está formado por jugadores apasionados con más de 10 años de experiencia trabajando dentro de la industria del juego. A lo largo de nuestras carreras como Product Managers, Product Owners y Key Account Managers, hemos visto cómo funciona la industria entre bastidores. Hemos aprendido qué crea una gran experiencia de juego y también hemos visto las prácticas que pueden dañar la confianza.",
+        "Por eso creamos GambleZone.",
+        "Nuestro objetivo es simple: construir una plataforma que ponga a los jugadores primero. Cada casino, casa de apuestas y promoción que presentamos se evalúa cuidadosamente según su calidad, fiabilidad, experiencia del jugador y valor general, no según promesas de marketing vacías.",
+        "Sabemos lo que esperan los jugadores porque también somos jugadores. Entendemos la emoción de una gran victoria, la frustración de un mal servicio de atención al cliente y la importancia de elegir un operador de confianza.",
+        "Ya sea que busques reseñas honestas, ofertas exclusivas o los mejores lugares para jugar, GambleZone se compromete a ayudarte a tomar decisiones informadas con confianza."
+      ],
+      "valuesTitle": "Creemos que el juego debe ser",
+      "values": {
+        "fair": "Justo",
+        "transparent": "Transparente",
+        "entertaining": "Entretenido",
+        "responsible": "Responsable"
+      },
+      "closing": "Bienvenido a GambleZone: creado por profesionales del sector, hecho para jugadores.",
+      "cta": "Explorar casinos"
     }
   },
   "notFound": {
