@@ -1,0 +1,288 @@
+{
+  "common": {
+    "brand": "GambleZone",
+    "tagline": "Unabhängiger Casino-Vergleich",
+    "openSite": "Zur Website",
+    "readReview": "Test lesen",
+    "viewAll": "Alle ansehen",
+    "learnMore": "Mehr erfahren",
+    "sponsored": "Gesponsert",
+    "advertisement": "Anzeige",
+    "ageNotice": "18+",
+    "mockDataBadge": "Beispieldaten",
+    "backToTop": "Nach oben",
+    "loading": "Lädt…",
+    "termsApply": "Es gelten AGB",
+    "lastReviewed": "Zuletzt geprüft",
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "nav": {
+    "home": "Start",
+    "casinos": "Casinos",
+    "bonuses": "Boni",
+    "guides": "Ratgeber",
+    "methodology": "Bewertung",
+    "responsibleGambling": "Verantwortungsvolles Spielen",
+    "menu": "Menü",
+    "language": "Sprache",
+    "closeMenu": "Menü schließen"
+  },
+  "hero": {
+    "eyebrow": "Unabhängig & transparent",
+    "title": "Vergleiche lizenzierte Online-Casinos mit Vertrauen",
+    "subtitle": "Transparente Bewertungen von Boni, Auszahlungen und Bedingungen – damit du einen sicheren, lizenzierten Anbieter findest, der zu dir passt.",
+    "ctaPrimary": "Top-Casinos ansehen",
+    "ctaSecondary": "So bewerten wir",
+    "statCasinos": "Getestete Casinos",
+    "statCriteria": "Bewertungskriterien",
+    "statUpdated": "Monatlich aktualisiert",
+    "disclaimer": "Glücksspiel birgt Risiken. Spiele verantwortungsvoll. Setze nie mehr, als du dir leisten kannst zu verlieren."
+  },
+  "topCasinos": {
+    "eyebrow": "Empfehlungen der Redaktion",
+    "title": "Bestbewertete Casinos in diesem Monat",
+    "subtitle": "Sortiert nach unserer transparenten Methodik – niemals nach Bezahlung.",
+    "rank": "Platz",
+    "bonus": "Willkommensbonus",
+    "highlights": "Höhepunkte"
+  },
+  "comparison": {
+    "eyebrow": "Direkt im Vergleich",
+    "title": "Casino-Vergleichstabelle",
+    "subtitle": "Vergleiche die wichtigsten Fakten auf einen Blick.",
+    "columnCasino": "Casino",
+    "columnRating": "Bewertung",
+    "columnBonus": "Bonus",
+    "columnMinDeposit": "Mindesteinzahlung",
+    "columnPayout": "Auszahlungsdauer",
+    "columnAction": "",
+    "sortBy": "Sortieren nach",
+    "sortRating": "Bewertung",
+    "sortBonus": "Bonus",
+    "sortName": "Name"
+  },
+  "methodology": {
+    "eyebrow": "Vertrauen & Transparenz",
+    "title": "So bewerten wir Casinos",
+    "subtitle": "Jeder Anbieter wird anhand von sieben gewichteten Kriterien bewertet. Bezahlte Platzierungen ändern nie eine redaktionelle Bewertung.",
+    "criteria": {
+      "licensing": "Lizenzierung & rechtliche Transparenz",
+      "security": "Sicherheit & Reputation",
+      "payouts": "Auszahlungen & Auszahlungsbedingungen",
+      "bonusFairness": "Faire Bonusbedingungen",
+      "product": "Spielauswahl & Qualität",
+      "support": "Kundensupport",
+      "responsible": "Tools für verantwortungsvolles Spielen"
+    },
+    "weight": "Gewichtung",
+    "note": "Gesponserte Platzierungen sind stets separat gekennzeichnet und beeinflussen die redaktionelle Bewertung nicht."
+  },
+  "payments": {
+    "eyebrow": "Kasse",
+    "title": "Beliebte Zahlungsmethoden",
+    "subtitle": "Ein- und Auszahlungen mit weit verbreiteten, sicheren Methoden."
+  },
+  "guides": {
+    "eyebrow": "Lernen",
+    "title": "Ratgeber für cleveres Spielen",
+    "subtitle": "Kurze, praktische Beiträge, die dir helfen, Boni, Auszahlungen und sichereres Spielen zu verstehen.",
+    "items": {
+      "bonuses": {
+        "title": "Casino-Boni verstehen",
+        "excerpt": "Umsatzbedingungen, Limits und Ablauf – was die Bedingungen wirklich bedeuten."
+      },
+      "withdrawals": {
+        "title": "So funktionieren schnelle Auszahlungen",
+        "excerpt": "Warum Auszahlungszeiten variieren und wie du ein schnell zahlendes Casino wählst."
+      },
+      "licensing": {
+        "title": "Warum Lizenzen wichtig sind",
+        "excerpt": "Wie Regulierungsbehörden Spieler schützen und wie du eine Lizenz prüfst."
+      }
+    }
+  },
+  "responsibleGambling": {
+    "eyebrow": "Auf Nummer sicher",
+    "title": "Verantwortungsvolles Spielen steht an erster Stelle",
+    "subtitle": "Glücksspiel sollte Unterhaltung sein, kein Weg, um Geld zu verdienen.",
+    "intro": "Wenn Glücksspiel keinen Spaß mehr macht, ist es Zeit für eine Pause. Setze Limits, mache regelmäßig Pausen und jage niemals Verlusten hinterher.",
+    "signsTitle": "Warnzeichen",
+    "signs": [
+      "Mehr Zeit oder Geld ausgeben als beabsichtigt",
+      "Verlusten hinterherjagen, um Geld zurückzugewinnen",
+      "Spielen, um Stress oder schlechter Stimmung zu entkommen",
+      "Geld leihen oder Pflichten vernachlässigen, um zu spielen"
+    ],
+    "toolsTitle": "Hilfreiche Tools",
+    "tools": [
+      "Einzahlungs-, Verlust- und Sitzungslimits",
+      "Realitätschecks und Zeiterinnerungen",
+      "Abkühlphasen",
+      "Selbstausschluss"
+    ],
+    "helpTitle": "Hilfe bekommen",
+    "helpText": "Kostenlose, vertrauliche Unterstützung ist verfügbar. Wenn du oder jemand, den du kennst, Hilfe braucht, wende dich an eine Beratungsstelle in deinem Land.",
+    "reminder": "Glücksspiel ist keine Lösung für finanzielle Probleme.",
+    "getHelp": "Hilfe finden"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Ist GambleZone ein Casino?",
+        "a": "Nein. GambleZone ist eine unabhängige Vergleichsseite. Wir nehmen keine Wetten an, verwalten keine Guthaben und wickeln keine Glücksspielzahlungen ab."
+      },
+      {
+        "q": "Wie verdienen wir Geld?",
+        "a": "Wir erhalten möglicherweise eine Provision, wenn du über unsere Links einen Anbieter besuchst. Das beeinflusst nie unsere redaktionellen Bewertungen, die einer transparenten Methodik folgen."
+      },
+      {
+        "q": "Sind die Casinos lizenziert?",
+        "a": "Wir zeigen nur Anbieter, deren Lizenzierung wir für den gewählten Markt als überprüfbar erachten. Prüfe stets die Verfügbarkeit in deiner Region."
+      },
+      {
+        "q": "Sind die Daten auf dieser Seite echt?",
+        "a": "Dieses MVP verwendet klar gekennzeichnete Beispieldaten zu Demonstrationszwecken. Es werden keine echten Boni, Lizenzen oder Affiliate-Links angedeutet."
+      }
+    ]
+  },
+  "newsletter": {
+    "eyebrow": "Bleib informiert",
+    "title": "Erhalte monatliche Casino-Einblicke",
+    "subtitle": "Nur mit Zustimmung. Jederzeit abbestellbar. Wir geben deine E-Mail nie weiter.",
+    "placeholder": "du@beispiel.de",
+    "consent": "Ich bestätige, dass ich 18+ bin und dem Erhalt von Marketing-E-Mails zustimme. Ich kann mich jederzeit abmelden.",
+    "submit": "Abonnieren",
+    "success": "Danke! (Nur Demo – es wurde keine E-Mail gespeichert.)",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "consentRequired": "Bitte bestätige das Zustimmungskästchen."
+  },
+  "disclosure": {
+    "title": "Affiliate-Offenlegung",
+    "text": "GambleZone finanziert sich über die Leser. Einige Links sind als gesponsert gekennzeichnete Affiliate-Links. Wir erhalten ggf. eine Provision ohne Mehrkosten für dich. Dies beeinflusst nicht unsere unabhängigen Bewertungen."
+  },
+  "casino": {
+    "rating": "Bewertung",
+    "editorialScore": "Redaktionelle Wertung",
+    "pros": "Vorteile",
+    "cons": "Nachteile",
+    "paymentMethods": "Zahlungsmethoden",
+    "gameProviders": "Spieleanbieter",
+    "gameTypes": "Spielarten",
+    "licenses": "Lizenzen",
+    "minDeposit": "Mindesteinzahlung",
+    "minWithdrawal": "Mindestauszahlung",
+    "withdrawalTime": "Auszahlungsdauer",
+    "supportedCurrencies": "Währungen",
+    "supportChannels": "Support",
+    "responsibleTools": "Tools für verantwortungsvolles Spielen",
+    "foundedYear": "Gegründet",
+    "operator": "Betreiber",
+    "availability": "Verfügbarkeit",
+    "unavailable": "Dieser Anbieter ist für die gewählte Region nicht verfügbar.",
+    "reviewSummary": "Fazit der Redaktion",
+    "similar": "Ähnliche Casinos",
+    "visitAria": "{name} besuchen (öffnet in neuem Tab, gesponsert)"
+  },
+  "catalog": {
+    "title": "Alle Casinos",
+    "subtitle": "Durchsuche und filtere unsere getesteten Anbieter.",
+    "resultsCount": "{count, plural, =0 {Keine Casinos gefunden} one {# Casino} other {# Casinos}}",
+    "filters": "Filter",
+    "filterPayment": "Zahlungsmethode",
+    "filterCurrency": "Währung",
+    "filterBonus": "Bonusart",
+    "filterPayout": "Auszahlungsdauer",
+    "reset": "Filter zurücksetzen",
+    "empty": "Keine Casinos entsprechen deinen Filtern.",
+    "emptyAction": "Filter löschen"
+  },
+  "detail": {
+    "backToCasinos": "Alle Casinos",
+    "quickFacts": "Kurzfakten",
+    "bonusTitle": "Willkommensbonus",
+    "reviewTitle": "Unser Test",
+    "faqTitle": "Häufig gestellte Fragen"
+  },
+  "footer": {
+    "about": "GambleZone ist ein unabhängiger Katalog und Vergleich lizenzierter Online-Casinos mit transparenten Informationen zu Boni, Bedingungen und Risiken. Wir sind kein Casino.",
+    "sections": {
+      "explore": "Entdecken",
+      "legal": "Rechtliches",
+      "responsible": "Sicher spielen"
+    },
+    "links": {
+      "casinos": "Casinos",
+      "bonuses": "Boni",
+      "guides": "Ratgeber",
+      "methodology": "Bewertung",
+      "privacy": "Datenschutz",
+      "cookies": "Cookie-Richtlinie",
+      "terms": "Nutzungsbedingungen",
+      "affiliate": "Affiliate-Offenlegung",
+      "responsibleGambling": "Verantwortungsvolles Spielen",
+      "contact": "Kontakt"
+    },
+    "rights": "Alle Rechte vorbehalten.",
+    "ageWarning": "Du musst mindestens 18 Jahre alt sein, um zu spielen. Glücksspiel kann süchtig machen – bitte spiele verantwortungsvoll.",
+    "disclaimer": "Diese Seite verwendet ausschließlich Beispieldaten zu Demonstrationszwecken."
+  },
+  "pages": {
+    "methodology": {
+      "title": "So bewerten wir Casinos",
+      "intro": "Unsere Bewertungen basieren auf einer transparenten, gewichteten Methodik. Wir wenden dieselben Kriterien auf jeden Anbieter an, und gesponserte Platzierungen ändern nie eine redaktionelle Wertung.",
+      "weightsTitle": "Gewichtung der Wertung",
+      "processTitle": "Unser Vorgehen",
+      "process": [
+        "Wir sammeln überprüfbare Fakten zu jedem Anbieter.",
+        "Wir bewerten jedes der sieben Kriterien unabhängig.",
+        "Wir fassen die gewichteten Wertungen zu einer redaktionellen Wertung zusammen.",
+        "Wir prüfen Anbieter regelmäßig erneut und vermerken das Prüfdatum.",
+        "Wir kennzeichnen jede gesponserte Platzierung klar."
+      ]
+    },
+    "responsibleGambling": {
+      "title": "Verantwortungsvolles Spielen",
+      "intro": "Glücksspiel sollte immer Spaß machen und nie ein Weg sein, Geld zu verdienen. Diese Seite erklärt die Risiken, Warnzeichen und Tools, die dir helfen, die Kontrolle zu behalten."
+    },
+    "affiliate": {
+      "title": "Affiliate-Offenlegung",
+      "body": "GambleZone finanziert sich über die Leser. Wenn du auf einen als gesponsert gekennzeichneten Link klickst und einen Anbieter besuchst, erhalten wir ggf. eine Provision ohne zusätzliche Kosten für dich. Diese Provisionen helfen uns, die Seite kostenlos zu halten. Affiliate-Beziehungen beeinflussen nie unsere redaktionellen Bewertungen, die der transparenten Methodik auf unserer Bewertungsseite folgen. Wir zeigen nur Anbieter, die wir für den gewählten Markt als geeignet erachten."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "body": "Dies ist ein Demonstrations-MVP. In einer Produktversion würde diese Seite erklären, welche Daten wir erheben, warum, auf welcher Rechtsgrundlage, wie lange wir sie speichern und welche Rechte du hast. Wir verpflichten uns, nur die notwendigsten Daten zu erheben und niemals sensible personenbezogene Daten in Analytics oder Affiliate-Links zu speichern."
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "body": "Dieses Demonstrations-MVP setzt keine Marketing-Cookies ohne Zustimmung. Eine Produktversion würde jedes Cookie, seinen Zweck und seine Dauer auflisten und granulare Zustimmungssteuerungen bieten. Vor deiner Zustimmung laufen nur zwingend notwendige Mechanismen."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "body": "Dies ist ein Demonstrations-MVP. Eine Produktversion würde die Bedingungen für die Nutzung der Seite festlegen, einschließlich zulässiger Nutzung, geistigem Eigentum, Haftungsausschlüssen, Haftungsbeschränkung und geltendem Recht. Die bereitgestellten Informationen dienen nur der allgemeinen Orientierung und stellen keine Rechts- oder Finanzberatung dar."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "intro": "Eine Ungenauigkeit entdeckt oder ein Problem mit einem Angebot? Sag uns Bescheid. Dieses Demo-Formular sendet oder speichert keine Daten.",
+      "nameLabel": "Dein Name",
+      "emailLabel": "Deine E-Mail",
+      "messageLabel": "Nachricht",
+      "submit": "Nachricht senden",
+      "success": "Danke! (Nur Demo – es wurde keine Nachricht gesendet.)"
+    }
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "subtitle": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "cta": "Zurück zur Startseite"
+  },
+  "metadata": {
+    "homeTitle": "GambleZone – Lizenzierte Online-Casinos vergleichen",
+    "homeDescription": "Unabhängiger, transparenter Vergleich lizenzierter Online-Casinos. Bewertungen zu Boni, Auszahlungen und Bedingungen. 18+. Spiele verantwortungsvoll.",
+    "casinosTitle": "Alle Casinos – GambleZone",
+    "casinosDescription": "Durchsuche und filtere unsere unabhängig getesteten lizenzierten Online-Casinos.",
+    "methodologyTitle": "So bewerten wir Casinos – GambleZone",
+    "responsibleTitle": "Verantwortungsvolles Spielen – GambleZone"
+  }
+}

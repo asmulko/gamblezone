@@ -1,0 +1,288 @@
+{
+  "common": {
+    "brand": "GambleZone",
+    "tagline": "Niezależne porównanie kasyn",
+    "openSite": "Odwiedź stronę",
+    "readReview": "Przeczytaj recenzję",
+    "viewAll": "Zobacz wszystkie",
+    "learnMore": "Dowiedz się więcej",
+    "sponsored": "Sponsorowane",
+    "advertisement": "Reklama",
+    "ageNotice": "18+",
+    "mockDataBadge": "Dane przykładowe",
+    "backToTop": "Do góry",
+    "loading": "Ładowanie…",
+    "termsApply": "Obowiązują warunki",
+    "lastReviewed": "Ostatnia weryfikacja",
+    "skipToContent": "Przejdź do treści"
+  },
+  "nav": {
+    "home": "Start",
+    "casinos": "Kasyna",
+    "bonuses": "Bonusy",
+    "guides": "Poradniki",
+    "methodology": "Jak oceniamy",
+    "responsibleGambling": "Odpowiedzialna gra",
+    "menu": "Menu",
+    "language": "Język",
+    "closeMenu": "Zamknij menu"
+  },
+  "hero": {
+    "eyebrow": "Niezależnie i przejrzyście",
+    "title": "Porównuj licencjonowane kasyna online z pewnością",
+    "subtitle": "Przejrzyste recenzje bonusów, wypłat i warunków — abyś mógł wybrać bezpiecznego, licencjonowanego operatora dopasowanego do Ciebie.",
+    "ctaPrimary": "Zobacz najlepsze kasyna",
+    "ctaSecondary": "Jak oceniamy",
+    "statCasinos": "Ocenionych kasyn",
+    "statCriteria": "Kryteria oceny",
+    "statUpdated": "Aktualizacja co miesiąc",
+    "disclaimer": "Hazard wiąże się z ryzykiem. Graj odpowiedzialnie. Nigdy nie stawiaj więcej, niż możesz stracić."
+  },
+  "topCasinos": {
+    "eyebrow": "Wybór redakcji",
+    "title": "Najlepiej oceniane kasyna w tym miesiącu",
+    "subtitle": "Uszeregowane według naszej przejrzystej metodologii redakcyjnej — nigdy według opłaty.",
+    "rank": "Miejsce",
+    "bonus": "Bonus powitalny",
+    "highlights": "Najważniejsze"
+  },
+  "comparison": {
+    "eyebrow": "Porównanie",
+    "title": "Tabela porównawcza kasyn",
+    "subtitle": "Porównaj kluczowe fakty w mgnieniu oka.",
+    "columnCasino": "Kasyno",
+    "columnRating": "Ocena",
+    "columnBonus": "Bonus",
+    "columnMinDeposit": "Min. depozyt",
+    "columnPayout": "Szybkość wypłat",
+    "columnAction": "",
+    "sortBy": "Sortuj według",
+    "sortRating": "Ocena",
+    "sortBonus": "Bonus",
+    "sortName": "Nazwa"
+  },
+  "methodology": {
+    "eyebrow": "Zaufanie i przejrzystość",
+    "title": "Jak oceniamy kasyna",
+    "subtitle": "Każdy operator jest oceniany według siedmiu ważonych kryteriów. Płatne miejsca nigdy nie zmieniają oceny redakcyjnej.",
+    "criteria": {
+      "licensing": "Licencja i przejrzystość prawna",
+      "security": "Bezpieczeństwo i reputacja",
+      "payouts": "Wypłaty i warunki wypłat",
+      "bonusFairness": "Uczciwość bonusów",
+      "product": "Wybór i jakość gier",
+      "support": "Obsługa klienta",
+      "responsible": "Narzędzia odpowiedzialnej gry"
+    },
+    "weight": "Waga",
+    "note": "Miejsca sponsorowane są zawsze oznaczane osobno i nie wpływają na ocenę redakcyjną."
+  },
+  "payments": {
+    "eyebrow": "Kasa",
+    "title": "Popularne metody płatności",
+    "subtitle": "Wpłacaj i wypłacaj za pomocą powszechnie obsługiwanych, bezpiecznych metod."
+  },
+  "guides": {
+    "eyebrow": "Ucz się",
+    "title": "Poradniki dla mądrzejszej gry",
+    "subtitle": "Krótkie, praktyczne teksty, które pomogą zrozumieć bonusy, wypłaty i bezpieczniejszą grę.",
+    "items": {
+      "bonuses": {
+        "title": "Zrozumieć bonusy kasynowe",
+        "excerpt": "Obrót, limity i wygasanie — co naprawdę oznaczają warunki, zanim je zaakceptujesz."
+      },
+      "withdrawals": {
+        "title": "Jak działają szybkie wypłaty",
+        "excerpt": "Dlaczego czasy wypłat się różnią i jak wybrać szybko płacące kasyno."
+      },
+      "licensing": {
+        "title": "Dlaczego licencja ma znaczenie",
+        "excerpt": "Jak regulatorzy chronią graczy i jak zweryfikować licencję."
+      }
+    }
+  },
+  "responsibleGambling": {
+    "eyebrow": "Graj bezpiecznie",
+    "title": "Odpowiedzialna gra przede wszystkim",
+    "subtitle": "Hazard powinien być rozrywką, a nie sposobem na zarabianie pieniędzy.",
+    "intro": "Jeśli gra przestaje być zabawą, to czas na przerwę. Ustawiaj limity, rób regularne przerwy i nigdy nie odgrywaj się po stratach.",
+    "signsTitle": "Sygnały ostrzegawcze",
+    "signs": [
+      "Poświęcanie więcej czasu lub pieniędzy niż zamierzano",
+      "Odgrywanie się, aby odzyskać pieniądze",
+      "Granie, by uciec od stresu lub złego nastroju",
+      "Pożyczanie pieniędzy lub zaniedbywanie obowiązków dla gry"
+    ],
+    "toolsTitle": "Pomocne narzędzia",
+    "tools": [
+      "Limity depozytów, strat i sesji",
+      "Sprawdzanie rzeczywistości i przypomnienia o czasie",
+      "Okresy przerwy",
+      "Samowykluczenie"
+    ],
+    "helpTitle": "Uzyskaj pomoc",
+    "helpText": "Dostępne jest bezpłatne, poufne wsparcie. Jeśli Ty lub ktoś, kogo znasz, potrzebuje pomocy, skontaktuj się z organizacją wsparcia w swoim kraju.",
+    "reminder": "Hazard nie jest rozwiązaniem problemów finansowych.",
+    "getHelp": "Znajdź wsparcie"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "q": "Czy GambleZone jest kasynem?",
+        "a": "Nie. GambleZone to niezależna strona porównawcza. Nie przyjmujemy zakładów, nie przechowujemy sald ani nie przetwarzamy płatności hazardowych."
+      },
+      {
+        "q": "Jak zarabiamy?",
+        "a": "Możemy otrzymać prowizję, gdy odwiedzisz operatora przez nasze linki. Nigdy nie wpływa to na nasze oceny redakcyjne, które podlegają przejrzystej metodologii."
+      },
+      {
+        "q": "Czy kasyna są licencjonowane?",
+        "a": "Prezentujemy wyłącznie operatorów, których licencję uznajemy za weryfikowalną dla wybranego rynku. Zawsze potwierdzaj dostępność w swoim regionie."
+      },
+      {
+        "q": "Czy dane na tej stronie są prawdziwe?",
+        "a": "To MVP wykorzystuje wyraźnie oznaczone dane przykładowe w celach demonstracyjnych. Nie sugeruje się żadnych prawdziwych bonusów, licencji ani linków afiliacyjnych."
+      }
+    ]
+  },
+  "newsletter": {
+    "eyebrow": "Bądź na bieżąco",
+    "title": "Otrzymuj miesięczne informacje o kasynach",
+    "subtitle": "Tylko za zgodą. Wypisz się w każdej chwili. Nigdy nie udostępniamy Twojego e-maila.",
+    "placeholder": "ty@przyklad.pl",
+    "consent": "Potwierdzam, że mam ukończone 18 lat i zgadzam się na otrzymywanie e-maili marketingowych. Mogę zrezygnować w każdej chwili.",
+    "submit": "Zapisz się",
+    "success": "Dziękujemy! (Tylko demo — nie zapisano żadnego e-maila.)",
+    "invalidEmail": "Podaj prawidłowy adres e-mail.",
+    "consentRequired": "Potwierdź pole zgody."
+  },
+  "disclosure": {
+    "title": "Informacja o afiliacji",
+    "text": "GambleZone jest wspierane przez czytelników. Niektóre linki to linki afiliacyjne oznaczone jako sponsorowane. Możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie. Nie wpływa to na nasze niezależne oceny."
+  },
+  "casino": {
+    "rating": "Ocena",
+    "editorialScore": "Ocena redakcyjna",
+    "pros": "Zalety",
+    "cons": "Wady",
+    "paymentMethods": "Metody płatności",
+    "gameProviders": "Dostawcy gier",
+    "gameTypes": "Rodzaje gier",
+    "licenses": "Licencje",
+    "minDeposit": "Min. depozyt",
+    "minWithdrawal": "Min. wypłata",
+    "withdrawalTime": "Czas wypłaty",
+    "supportedCurrencies": "Waluty",
+    "supportChannels": "Wsparcie",
+    "responsibleTools": "Narzędzia odpowiedzialnej gry",
+    "foundedYear": "Założono",
+    "operator": "Operator",
+    "availability": "Dostępność",
+    "unavailable": "Ten operator jest niedostępny w wybranym regionie.",
+    "reviewSummary": "Werdykt redakcji",
+    "similar": "Podobne kasyna",
+    "visitAria": "Odwiedź {name} (otwiera się w nowej karcie, sponsorowane)"
+  },
+  "catalog": {
+    "title": "Wszystkie kasyna",
+    "subtitle": "Przeglądaj i filtruj naszych ocenionych operatorów.",
+    "resultsCount": "{count, plural, =0 {Nie znaleziono kasyn} one {# kasyno} few {# kasyna} many {# kasyn} other {# kasyna}}",
+    "filters": "Filtry",
+    "filterPayment": "Metoda płatności",
+    "filterCurrency": "Waluta",
+    "filterBonus": "Rodzaj bonusu",
+    "filterPayout": "Szybkość wypłat",
+    "reset": "Resetuj filtry",
+    "empty": "Żadne kasyno nie pasuje do Twoich filtrów.",
+    "emptyAction": "Wyczyść filtry"
+  },
+  "detail": {
+    "backToCasinos": "Wszystkie kasyna",
+    "quickFacts": "Szybkie fakty",
+    "bonusTitle": "Bonus powitalny",
+    "reviewTitle": "Nasza recenzja",
+    "faqTitle": "Najczęściej zadawane pytania"
+  },
+  "footer": {
+    "about": "GambleZone to niezależny katalog i porównanie licencjonowanych kasyn online z przejrzystymi informacjami o bonusach, warunkach i ryzyku. Nie jesteśmy kasynem.",
+    "sections": {
+      "explore": "Odkrywaj",
+      "legal": "Informacje prawne",
+      "responsible": "Graj bezpiecznie"
+    },
+    "links": {
+      "casinos": "Kasyna",
+      "bonuses": "Bonusy",
+      "guides": "Poradniki",
+      "methodology": "Jak oceniamy",
+      "privacy": "Polityka prywatności",
+      "cookies": "Polityka plików cookie",
+      "terms": "Warunki użytkowania",
+      "affiliate": "Informacja o afiliacji",
+      "responsibleGambling": "Odpowiedzialna gra",
+      "contact": "Kontakt"
+    },
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "ageWarning": "Aby grać, musisz mieć ukończone 18 lat. Hazard może uzależniać — graj odpowiedzialnie.",
+    "disclaimer": "Ta strona wykorzystuje dane przykładowe wyłącznie w celach demonstracyjnych."
+  },
+  "pages": {
+    "methodology": {
+      "title": "Jak oceniamy kasyna",
+      "intro": "Nasze oceny opierają się na przejrzystej, ważonej metodologii. Stosujemy te same kryteria wobec każdego operatora, a miejsca sponsorowane nigdy nie zmieniają oceny redakcyjnej.",
+      "weightsTitle": "Wagi oceny",
+      "processTitle": "Nasz proces",
+      "process": [
+        "Zbieramy weryfikowalne fakty o każdym operatorze.",
+        "Oceniamy niezależnie każde z siedmiu kryteriów.",
+        "Łączymy ważone oceny w jedną ocenę redakcyjną.",
+        "Regularnie ponownie weryfikujemy operatorów i zapisujemy datę weryfikacji.",
+        "Wyraźnie oznaczamy każde miejsce sponsorowane."
+      ]
+    },
+    "responsibleGambling": {
+      "title": "Odpowiedzialna gra",
+      "intro": "Hazard powinien być zawsze zabawą i nigdy sposobem na zarabianie pieniędzy. Ta strona wyjaśnia ryzyko, sygnały ostrzegawcze i narzędzia, które pomogą Ci zachować kontrolę."
+    },
+    "affiliate": {
+      "title": "Informacja o afiliacji",
+      "body": "GambleZone jest wspierane przez czytelników. Gdy klikniesz link oznaczony jako sponsorowany i odwiedzisz operatora, możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie. Te prowizje pomagają nam utrzymać stronę bezpłatną. Relacje afiliacyjne nigdy nie wpływają na nasze oceny redakcyjne, które podlegają przejrzystej metodologii opisanej na stronie Jak oceniamy. Prezentujemy wyłącznie operatorów, których uznajemy za odpowiednich dla wybranego rynku."
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "body": "To jest demonstracyjne MVP. W wersji produkcyjnej ta strona wyjaśniałaby, jakie dane zbieramy, dlaczego, na jakiej podstawie prawnej, jak długo je przechowujemy i jakie masz prawa. Zobowiązujemy się do zbierania minimalnej niezbędnej ilości danych i nieprzechowywania wrażliwych danych osobowych w analityce ani linkach afiliacyjnych."
+    },
+    "cookies": {
+      "title": "Polityka plików cookie",
+      "body": "To demonstracyjne MVP nie ustawia plików cookie marketingowych bez zgody. Wersja produkcyjna wymieniałaby każdy plik cookie, jego cel i czas trwania oraz oferowała szczegółowe ustawienia zgody. Przed wyrażeniem zgody działają tylko ściśle niezbędne mechanizmy."
+    },
+    "terms": {
+      "title": "Warunki użytkowania",
+      "body": "To jest demonstracyjne MVP. Wersja produkcyjna określałaby warunki korzystania ze strony, w tym dozwolone użycie, własność intelektualną, wyłączenia odpowiedzialności, ograniczenie odpowiedzialności i prawo właściwe. Podane informacje mają charakter wyłącznie ogólny i nie stanowią porady prawnej ani finansowej."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "intro": "Zauważyłeś nieścisłość lub chcesz zgłosić problem z ofertą? Daj nam znać. Ten formularz demonstracyjny nie wysyła ani nie przechowuje żadnych danych.",
+      "nameLabel": "Twoje imię",
+      "emailLabel": "Twój e-mail",
+      "messageLabel": "Wiadomość",
+      "submit": "Wyślij wiadomość",
+      "success": "Dziękujemy! (Tylko demo — nie wysłano żadnej wiadomości.)"
+    }
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "subtitle": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "cta": "Powrót do strony głównej"
+  },
+  "metadata": {
+    "homeTitle": "GambleZone — Porównaj licencjonowane kasyna online",
+    "homeDescription": "Niezależne, przejrzyste porównanie licencjonowanych kasyn online. Recenzje bonusów, wypłat i warunków. 18+. Graj odpowiedzialnie.",
+    "casinosTitle": "Wszystkie kasyna — GambleZone",
+    "casinosDescription": "Przeglądaj i filtruj nasze niezależnie ocenione licencjonowane kasyna online.",
+    "methodologyTitle": "Jak oceniamy kasyna — GambleZone",
+    "responsibleTitle": "Odpowiedzialna gra — GambleZone"
+  }
+}
