@@ -274,62 +274,62 @@
     },
     "affiliate": {
       "title": "Divulgação de afiliação",
-      "effectiveDate": "Effective Date: July 14, 2026",
-      "intro": "At GambleZone, we believe in transparency and honesty with our visitors.",
+      "effectiveDate": "Data de entrada em vigor: 14 de julho de 2026",
+      "intro": "Na GambleZone, acreditamos na transparência e honestidade com os nossos visitantes.",
       "sections": [
-        { "paragraphs": ["GambleZone participates in various affiliate marketing programs. This means that when you click on certain links to online casinos, sportsbooks, or other gambling-related services and complete a qualifying action, such as registering or making a deposit, GambleZone may earn a commission at no additional cost to you.", "These commissions help support the operation of GambleZone, allowing us to provide free content, reviews, guides, and comparisons."] },
-        { "heading": "Editorial Independence", "paragraphs": ["Affiliate partnerships do not influence our opinions or recommendations. We strive to provide fair, accurate, and unbiased information based on research and our team's experience in the online gambling industry."] },
-        { "heading": "Third-Party Websites", "paragraphs": ["Links on GambleZone direct users to third-party websites operated independently from GambleZone. We are not responsible for the content, offers, terms, promotions, or privacy practices of these external websites. Users should review the policies and terms of any third-party website before engaging with its services."] },
-        { "heading": "Gambling Responsibility", "paragraphs": ["Online gambling involves financial risk and should be undertaken responsibly. GambleZone encourages visitors to gamble only within their means and only if they are of legal gambling age in their jurisdiction."] },
-        { "heading": "Changes to This Disclosure", "paragraphs": ["GambleZone reserves the right to update this Affiliate Disclosure at any time. Any changes will be published on this page with an updated effective date."] },
-        { "heading": "Contact", "paragraphs": ["If you have any questions regarding this Affiliate Disclosure, please contact GambleZone through the Contact page."] }
+        { "paragraphs": ["A GambleZone participa em diversos programas de marketing de afiliados. Quando clica em determinados links e completa uma ação qualificada (registo ou depósito), a GambleZone pode receber uma comissão sem custo adicional para si.", "Estas comissões suportam o funcionamento da GambleZone e permitem-nos oferecer conteúdo gratuito, análises e comparativas."] },
+        { "heading": "Independência editorial", "paragraphs": ["As parcerias de afiliação não influenciam as nossas opiniões. Esforçamo-nos por fornecer informações justas, precisas e imparciais."] },
+        { "heading": "Sítios web de terceiros", "paragraphs": ["Os links da GambleZone direcionam para sítios operados de forma independente. Não somos responsáveis pelo seu conteúdo ou práticas de privacidade."] },
+        { "heading": "Responsabilidade no jogo", "paragraphs": ["O jogo online envolve risco financeiro. A GambleZone encoraja a jogar apenas dentro dos seus meios e tendo a idade legal exigida."] },
+        { "heading": "Alterações", "paragraphs": ["A GambleZone reserva-se o direito de atualizar esta divulgação em qualquer momento."] },
+        { "heading": "Contacto", "paragraphs": ["Se tiver dúvidas, contacte-nos através da página de contacto."] }
       ]
     },
     "privacy": {
       "title": "Política de Privacidade",
-      "effectiveDate": "Effective Date: July 14, 2026",
-      "intro": "Welcome to our website. Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you visit our affiliate website.",
+      "effectiveDate": "Data de entrada em vigor: 14 de julho de 2026",
+      "intro": "Bem-vindo ao nosso sítio. A sua privacidade é importante para nós. Esta Política de Privacidade explica como recolhemos, utilizamos e protegemos as suas informações quando visita o nosso sítio de afiliados.",
       "sections": [
-        { "heading": "Information We Collect", "paragraphs": ["We may collect non-personal information such as your IP address, browser type, device information, pages visited, and time spent on our website. If you contact us, we may also collect the information you provide voluntarily, such as your name and email address."] },
-        { "heading": "How We Use Your Information", "paragraphs": ["The information we collect may be used to:"], "bullets": ["Improve our website and user experience.", "Analyze website traffic and performance.", "Respond to your inquiries.", "Comply with legal obligations."] },
-        { "heading": "Affiliate Links", "paragraphs": ["Our website contains affiliate links to third-party gambling operators and services. If you click on these links and register or make a purchase, we may receive a commission at no additional cost to you. We are not responsible for the privacy practices or content of third-party websites."] },
-        { "heading": "Cookies", "paragraphs": ["We use cookies and similar technologies to enhance your browsing experience, analyze website traffic, and support our affiliate partnerships. You can disable cookies through your browser settings, although some features of the website may not function properly."] },
-        { "heading": "Third-Party Services", "paragraphs": ["We may use third-party analytics providers, advertising partners, and affiliate tracking platforms. These services may collect information according to their own privacy policies."] },
-        { "heading": "Data Security", "paragraphs": ["We take reasonable measures to protect the information collected through our website. However, no method of data transmission or storage is completely secure."] },
-        { "heading": "Children's Privacy", "paragraphs": ["Our website is intended for users who are at least 18 years old (or the legal gambling age in their jurisdiction). We do not knowingly collect personal information from minors."] },
-        { "heading": "Changes to This Policy", "paragraphs": ["We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date."] },
-        { "heading": "Contact Us", "paragraphs": ["If you have any questions regarding this Privacy Policy, please contact us through the contact page available on our website."] }
+        { "heading": "Informações que recolhemos", "paragraphs": ["Podemos recolher informações não pessoais como endereço IP, tipo de navegador, dados do dispositivo e páginas visitadas."] },
+        { "heading": "Como utilizamos as informações", "paragraphs": ["As informações recolhidas podem ser utilizadas para:"], "bullets": ["Melhorar o nosso sítio e a experiência do utilizador.", "Analisar o tráfego e o desempenho.", "Responder às suas consultas.", "Cumprir obrigações legais."] },
+        { "heading": "Links de afiliação", "paragraphs": ["O nosso sítio contém links de afiliação. Se clicar e realizar uma ação qualificada, podemos receber uma comissão sem custo para si."] },
+        { "heading": "Cookies", "paragraphs": ["Utilizamos cookies para melhorar a sua experiência e apoiar as nossas parcerias de afiliação."] },
+        { "heading": "Serviços de terceiros", "paragraphs": ["Podemos utilizar serviços de análise e rastreamento de afiliados de terceiros."] },
+        { "heading": "Segurança dos dados", "paragraphs": ["Tomamos medidas razoáveis para proteger as informações recolhidas."] },
+        { "heading": "Privacidade de menores", "paragraphs": ["O nosso sítio destina-se a maiores de 18 anos. Não recolhemos conscientemente dados de menores."] },
+        { "heading": "Alterações", "paragraphs": ["Podemos atualizar esta política. As alterações serão publicadas nesta página."] },
+        { "heading": "Contacto", "paragraphs": ["Se tiver dúvidas, contacte-nos através da página de contacto."] }
       ]
     },
     "cookies": {
       "title": "Política de Cookies",
-      "effectiveDate": "Effective Date: July 14, 2026",
-      "intro": "This Cookie Policy explains how our website uses cookies and similar technologies to improve your browsing experience and support the functionality of our services.",
+      "effectiveDate": "Data de entrada em vigor: 14 de julho de 2026",
+      "intro": "Esta Política de Cookies explica como o nosso sítio utiliza cookies para melhorar a sua experiência.",
       "sections": [
-        { "heading": "What Are Cookies?", "paragraphs": ["Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences, improve performance, and analyze visitor behavior."] },
-        { "heading": "How We Use Cookies", "paragraphs": ["We use cookies to:"], "bullets": ["Ensure the website functions properly.", "Remember your preferences and settings.", "Analyze website traffic and visitor interactions.", "Measure the effectiveness of our affiliate marketing activities.", "Improve the overall user experience."] },
-        { "heading": "Types of Cookies We Use", "paragraphs": ["Essential Cookies: Necessary for the operation of the website and cannot be disabled.", "Analytics Cookies: Help us understand how visitors use our website by collecting anonymous statistical information.", "Affiliate Tracking Cookies: Allow us to track referrals to our affiliate partners so we may receive a commission when eligible actions are completed.", "Advertising Cookies: Our partners may use cookies to deliver relevant advertisements and measure the performance of advertising campaigns.", "Third-Party Cookies: Some cookies may be placed by third-party services, including analytics providers, advertising networks, and affiliate platforms."] },
-        { "heading": "Managing Cookies", "paragraphs": ["Most web browsers allow you to control or disable cookies through their settings. Please note that disabling certain cookies may affect the functionality of this website."] },
-        { "heading": "Changes to This Cookie Policy", "paragraphs": ["We may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated effective date."] },
-        { "heading": "Contact Us", "paragraphs": ["If you have any questions regarding this Cookie Policy, please contact us through the contact page available on our website."] }
+        { "heading": "O que são cookies?", "paragraphs": ["Cookies são pequenos ficheiros de texto guardados no seu dispositivo quando visita um sítio."] },
+        { "heading": "Como utilizamos cookies", "paragraphs": ["Utilizamos cookies para:"], "bullets": ["Garantir o funcionamento do sítio.", "Guardar as suas preferências.", "Analisar o tráfego.", "Medir a eficácia das atividades de afiliação.", "Melhorar a experiência geral."] },
+        { "heading": "Tipos de cookies", "paragraphs": ["Essenciais: necessários para o funcionamento do sítio.", "Analíticos: ajudam-nos a compreender a utilização do sítio.", "De rastreamento de afiliação: rastreiam referências para parceiros.", "Publicitários: usados por parceiros para publicidade relevante.", "De terceiros: colocados por serviços externos."] },
+        { "heading": "Gestão de cookies", "paragraphs": ["Pode controlar os cookies nas definições do navegador."] },
+        { "heading": "Alterações", "paragraphs": ["Podemos atualizar esta política em qualquer momento."] },
+        { "heading": "Contacto", "paragraphs": ["Se tiver dúvidas, contacte-nos através da página de contacto."] }
       ]
     },
     "terms": {
       "title": "Termos de Utilização",
-      "effectiveDate": "Effective Date: July 14, 2026",
-      "intro": "Welcome to GambleZone. By accessing or using GambleZone, you agree to comply with these Terms of Use. If you do not agree with these terms, please do not use GambleZone.",
+      "effectiveDate": "Data de entrada em vigor: 14 de julho de 2026",
+      "intro": "Bem-vindo à GambleZone. Ao aceder ou utilizar a GambleZone, aceita estes Termos de Utilização.",
       "sections": [
-        { "heading": "Website Purpose", "paragraphs": ["GambleZone provides informational content, reviews, comparisons, and promotional offers related to online gambling operators and services. The information provided is for general informational purposes only."] },
-        { "heading": "Affiliate Disclosure", "paragraphs": ["GambleZone contains affiliate links. If you click on these links and register or make a purchase, GambleZone may receive a commission at no additional cost to you. Our reviews and recommendations are based on our own opinions and research."] },
-        { "heading": "Eligibility", "paragraphs": ["GambleZone is intended for individuals who are at least 18 years old, or the legal gambling age in their jurisdiction. It is your responsibility to ensure that online gambling is legal where you reside."] },
-        { "heading": "Responsible Gambling", "paragraphs": ["GambleZone supports responsible gambling. Gambling should be viewed as entertainment, not as a way to earn money. If you believe gambling is becoming a problem, we encourage you to seek professional assistance."] },
-        { "heading": "Intellectual Property", "paragraphs": ["All content available on GambleZone, including text, graphics, logos, images, and other materials, is the property of GambleZone unless otherwise stated and may not be copied, reproduced, or distributed without prior written permission."] },
-        { "heading": "Third-Party Websites", "paragraphs": ["GambleZone may contain links to third-party websites. GambleZone does not own, control, or accept responsibility for the content, services, or privacy practices of these external websites."] },
-        { "heading": "Disclaimer", "paragraphs": ["While GambleZone strives to keep all information accurate and up to date, we make no warranties or guarantees regarding its accuracy, completeness, or reliability. Online gambling offers, promotions, and bonuses may change without prior notice."] },
-        { "heading": "Limitation of Liability", "paragraphs": ["To the fullest extent permitted by law, GambleZone shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of GambleZone or any third-party websites linked from it."] },
-        { "heading": "Changes to These Terms", "paragraphs": ["GambleZone reserves the right to modify these Terms of Use at any time. Updated versions will be posted on this page with a revised effective date."] },
-        { "heading": "Governing Law", "paragraphs": ["These Terms of Use shall be governed by and interpreted in accordance with the applicable laws of the jurisdiction in which the operator of GambleZone is established."] },
-        { "heading": "Contact", "paragraphs": ["If you have any questions regarding these Terms of Use, please contact GambleZone through the Contact page."] }
+        { "heading": "Finalidade do sítio", "paragraphs": ["A GambleZone fornece conteúdo informativo, análises e comparativas sobre operadores de jogo online."] },
+        { "heading": "Divulgação de afiliação", "paragraphs": ["A GambleZone contém links de afiliação. Podemos receber uma comissão sem custo adicional para si."] },
+        { "heading": "Elegibilidade", "paragraphs": ["A GambleZone destina-se a maiores de 18 anos. É da sua responsabilidade assegurar que o jogo online é legal na sua jurisdição."] },
+        { "heading": "Jogo responsável", "paragraphs": ["A GambleZone apoia o jogo responsável. O jogo deve ser visto como entretenimento, não como fonte de rendimento."] },
+        { "heading": "Propriedade intelectual", "paragraphs": ["Todo o conteúdo da GambleZone é propriedade da GambleZone e não pode ser copiado sem autorização prévia."] },
+        { "heading": "Sítios de terceiros", "paragraphs": ["A GambleZone não aceita responsabilidade pelo conteúdo ou práticas de sítios externos."] },
+        { "heading": "Isenção de responsabilidade", "paragraphs": ["A GambleZone não garante a exatidão das informações. As ofertas podem mudar sem aviso prévio."] },
+        { "heading": "Limitação de responsabilidade", "paragraphs": ["Na medida permitida por lei, a GambleZone não será responsável por danos diretos ou consequentes."] },
+        { "heading": "Alterações", "paragraphs": ["A GambleZone reserva-se o direito de modificar estes termos a qualquer momento."] },
+        { "heading": "Lei aplicável", "paragraphs": ["Estes termos regem-se pela lei aplicável da jurisdição do operador."] },
+        { "heading": "Contacto", "paragraphs": ["Se tiver dúvidas, contacte a GambleZone através da página de contacto."] }
       ]
     },
     "contact": {

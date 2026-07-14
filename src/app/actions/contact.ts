@@ -44,7 +44,7 @@ export async function sendContactEmail(formData: FormData): Promise<ContactResul
 
     await transporter.sendMail({
       from: `"GambleZone Contact" <${process.env.SMTP_FROM ?? process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_EMAIL ?? 'info@gamblezone.com',
+      to: process.env.CONTACT_EMAIL ?? 'info@gamblezone.vip',
       replyTo: email,
       subject: `New contact message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,

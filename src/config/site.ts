@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: 'Independent casino comparison',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gamblezone.vip',
   defaultMarket: 'INT',
-  contactEmail: 'info@gamblezone.com',
+  contactEmail: 'info@gamblezone.vip',
   foundedYear: 2026,
 } as const;
 

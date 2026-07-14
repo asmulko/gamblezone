@@ -17,9 +17,9 @@ export async function generateMetadata({
 }
 
 const LEGAL_EMAILS = [
-  'manager@gamblezone.com',
-  'info@gamblezone.com',
-  'help@gamblezone.com',
+  'manager@gamblezone.vip',
+  'info@gamblezone.vip',
+  'help@gamblezone.vip',
 ];
 
 export default async function ContactPage({
