@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { ArrowRight, Scale, Eye, Sparkles, ShieldCheck, Briefcase } from 'lucide-react';
+import { ArrowRight, Scale, Eye, Sparkles, ShieldCheck, Briefcase, Mail } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
@@ -86,6 +86,19 @@ export default async function AboutPage({
             <Button asChild className="w-full">
               <Link href="/casinos">
                 {t('cta')} <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </Reveal>
+
+          <Reveal delay={0.1} className="flex flex-col items-center gap-3 rounded-3xl border border-border bg-surface/50 p-6 text-center">
+            <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary/15 text-secondary">
+              <Mail size={20} />
+            </span>
+            <h2 className="font-display text-base font-bold">{t('contactTitle')}</h2>
+            <p className="text-sm text-muted">{t('contactDesc')}</p>
+            <Button asChild variant="outline" className="w-full">
+              <Link href="/contact">
+                {t('contactCta')} <ArrowRight size={16} />
               </Link>
             </Button>
           </Reveal>

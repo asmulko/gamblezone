@@ -15,6 +15,7 @@ const navItems = [
   { key: 'methodology', href: '/methodology' },
   { key: 'about', href: '/about' },
   { key: 'responsibleGambling', href: '/responsible-gambling' },
+  { key: 'contact', href: '/contact' },
 ] as const;
 
 export function Header() {

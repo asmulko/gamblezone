@@ -24,6 +24,7 @@
     "methodology": "Cómo evaluamos",
     "about": "Sobre nosotros",
     "responsibleGambling": "Juego responsable",
+    "contact": "Contacto",
     "menu": "Menú",
     "language": "Idioma",
     "closeMenu": "Cerrar menú"
@@ -271,7 +272,9 @@
       "emailLabel": "Tu correo",
       "messageLabel": "Mensaje",
       "submit": "Enviar mensaje",
-      "success": "¡Gracias! (Solo demostración: no se envió ningún mensaje.)"
+      "success": "¡Gracias! (Solo demostración: no se envió ningún mensaje.)",
+      "legalTitle": "Legal y consultas",
+      "legalDesc": "Para consultas legales, de asociación o de cumplimiento, contáctanos directamente."
     },
     "about": {
       "eyebrow": "Sobre nosotros",
@@ -294,7 +297,10 @@
         "responsible": "Responsable"
       },
       "closing": "Bienvenido a GambleZone: creado por profesionales del sector, hecho para jugadores.",
-      "cta": "Explorar casinos"
+      "cta": "Explorar casinos",
+      "contactTitle": "Contáctanos",
+      "contactDesc": "¿Tienes una pregunta o detectaste un problema? Nuestro equipo estará encantado de ayudarte.",
+      "contactCta": "Contacto"
     }
   },
   "notFound": {
