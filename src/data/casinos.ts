@@ -136,7 +136,7 @@ const rawCasinos: Casino[] = [
     responsibleGamblingTools: ['Deposit limits', 'Loss limits', 'Reality checks', 'Self-exclusion'],
     supportChannels: ['Live chat 24/7', 'Email'],
     affiliateLinks: [{ id: 'algz1', casinoId: 'gz1', market: 'INT', campaign: 'welcome01', destinationUrl: 'https://gamblezenpartners.com/', enabled: true, rel: 'sponsored nofollow', createdAt: now, updatedAt: now }],
-    offers: [{ id: 'ogz1', casinoId: 'gz1', market: 'INT', title: '200% up to \u20ac500 + 100 Bonus Spins', shortTerms: 'Min. deposit \u20ac20. 40\u00d7 wagering on deposit + bonus. 18+.', valueText: '200% up to \u20ac500', wageringText: '40\u00d7 (deposit + bonus)', minDepositText: '\u20ac20', status: 'active', verifiedAt: now }],
+    offers: [{ id: 'ogz1', casinoId: 'gz1', market: 'INT', title: '500% up to \u20ac3625 + 350 Free Spins Welcome Pack', shortTerms: 'Spread across 4 deposits. 18+.', valueText: '500% up to \u20ac3625', wageringText: '4 deposits', minDepositText: '\u20ac20', status: 'active', verifiedAt: now }],
     publishedAt: now, reviewedAt: now, nextReviewAt: nextReview,
     logoUrl: '/logos/gamblezen.png',
   },
