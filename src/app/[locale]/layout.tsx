@@ -62,7 +62,11 @@ export async function generateMetadata({
     },
     robots: { index: true, follow: true },
     alternates: {
-      languages: Object.fromEntries(routing.locales.map((l) => [l, `/${l}`])),
+      canonical: `${siteConfig.url}/${locale}`,
+      languages: {
+        ...Object.fromEntries(routing.locales.map((l) => [l, `${siteConfig.url}/${l}`])),
+        'x-default': `${siteConfig.url}/en`,
+      },
     },
   };
 }
@@ -88,6 +92,30 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${inter.variable} ${sora.variable}`}>
       <body className="min-h-dvh bg-background font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify([
+                {
+                  '@context': 'https://schema.org',
+                  '@type': 'Organization',
+                  name: siteConfig.name,
+                  url: siteConfig.url,
+                  contactPoint: {
+                    '@type': 'ContactPoint',
+                    email: siteConfig.contactEmail,
+                    contactType: 'customer service',
+                  },
+                },
+                {
+                  '@context': 'https://schema.org',
+                  '@type': 'WebSite',
+                  name: siteConfig.name,
+                  url: siteConfig.url,
+                },
+              ]),
+            }}
+          />
           <a
             href="#main"
             className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[1000] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"

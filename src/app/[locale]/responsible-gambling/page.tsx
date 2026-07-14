@@ -1,9 +1,42 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { AlertTriangle, LifeBuoy, Wrench } from 'lucide-react';
+import { AlertTriangle, ExternalLink, LifeBuoy, Wrench } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
 import { Reveal } from '@/components/motion/reveal';
+
+const supportOrgs = [
+  {
+    name: 'GamCare',
+    url: 'https://www.gamcare.org.uk/',
+    desc: 'Free information, support and counselling for people affected by gambling (UK)',
+  },
+  {
+    name: 'Gambling Therapy',
+    url: 'https://www.gamblingtherapy.org/',
+    desc: 'Free global online support for people affected by gambling (international)',
+  },
+  {
+    name: 'Gamblers Anonymous',
+    url: 'https://www.gamblersanonymous.org/',
+    desc: 'International fellowship of men and women who share their experience to recover from gambling problems',
+  },
+  {
+    name: 'BeGambleAware',
+    url: 'https://www.begambleaware.org/',
+    desc: 'Free, confidential support, information and advice (UK)',
+  },
+  {
+    name: 'NCPG — National Council on Problem Gambling',
+    url: 'https://www.ncpgambling.org/',
+    desc: 'Helpline and resources across the United States (1-800-522-4700)',
+  },
+  {
+    name: 'Gambling Help Online',
+    url: 'https://www.gamblinghelponline.org.au/',
+    desc: '24/7 chat, phone and email support (Australia)',
+  },
+];
 
 export async function generateMetadata({
   params,
@@ -73,6 +106,24 @@ export default async function ResponsibleGamblingPage({
             <LifeBuoy size={20} className="text-secondary" /> {t('helpTitle')}
           </h2>
           <p className="text-muted">{t('helpText')}</p>
+          <ul className="mt-2 flex flex-col gap-3">
+            {supportOrgs.map((org) => (
+              <li key={org.name}>
+                <a
+                  href={org.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-start gap-3 rounded-2xl border border-border bg-surface/50 p-4 transition-colors hover:border-primary/40"
+                >
+                  <ExternalLink size={16} className="mt-0.5 shrink-0 text-secondary" />
+                  <div>
+                    <p className="font-semibold group-hover:text-secondary">{org.name}</p>
+                    <p className="mt-0.5 text-xs text-muted">{org.desc}</p>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
         </Reveal>
       </div>
     </>

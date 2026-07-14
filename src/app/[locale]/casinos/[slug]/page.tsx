@@ -7,6 +7,7 @@ import {
   X,
   CalendarClock,
   Coins,
+  Star,
   Timer,
   Wallet,
   Headphones,
@@ -97,7 +98,13 @@ export default async function CasinoDetailPage({
                 <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
                   {casino.name}
                 </h1>
-                <Rating value={casino.rating} />
+                {casino.rating > 0 && (
+                  <span className="inline-flex items-center gap-1.5 text-sm text-muted">
+                    <Star size={14} className="fill-accent text-accent" />
+                    <span className="font-bold tabular-nums text-foreground">{casino.rating.toFixed(1)}/5</span>
+                    <span>user rating</span>
+                  </span>
+                )}
                 {casino.reviewedAt && (
                   <span className="text-xs text-muted">
                     {tc('lastReviewed')}: {formatDate(casino.reviewedAt, locale)}

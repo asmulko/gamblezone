@@ -2,7 +2,7 @@
   "common": {
     "brand": "GambleZone",
     "tagline": "Unabhängiger Casino-Vergleich",
-    "openSite": "Zur Website",
+    "openSite": "Bonus sichern",
     "readReview": "Test lesen",
     "viewAll": "Alle ansehen",
     "learnMore": "Mehr erfahren",
@@ -31,7 +31,7 @@
   },
   "hero": {
     "eyebrow": "Unabhängig & transparent",
-    "title": "Vergleiche lizenzierte Online-Casinos mit Vertrauen",
+    "title": "Ihr ultimativer Leitfaden für erstklassige Online-Casino-Unterhaltung",
     "subtitle": "Transparente Bewertungen von Boni, Auszahlungen und Bedingungen – damit du einen sicheren, lizenzierten Anbieter findest, der zu dir passt.",
     "ctaPrimary": "Top-Casinos ansehen",
     "ctaSecondary": "So bewerten wir",
@@ -157,8 +157,27 @@
     "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
     "consentRequired": "Bitte bestätige das Zustimmungskästchen."
   },
+  "casinoDescriptions": {
+    "gamblezen": {
+      "offerTitle": "200% bis zu €500 + 100 Bonus-Freispiele",
+      "offerTerms": "Mind. €20 Einzahlung. 40-fache Umsatzbedingung auf Einzahlung + Bonus. 18+.",
+      "offerValue": "200% bis zu €500",
+      "pros": ["10.000+ Spiele", "Schnelle Auszahlungen", "24/7 Live-Chat"]
+    },
+    "immerion": {
+      "offerTitle": "100% bis zu 1.000$ + 200 Freispiele",
+      "offerTerms": "Mind. $15 Einzahlung. 40-fache Umsatzbedingung. 18+.",
+      "offerValue": "100% bis zu 1.000$",
+      "pros": ["Niedrige Einzahlungsoptionen", "24/7 Live-Chat", "Große Spieleauswahl"]
+    },
+    "impressario": {
+      "offerTitle": "Bis zu 10% Cashback-Bonus jeden Freitag",
+      "offerTerms": "1-fache Umsatzbedingung. Kein Höchstauszahlungsbetrag. 18+.",
+      "offerValue": "Bis zu 10% Cashback",
+      "pros": ["0–24 Stunden Bearbeitungszeit", "Keine Zahlungsgebühren", "24/7 Live-Chat"]
+    }
+  },
   "disclosure": {
-    "title": "Affiliate-Offenlegung",
     "text": "GambleZone finanziert sich über die Leser. Einige Links sind als gesponsert gekennzeichnete Affiliate-Links. Wir erhalten ggf. eine Provision ohne Mehrkosten für dich. Dies beeinflusst nicht unsere unabhängigen Bewertungen."
   },
   "casino": {

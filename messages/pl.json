@@ -2,7 +2,7 @@
   "common": {
     "brand": "GambleZone",
     "tagline": "Niezależne porównanie kasyn",
-    "openSite": "Odwiedź stronę",
+    "openSite": "Odbierz bonus",
     "readReview": "Przeczytaj recenzję",
     "viewAll": "Zobacz wszystkie",
     "learnMore": "Dowiedz się więcej",
@@ -31,7 +31,7 @@
   },
   "hero": {
     "eyebrow": "Niezależnie i przejrzyście",
-    "title": "Porównuj licencjonowane kasyna online z pewnością",
+    "title": "Twój ostateczny przewodnik po hazardowej rozrywce online premium",
     "subtitle": "Przejrzyste recenzje bonusów, wypłat i warunków — abyś mógł wybrać bezpiecznego, licencjonowanego operatora dopasowanego do Ciebie.",
     "ctaPrimary": "Zobacz najlepsze kasyna",
     "ctaSecondary": "Jak oceniamy",
@@ -156,8 +156,27 @@
     "invalidEmail": "Podaj prawidłowy adres e-mail.",
     "consentRequired": "Potwierdź pole zgody."
   },
+  "casinoDescriptions": {
+    "gamblezen": {
+      "offerTitle": "200% do €500 + 100 Spinów Bonusowych",
+      "offerTerms": "Min. wpłata €20. Obrót 40x od wpłaty + bonus. 18+.",
+      "offerValue": "200% do €500",
+      "pros": ["Ponad 10 000 gier", "Szybkie wypłaty", "Czat 24/7"]
+    },
+    "immerion": {
+      "offerTitle": "100% do 1000$ + 200 Darmowych Spinów",
+      "offerTerms": "Min. wpłata $15. Obrót 40x. 18+.",
+      "offerValue": "100% do 1000$",
+      "pros": ["Niski minimalny depozyt", "Czat 24/7", "Szeroka gama gier"]
+    },
+    "impressario": {
+      "offerTitle": "Do 10% Cashback każdy piątek",
+      "offerTerms": "Obrót 1x. Brak limitu wypłaty. 18+.",
+      "offerValue": "Do 10% Cashback",
+      "pros": ["Czas oczekiwania 0–24 godziny", "Brak opłat za płatności", "Czat 24/7"]
+    }
+  },
   "disclosure": {
-    "title": "Informacja o afiliacji",
     "text": "GambleZone jest wspierane przez czytelników. Niektóre linki to linki afiliacyjne oznaczone jako sponsorowane. Możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie. Nie wpływa to na nasze niezależne oceny."
   },
   "casino": {

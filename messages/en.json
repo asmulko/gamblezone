@@ -2,7 +2,7 @@
   "common": {
     "brand": "GambleZone",
     "tagline": "Independent casino comparison",
-    "openSite": "Visit site",
+    "openSite": "Claim Bonus",
     "readReview": "Read review",
     "viewAll": "View all",
     "learnMore": "Learn more",
@@ -31,7 +31,7 @@
   },
   "hero": {
     "eyebrow": "Independent & transparent",
-    "title": "Compare licensed online casinos with confidence",
+    "title": "Your Ultimate Guide to Premium Online Gambling Entertainment",
     "subtitle": "Transparent reviews of bonuses, payouts and conditions — so you can choose a safe, licensed operator that fits you.",
     "ctaPrimary": "See the top casinos",
     "ctaSecondary": "How we rate",
@@ -156,6 +156,46 @@
     "success": "You're subscribed! You'll receive our next update soon.",
     "invalidEmail": "Please enter a valid email address.",
     "consentRequired": "Please confirm the consent checkbox."
+  },
+  "casinoDescriptions": {
+    "gamblezen": {
+      "offerTitle": "200% up to €500 + 100 Bonus Spins",
+      "offerTerms": "Min. deposit €20. 40× wagering on deposit + bonus. 18+.",
+      "offerValue": "200% up to €500",
+      "pros": ["10,000+ games", "Fast withdrawals", "24/7 live chat"]
+    },
+    "immerion": {
+      "offerTitle": "100% up to $1,000 + 200 Free Spins",
+      "offerTerms": "Min. deposit $15. 40× wagering. 18+.",
+      "offerValue": "100% up to $1,000",
+      "pros": ["Low deposit options", "24/7 live chat", "Wide variety of games"]
+    },
+    "impressario": {
+      "offerTitle": "Up to 10% Cashback Bonus every Friday",
+      "offerTerms": "1× wagering. No maximum cashout. 18+.",
+      "offerValue": "10% Cashback every Friday",
+      "pros": ["0–24 hours pending time", "No payment fees", "24/7 live chat"]
+    }
+  },
+  "casinoDescriptions": {
+    "gamblezen": {
+      "offerTitle": "200% up to €500 + 100 Bonus Spins",
+      "offerTerms": "Min. deposit €20. 40× wagering on deposit + bonus. 18+.",
+      "offerValue": "200% up to €500",
+      "pros": ["10,000+ games", "Fast withdrawals", "24/7 live chat"]
+    },
+    "immerion": {
+      "offerTitle": "100% up to $1,000 + 200 Free Spins",
+      "offerTerms": "Min. deposit $15. 40× wagering. 18+.",
+      "offerValue": "100% up to $1,000",
+      "pros": ["Low deposit options", "24/7 live chat", "Wide variety of games"]
+    },
+    "impressario": {
+      "offerTitle": "Up to 10% Cashback Bonus every Friday",
+      "offerTerms": "1× wagering. No maximum cashout. 18+.",
+      "offerValue": "10% Cashback every Friday",
+      "pros": ["0–24 hours pending time", "No payment fees", "24/7 live chat"]
+    }
   },
   "disclosure": {
     "title": "Affiliate disclosure",

@@ -2,7 +2,7 @@
   "common": {
     "brand": "GambleZone",
     "tagline": "Comparador independiente de casinos",
-    "openSite": "Visitar sitio",
+    "openSite": "Reclamar bono",
     "readReview": "Leer reseña",
     "viewAll": "Ver todo",
     "learnMore": "Saber más",
@@ -31,7 +31,7 @@
   },
   "hero": {
     "eyebrow": "Independiente y transparente",
-    "title": "Compara casinos en línea con licencia con confianza",
+    "title": "Tu guía definitiva para el entretenimiento de juego en línea premium",
     "subtitle": "Reseñas transparentes de bonos, pagos y condiciones para que elijas un operador seguro y con licencia que se adapte a ti.",
     "ctaPrimary": "Ver los mejores casinos",
     "ctaSecondary": "Cómo evaluamos",
@@ -157,8 +157,27 @@
     "invalidEmail": "Introduce una dirección de correo válida.",
     "consentRequired": "Confirma la casilla de consentimiento."
   },
+  "casinoDescriptions": {
+    "gamblezen": {
+      "offerTitle": "200% hasta €500 + 100 Giros Bono",
+      "offerTerms": "Depósito mín. €20. Apuesta 40x sobre depósito + bono. 18+.",
+      "offerValue": "200% hasta €500",
+      "pros": ["Más de 10.000 juegos", "Retiros rápidos", "Chat en vivo 24/7"]
+    },
+    "immerion": {
+      "offerTitle": "100% hasta $1.000 + 200 Giros Gratis",
+      "offerTerms": "Depósito mín. $15. Apuesta 40x. 18+.",
+      "offerValue": "100% hasta $1.000",
+      "pros": ["Opciones de depósito bajo", "Chat en vivo 24/7", "Gran variedad de juegos"]
+    },
+    "impressario": {
+      "offerTitle": "Hasta 10% Bono Cashback cada viernes",
+      "offerTerms": "Apuesta 1x. Sin límite de retiro. 18+.",
+      "offerValue": "Hasta 10% Cashback",
+      "pros": ["Tiempo de espera 0–24 horas", "Sin comisiones de pago", "Chat en vivo 24/7"]
+    }
+  },
   "disclosure": {
-    "title": "Aviso de afiliación",
     "text": "GambleZone se financia gracias a sus lectores. Algunos enlaces son de afiliado marcados como patrocinados. Podemos recibir una comisión sin coste para ti. Esto no influye en nuestras valoraciones independientes."
   },
   "casino": {

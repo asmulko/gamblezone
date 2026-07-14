@@ -1,9 +1,8 @@
 import { useTranslations } from 'next-intl';
-import { Check, Gift, Zap } from 'lucide-react';
+import { Check, Gift, Star, Zap } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { CasinoLogo } from './casino-logo';
 import { AffiliateCTA } from './affiliate-cta';
-import { Rating } from '@/components/ui/rating';
 import { Badge } from '@/components/ui/badge';
 import { getActiveOffer, isAvailableInMarket } from '@/lib/casinos';
 import type { Casino } from '@/types/casino';
@@ -42,7 +41,13 @@ export function CasinoCard({
                 {casino.name}
               </Link>
             </h3>
-            <Rating value={casino.rating} size={14} />
+            {casino.rating > 0 && (
+              <span className="inline-flex items-center gap-1 text-xs text-muted">
+                <Star size={11} className="fill-accent text-accent" />
+                <span className="font-semibold tabular-nums text-foreground">{casino.rating.toFixed(1)}</span>
+                <span>/5 user rating</span>
+              </span>
+            )}
           </div>
         </div>
         <div className="flex flex-col items-end">

@@ -6,7 +6,22 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { RotateCcw, SlidersHorizontal } from 'lucide-react';
 import { CasinoCard } from '@/components/casino/casino-card';
 import { cn } from '@/lib/utils';
+import { paymentMethodMap } from '@/data/payment-methods';
 import type { Casino } from '@/types/casino';
+
+const bonusLabels: Record<string, string> = {
+  match: 'Match bonus',
+  freespins: 'Free spins',
+  cashback: 'Cashback',
+  nodeposit: 'No deposit',
+};
+
+const payoutLabels: Record<string, string> = {
+  instant: 'Instant',
+  fast: 'Fast',
+  standard: 'Standard',
+  slow: 'Slow',
+};
 
 type Filters = {
   payment: string;
@@ -80,6 +95,7 @@ export function CasinoCatalog({ casinos }: { casinos: Casino[] }) {
             value={filters.payment}
             options={options.payment}
             onChange={(v) => setFilters((f) => ({ ...f, payment: v }))}
+            getLabel={(id) => paymentMethodMap.get(id)?.name ?? id}
           />
           <FilterGroup
             label={t('filterCurrency')}
@@ -92,12 +108,14 @@ export function CasinoCatalog({ casinos }: { casinos: Casino[] }) {
             value={filters.bonus}
             options={options.bonus}
             onChange={(v) => setFilters((f) => ({ ...f, bonus: v }))}
+            getLabel={(id) => bonusLabels[id] ?? id}
           />
           <FilterGroup
             label={t('filterPayout')}
             value={filters.payout}
             options={options.payout}
             onChange={(v) => setFilters((f) => ({ ...f, payout: v }))}
+            getLabel={(id) => payoutLabels[id] ?? id}
           />
         </div>
       </aside>
@@ -144,11 +162,13 @@ function FilterGroup({
   value,
   options,
   onChange,
+  getLabel = (o: string) => o,
 }: {
   label: string;
   value: string;
   options: string[];
   onChange: (v: string) => void;
+  getLabel?: (opt: string) => string;
 }) {
   return (
     <div className="flex flex-col gap-2">
@@ -160,13 +180,13 @@ function FilterGroup({
             type="button"
             onClick={() => onChange(value === opt ? '' : opt)}
             className={cn(
-              'rounded-full border px-3 py-1 text-xs font-medium capitalize transition-colors',
+              'rounded-full border px-3 py-1 text-xs font-medium transition-colors',
               value === opt
                 ? 'border-primary bg-primary/15 text-secondary'
                 : 'border-border bg-surface-overlay/50 text-muted hover:text-foreground',
             )}
           >
-            {opt}
+            {getLabel(opt)}
           </button>
         ))}
       </div>

@@ -75,7 +75,7 @@ export function Footer() {
           </p>
           <div className="flex flex-col justify-between gap-2 sm:flex-row">
             <p>
-              © {siteConfig.foundedYear} {siteConfig.name}. {t('rights')}
+              © {new Date().getFullYear()} {siteConfig.name}. {t('rights')}
             </p>
             <p>{t('disclaimer')}</p>
           </div>

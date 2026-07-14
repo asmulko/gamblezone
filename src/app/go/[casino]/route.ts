@@ -12,9 +12,13 @@ import { defaultMarketId } from '@/config/markets';
  * - Only a minimal, non-PII click event is logged.
  */
 
-// Hosts we are allowed to redirect to. In production this is the set of verified
-// affiliate destinations. The MVP uses example.com placeholders only.
-const ALLOWED_HOSTS = new Set<string>(['example.com', 'www.example.com']);
+const ALLOWED_HOSTS = new Set<string>([
+  // Real affiliate partners
+  'www.redchips.com', 'redchips.com',
+  'immerion.partners',
+  'impressariocasino.com', 'www.impressariocasino.com',
+  'gamblezenpartners.com', 'www.gamblezenpartners.com',
+]);
 
 function isAllowedDestination(url: string): boolean {
   try {
