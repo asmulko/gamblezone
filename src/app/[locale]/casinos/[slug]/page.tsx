@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import {
   ArrowLeft,
   Check,
@@ -68,7 +68,17 @@ export default async function CasinoDetailPage({
   const td = await getTranslations('detail');
   const tc = await getTranslations('common');
 
-  const offer = getActiveOffer(casino);
+  const messages = await getMessages();
+  const i18n = (messages as any)?.casinoDescriptions?.[casino.slug];
+
+  const rawOffer = getActiveOffer(casino);
+  const offer = rawOffer && i18n ? {
+    ...rawOffer,
+    title: (i18n.offerTitle as string) ?? rawOffer.title,
+    shortTerms: (i18n.offerTerms as string) ?? rawOffer.shortTerms,
+  } : rawOffer;
+  const displayPros = (i18n?.pros as string[] | undefined) ?? casino.pros;
+
   const available = isAvailableInMarket(casino);
   const similar = getSimilarCasinos(casino);
 
@@ -161,7 +171,7 @@ export default async function CasinoDetailPage({
             <div className="rounded-3xl border border-success/25 bg-success/5 p-6">
               <h3 className="mb-3 font-bold text-success">{t('pros')}</h3>
               <ul className="flex flex-col gap-2">
-                {casino.pros.map((p) => (
+                {displayPros.map((p) => (
                   <li key={p} className="flex items-start gap-2 text-sm">
                     <Check size={16} className="mt-0.5 shrink-0 text-success" />
                     {p}

@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { useMessages, useTranslations } from 'next-intl';
 import { ArrowRight, Check, Gift, ShieldCheck, Star, Trophy } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
@@ -149,7 +149,16 @@ function FeaturedCasinoCard({
 }) {
   const t = useTranslations('common');
   const tc = useTranslations('casino');
+  const messages = useMessages();
+  const i18n = (messages as any)?.casinoDescriptions?.[casino.slug];
   const offer = getActiveOffer(casino);
+  const displayOffer = offer && i18n ? {
+    ...offer,
+    title: i18n.offerTitle ?? offer.title,
+    shortTerms: i18n.offerTerms ?? offer.shortTerms,
+    valueText: i18n.offerValue ?? offer.valueText,
+  } : offer;
+  const displayPros = (i18n?.pros as string[] | undefined) ?? casino.pros;
   const available = isAvailableInMarket(casino);
   const trophy = trophyStyles[rank - 1] ?? trophyStyles[2];
 
@@ -216,20 +225,20 @@ function FeaturedCasinoCard({
       </div>
 
       {/* Bonus box */}
-      {offer && (
+      {displayOffer && (
         <div className="mt-4 rounded-2xl border border-primary/20 bg-primary/5 p-4">
           <div className="mb-1 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-secondary">
             <Gift size={13} />
             {t('termsApply')}
           </div>
-          <p className="font-bold text-foreground">{offer.title}</p>
-          <p className="mt-1 text-xs text-muted">{offer.shortTerms}</p>
+          <p className="font-bold text-foreground">{displayOffer.title}</p>
+          <p className="mt-1 text-xs text-muted">{displayOffer.shortTerms}</p>
         </div>
       )}
 
       {/* Pros */}
       <ul className="mt-4 grid gap-1.5 sm:grid-cols-3">
-        {casino.pros.slice(0, 3).map((pro) => (
+        {displayPros.slice(0, 3).map((pro) => (
           <li key={pro} className="flex items-start gap-2 text-sm text-muted">
             <Check size={14} className="mt-0.5 shrink-0 text-success" />
             {pro}
@@ -251,7 +260,10 @@ function CompactCasinoRow({
 }) {
   const t = useTranslations('common');
   const tc = useTranslations('casino');
+  const messages = useMessages();
+  const i18n = (messages as any)?.casinoDescriptions?.[casino.slug];
   const offer = getActiveOffer(casino);
+  const displayValueText = (i18n?.offerValue as string | undefined) ?? offer?.valueText;
   const available = isAvailableInMarket(casino);
 
   return (
@@ -266,10 +278,10 @@ function CompactCasinoRow({
           {casino.name}
         </Link>
       </div>
-      {offer && (
+      {displayValueText && (
         <div className="inline-flex items-center gap-1.5 rounded-full border border-secondary/30 bg-secondary/10 px-3 py-1 text-sm font-semibold text-secondary">
           <Gift size={12} />
-          {offer.valueText}
+          {displayValueText}
         </div>
       )}
       <div className="shrink-0 text-right">

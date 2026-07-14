@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useMessages, useTranslations } from 'next-intl';
 import { Check, Gift, Star, Zap } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { CasinoLogo } from './casino-logo';
@@ -18,7 +18,15 @@ export function CasinoCard({
 }) {
   const t = useTranslations('common');
   const tc = useTranslations('casino');
+  const messages = useMessages();
+  const i18n = (messages as any)?.casinoDescriptions?.[casino.slug];
   const offer = getActiveOffer(casino);
+  const displayOffer = offer && i18n ? {
+    ...offer,
+    title: (i18n.offerTitle as string) ?? offer.title,
+    shortTerms: (i18n.offerTerms as string) ?? offer.shortTerms,
+  } : offer;
+  const displayPros = (i18n?.pros as string[] | undefined) ?? casino.pros;
   const available = isAvailableInMarket(casino);
 
   return (
@@ -60,18 +68,18 @@ export function CasinoCard({
         </div>
       </div>
 
-      {offer && (
+      {displayOffer && (
         <div className="rounded-2xl border border-primary/20 bg-primary/5 p-3">
           <div className="mb-1 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-secondary">
             <Gift size={13} /> {t('termsApply')}
           </div>
-          <p className="text-sm font-semibold text-foreground">{offer.title}</p>
-          <p className="mt-1 text-xs text-muted">{offer.shortTerms}</p>
+          <p className="text-sm font-semibold text-foreground">{displayOffer.title}</p>
+          <p className="mt-1 text-xs text-muted">{displayOffer.shortTerms}</p>
         </div>
       )}
 
       <ul className="flex flex-col gap-1.5">
-        {casino.pros.slice(0, 3).map((pro) => (
+        {displayPros.slice(0, 3).map((pro) => (
           <li key={pro} className="flex items-start gap-2 text-sm text-muted">
             <Check size={15} className="mt-0.5 shrink-0 text-success" />
             {pro}

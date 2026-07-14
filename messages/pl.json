@@ -157,6 +157,12 @@
     "consentRequired": "Potwierdź pole zgody."
   },
   "casinoDescriptions": {
+    "redchips": {
+      "offerTitle": "100% do €2500 Bonus powitalny",
+      "offerTerms": "Obrót 35x od bonusu. 20% miesięczny cashback. 18+.",
+      "offerValue": "100% do €2500",
+      "pros": ["Czat 24/7", "Najlepsze rynki zakładów sportowych", "Szybkie wypłaty"]
+    },
     "gamblezen": {
       "offerTitle": "200% do €500 + 100 Spinów Bonusowych",
       "offerTerms": "Min. wpłata €20. Obrót 40x od wpłaty + bonus. 18+.",
@@ -177,6 +183,7 @@
     }
   },
   "disclosure": {
+    "title": "Informacja o afiliacji",
     "text": "GambleZone jest wspierane przez czytelników. Niektóre linki to linki afiliacyjne oznaczone jako sponsorowane. Możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie. Nie wpływa to na nasze niezależne oceny."
   },
   "casino": {

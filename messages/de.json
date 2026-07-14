@@ -158,6 +158,12 @@
     "consentRequired": "Bitte bestätige das Zustimmungskästchen."
   },
   "casinoDescriptions": {
+    "redchips": {
+      "offerTitle": "100% bis zu €2500 Willkommensbonus",
+      "offerTerms": "35-fache Umsatzbedingung auf Bonus. 20% monatlicher Cashback. 18+.",
+      "offerValue": "100% bis zu €2500",
+      "pros": ["24/7 Live-Chat", "Beste Sportwettenmärkte", "Schnelle Auszahlungen"]
+    },
     "gamblezen": {
       "offerTitle": "200% bis zu €500 + 100 Bonus-Freispiele",
       "offerTerms": "Mind. €20 Einzahlung. 40-fache Umsatzbedingung auf Einzahlung + Bonus. 18+.",
@@ -178,6 +184,7 @@
     }
   },
   "disclosure": {
+    "title": "Affiliate-Offenlegung",
     "text": "GambleZone finanziert sich über die Leser. Einige Links sind als gesponsert gekennzeichnete Affiliate-Links. Wir erhalten ggf. eine Provision ohne Mehrkosten für dich. Dies beeinflusst nicht unsere unabhängigen Bewertungen."
   },
   "casino": {

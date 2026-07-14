@@ -158,6 +158,12 @@
     "consentRequired": "Confirma la casilla de consentimiento."
   },
   "casinoDescriptions": {
+    "redchips": {
+      "offerTitle": "100% hasta €2500 Bono de bienvenida",
+      "offerTerms": "Apuesta 35x sobre bono. 20% Cashback mensual. 18+.",
+      "offerValue": "100% hasta €2500",
+      "pros": ["Chat en vivo 24/7", "Los mejores mercados deportivos", "Retiros rápidos"]
+    },
     "gamblezen": {
       "offerTitle": "200% hasta €500 + 100 Giros Bono",
       "offerTerms": "Depósito mín. €20. Apuesta 40x sobre depósito + bono. 18+.",
@@ -178,6 +184,7 @@
     }
   },
   "disclosure": {
+    "title": "Aviso de afiliación",
     "text": "GambleZone se financia gracias a sus lectores. Algunos enlaces son de afiliado marcados como patrocinados. Podemos recibir una comisión sin coste para ti. Esto no influye en nuestras valoraciones independientes."
   },
   "casino": {

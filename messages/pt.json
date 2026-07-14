@@ -158,6 +158,12 @@
     "consentRequired": "Confirme a caixa de consentimento."
   },
   "casinoDescriptions": {
+    "redchips": {
+      "offerTitle": "100% até €2500 Bónus de boas-vindas",
+      "offerTerms": "Rollover 35x sobre bónus. 20% Cashback mensal. 18+.",
+      "offerValue": "100% até €2500",
+      "pros": ["Chat ao vivo 24/7", "Melhores mercados de apostas desportivas", "Levantamentos rápidos"]
+    },
     "gamblezen": {
       "offerTitle": "200% até €500 + 100 Giros Bónus",
       "offerTerms": "Depósito mín. €20. Rollover 40x sobre depósito + bónus. 18+.",
@@ -178,6 +184,7 @@
     }
   },
   "disclosure": {
+    "title": "Divulgação de afiliação",
     "text": "O GambleZone é sustentado pelos leitores. Alguns links são links de afiliado identificados como patrocinados. Podemos receber uma comissão sem custo para si. Isto não influencia as nossas avaliações independentes."
   },
   "casino": {
