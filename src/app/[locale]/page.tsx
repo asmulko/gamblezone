@@ -1,10 +1,12 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-import { ArrowRight, ScrollText, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Check, Gift, ShieldCheck, Trophy } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
 import { Hero } from '@/components/home/hero';
-import { CasinoCard } from '@/components/casino/casino-card';
+import { CasinoLogo } from '@/components/casino/casino-logo';
+import { AffiliateCTA } from '@/components/casino/affiliate-cta';
+import { Rating } from '@/components/ui/rating';
 import { ComparisonTable } from '@/components/casino/comparison-table';
 import { PaymentChip } from '@/components/casino/payment-methods';
 import { FaqAccordion, type FaqItem } from '@/components/casino/faq-accordion';
@@ -12,8 +14,9 @@ import { NewsletterForm } from '@/components/forms/newsletter-form';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal';
 import { Button } from '@/components/ui/button';
-import { getTopCasinos, getActiveOffer, methodologyWeights } from '@/lib/casinos';
+import { getTopCasinos, getActiveOffer, isAvailableInMarket } from '@/lib/casinos';
 import { paymentMethods } from '@/data/payment-methods';
+import type { Casino } from '@/types/casino';
 
 export default async function HomePage({
   params,
@@ -25,24 +28,14 @@ export default async function HomePage({
 
   const t = await getTranslations();
   const casinos = getTopCasinos(6);
-
-  const rows = casinos.map((c) => ({
-    slug: c.slug,
-    name: c.name,
-    brandColor: c.brandColor,
-    rating: c.rating,
-    editorialScore: c.editorialScore,
-    bonus: getActiveOffer(c)?.valueText ?? '—',
-    minDeposit: c.minDeposit ? `€${c.minDeposit.amount}` : '—',
-    payout: c.withdrawalTimeText ?? '—',
-    available: c.supportedMarkets.includes('INT'),
-  }));
+  const topThree = casinos.slice(0, 3);
+  const rest = casinos.slice(3);
 
   const faqItems = t.raw('faq.items') as FaqItem[];
 
   return (
     <>
-      <Hero casinoCount={casinos.length} criteriaCount={methodologyWeights.length} />
+      <Hero />
 
       {/* Top casinos */}
       <section className="container-page py-16">
@@ -51,29 +44,32 @@ export default async function HomePage({
           title={t('topCasinos.title')}
           subtitle={t('topCasinos.subtitle')}
         />
-        <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {casinos.map((c, i) => (
-            <StaggerItem key={c.id} className="h-full">
-              <CasinoCard casino={c} rank={i + 1} placement="home-topcard" />
+
+        {/* Featured top 3 */}
+        <Stagger className="mt-10 flex flex-col gap-4">
+          {topThree.map((c, i) => (
+            <StaggerItem key={c.id}>
+              <FeaturedCasinoCard casino={c} rank={i + 1} placement="home-topcard" />
             </StaggerItem>
           ))}
         </Stagger>
-      </section>
 
-      {/* Comparison table */}
-      <section className="container-page py-16">
-        <SectionHeading
-          eyebrow={t('comparison.eyebrow')}
-          title={t('comparison.title')}
-          subtitle={t('comparison.subtitle')}
-        />
-        <Reveal className="mt-10">
-          <ComparisonTable rows={rows} />
-        </Reveal>
+        {/* Remaining casinos */}
+        {rest.length > 0 && (
+          <>
+            <h3 className="mb-4 mt-10 text-xs font-bold uppercase tracking-widest text-muted">
+              {t('topCasinos.more')}
+            </h3>
+            <Stagger className="flex flex-col gap-2">
+              {rest.map((c, i) => (
+                <StaggerItem key={c.id}>
+                  <CompactCasinoRow casino={c} rank={i + 4} placement="home-topcard" />
+                </StaggerItem>
+              ))}
+            </Stagger>
+          </>
+        )}
       </section>
-
-      {/* Methodology */}
-      <MethodologyPreview />
 
       {/* Payments */}
       <section className="container-page py-16">
@@ -88,9 +84,6 @@ export default async function HomePage({
           ))}
         </Reveal>
       </section>
-
-      {/* Guides */}
-      <GuidesPreview />
 
       {/* Responsible gambling */}
       <ResponsibleGamblingPreview />
@@ -125,75 +118,135 @@ export default async function HomePage({
   );
 }
 
-function MethodologyPreview() {
-  const t = useTranslations();
-  return (
-    <section className="border-y border-border bg-surface/30 py-16">
-      <div className="container-page grid gap-10 lg:grid-cols-2 lg:items-center">
-        <Reveal className="flex flex-col gap-4">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-secondary">
-            {t('methodology.eyebrow')}
-          </span>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            {t('methodology.title')}
-          </h2>
-          <p className="text-muted">{t('methodology.subtitle')}</p>
-          <p className="rounded-xl border border-border bg-surface/60 px-4 py-3 text-sm text-muted">
-            {t('methodology.note')}
-          </p>
-          <Button asChild variant="outline" className="w-fit">
-            <Link href="/methodology">
-              {t('nav.methodology')} <ArrowRight size={16} />
-            </Link>
-          </Button>
-        </Reveal>
+const trophyStyles = [
+  { color: 'text-amber-400', filter: '[filter:drop-shadow(0_0_8px_rgba(251,191,36,0.65))]' },
+  { color: 'text-slate-300', filter: '' },
+  { color: 'text-amber-700', filter: '' },
+] as const;
 
-        <Stagger className="flex flex-col gap-3">
-          {methodologyWeights.map((c) => (
-            <StaggerItem
-              key={c.key}
-              className="flex items-center gap-4 rounded-2xl border border-border bg-surface/50 p-4"
-            >
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary/15 text-sm font-bold text-secondary">
-                {c.weight}%
-              </span>
-              <span className="flex-1 text-sm font-medium">
-                {t(`methodology.criteria.${c.key}`)}
-              </span>
-              <div className="hidden h-2 w-24 overflow-hidden rounded-full bg-surface-overlay sm:block">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-primary to-secondary"
-                  style={{ width: `${(c.weight / 25) * 100}%` }}
-                />
-              </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
+function FeaturedCasinoCard({
+  casino,
+  rank,
+  placement,
+}: {
+  casino: Casino;
+  rank: number;
+  placement: string;
+}) {
+  const t = useTranslations('common');
+  const tc = useTranslations('casino');
+  const offer = getActiveOffer(casino);
+  const available = isAvailableInMarket(casino);
+  const trophy = trophyStyles[rank - 1] ?? trophyStyles[2];
+
+  return (
+    <article className="relative rounded-3xl border border-border bg-surface/50 p-5 transition-all hover:border-primary/40 hover:shadow-card sm:p-6">
+      {/* Header */}
+      <div className="flex flex-wrap items-center gap-3 sm:flex-nowrap">
+        <Trophy size={32} className={`shrink-0 ${trophy.color} ${trophy.filter}`} />
+        <CasinoLogo name={casino.name} color={casino.brandColor} size={54} logoUrl={casino.logoUrl} />
+        <div className="flex min-w-0 flex-1 flex-col gap-0.5">
+          <Link
+            href={`/casinos/${casino.slug}`}
+            className="font-display text-lg font-bold after:absolute after:inset-0"
+          >
+            {casino.name}
+          </Link>
+          <Rating value={casino.rating} size={14} />
+        </div>
+        <div className="shrink-0 text-right">
+          <p className="text-3xl font-bold tabular-nums text-secondary">
+            {casino.editorialScore.toFixed(1)}
+          </p>
+          <p className="text-[10px] uppercase tracking-wide text-muted">{tc('editorialScore')}</p>
+        </div>
+        {available && (
+          <div className="relative z-10 shrink-0">
+            <AffiliateCTA
+              slug={casino.slug}
+              placement={placement}
+              label={t('openSite')}
+              ariaLabel={tc('visitAria', { name: casino.name })}
+            />
+          </div>
+        )}
       </div>
-    </section>
+
+      {/* Bonus box */}
+      {offer && (
+        <div className="mt-4 rounded-2xl border border-primary/20 bg-primary/5 p-4">
+          <div className="mb-1 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-secondary">
+            <Gift size={13} />
+            {t('termsApply')}
+          </div>
+          <p className="font-bold text-foreground">{offer.title}</p>
+          <p className="mt-1 text-xs text-muted">{offer.shortTerms}</p>
+        </div>
+      )}
+
+      {/* Pros */}
+      <ul className="mt-4 grid gap-1.5 sm:grid-cols-3">
+        {casino.pros.slice(0, 3).map((pro) => (
+          <li key={pro} className="flex items-start gap-2 text-sm text-muted">
+            <Check size={14} className="mt-0.5 shrink-0 text-success" />
+            {pro}
+          </li>
+        ))}
+      </ul>
+    </article>
   );
 }
 
-function GuidesPreview() {
-  const t = useTranslations('guides');
-  const keys = ['bonuses', 'withdrawals', 'licensing'] as const;
+function CompactCasinoRow({
+  casino,
+  rank,
+  placement,
+}: {
+  casino: Casino;
+  rank: number;
+  placement: string;
+}) {
+  const t = useTranslations('common');
+  const tc = useTranslations('casino');
+  const offer = getActiveOffer(casino);
+  const available = isAvailableInMarket(casino);
+
   return (
-    <section className="container-page py-16">
-      <SectionHeading eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} />
-      <Stagger className="mt-10 grid gap-5 md:grid-cols-3">
-        {keys.map((k) => (
-          <StaggerItem key={k}>
-            <article className="group flex h-full flex-col gap-3 rounded-3xl border border-border bg-surface/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40">
-              <span className="grid h-11 w-11 place-items-center rounded-xl bg-secondary/15 text-secondary">
-                <ScrollText size={20} />
-              </span>
-              <h3 className="text-lg font-bold">{t(`items.${k}.title`)}</h3>
-              <p className="text-sm text-muted">{t(`items.${k}.excerpt`)}</p>
-            </article>
-          </StaggerItem>
-        ))}
-      </Stagger>
-    </section>
+    <article className="relative flex flex-wrap items-center gap-3 rounded-xl border border-border bg-surface/50 px-4 py-3 transition-all hover:border-primary/40 hover:bg-surface-overlay sm:flex-nowrap">
+      <span className="w-5 shrink-0 text-center text-xs font-bold text-muted">{rank}</span>
+      <CasinoLogo name={casino.name} color={casino.brandColor} size={36} logoUrl={casino.logoUrl} />
+      <div className="flex min-w-0 flex-1 flex-col gap-0.5">
+        <Link
+          href={`/casinos/${casino.slug}`}
+          className="text-sm font-bold after:absolute after:inset-0"
+        >
+          {casino.name}
+        </Link>
+        <Rating value={casino.rating} size={11} />
+      </div>
+      {offer && (
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-secondary/30 bg-secondary/10 px-3 py-1 text-sm font-semibold text-secondary">
+          <Gift size={12} />
+          {offer.valueText}
+        </div>
+      )}
+      <div className="shrink-0 text-right">
+        <p className="text-lg font-bold tabular-nums text-secondary">
+          {casino.editorialScore.toFixed(1)}
+        </p>
+      </div>
+      {available && (
+        <div className="relative z-10 shrink-0">
+          <AffiliateCTA
+            slug={casino.slug}
+            placement={placement}
+            label={t('openSite')}
+            ariaLabel={tc('visitAria', { name: casino.name })}
+            size="sm"
+          />
+        </div>
+      )}
+    </article>
   );
 }
 

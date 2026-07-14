@@ -36,7 +36,7 @@ export default async function BonusesPage({
               className="flex h-full flex-col gap-4 rounded-3xl border border-border bg-surface/50 p-6"
             >
               <div className="flex items-center gap-3">
-                <CasinoLogo name={casino.name} color={casino.brandColor} size={48} />
+                <CasinoLogo name={casino.name} color={casino.brandColor} size={48} logoUrl={casino.logoUrl} />
                 <div>
                   <h2 className="font-bold">{casino.name}</h2>
                   <span className="inline-flex items-center gap-1 text-xs font-semibold text-secondary">

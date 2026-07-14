@@ -12,7 +12,6 @@ import { cn } from '@/lib/utils';
 
 const navItems = [
   { key: 'casinos', href: '/casinos' },
-  { key: 'methodology', href: '/methodology' },
   { key: 'about', href: '/about' },
   { key: 'responsibleGambling', href: '/responsible-gambling' },
   { key: 'contact', href: '/contact' },

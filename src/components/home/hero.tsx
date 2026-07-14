@@ -2,20 +2,14 @@
 
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, Sparkles, TrendingUp } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { Button } from '@/components/ui/button';
 import { AgeBadge } from '@/components/ui/age-badge';
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
-export function Hero({
-  casinoCount,
-  criteriaCount,
-}: {
-  casinoCount: number;
-  criteriaCount: number;
-}) {
+export function Hero() {
   const t = useTranslations('hero');
   const reduce = useReducedMotion();
 
@@ -31,12 +25,6 @@ export function Hero({
       transition: { duration: 0.6, ease: easeOut },
     },
   };
-
-  const stats = [
-    { value: `${casinoCount}`, label: t('statCasinos'), icon: ShieldCheck },
-    { value: `${criteriaCount}`, label: t('statCriteria'), icon: TrendingUp },
-    { value: '★', label: t('statUpdated'), icon: Sparkles },
-  ];
 
   return (
     <section className="relative overflow-hidden">
@@ -74,9 +62,6 @@ export function Hero({
                 <ArrowRight size={18} />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/methodology">{t('ctaSecondary')}</Link>
-            </Button>
           </motion.div>
 
           <motion.div
@@ -87,25 +72,9 @@ export function Hero({
             <span className="max-w-md text-pretty">{t('disclaimer')}</span>
           </motion.div>
         </motion.div>
-
-        <motion.dl
-          initial={reduce ? { opacity: 0 } : { opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: easeOut, delay: 0.5 }}
-          className="mt-4 grid w-full max-w-2xl grid-cols-3 gap-3"
-        >
-          {stats.map((s) => (
-            <div
-              key={s.label}
-              className="flex flex-col items-center gap-1 rounded-2xl border border-border bg-surface/50 p-4"
-            >
-              <s.icon size={18} className="text-secondary" />
-              <dd className="text-2xl font-bold tabular-nums">{s.value}</dd>
-              <dt className="text-[11px] uppercase tracking-wide text-muted">{s.label}</dt>
-            </div>
-          ))}
-        </motion.dl>
       </div>
     </section>
   );
 }
+
+

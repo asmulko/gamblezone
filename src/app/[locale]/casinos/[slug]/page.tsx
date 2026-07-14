@@ -92,7 +92,7 @@ export default async function CasinoDetailPage({
 
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
-              <CasinoLogo name={casino.name} color={casino.brandColor} size={72} />
+              <CasinoLogo name={casino.name} color={casino.brandColor} size={72} logoUrl={casino.logoUrl} />
               <div className="flex flex-col gap-1.5">
                 <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
                   {casino.name}

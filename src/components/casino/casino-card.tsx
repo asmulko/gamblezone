@@ -32,7 +32,7 @@ export function CasinoCard({
 
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
-          <CasinoLogo name={casino.name} color={casino.brandColor} size={52} />
+          <CasinoLogo name={casino.name} color={casino.brandColor} size={52} logoUrl={casino.logoUrl} />
           <div>
             <h3 className="font-display text-lg font-bold leading-tight">
               <Link

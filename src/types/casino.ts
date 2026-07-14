@@ -91,6 +91,8 @@ export const casinoSchema = z.object({
   affiliateLinks: z.array(affiliateLinkSchema),
   offers: z.array(casinoOfferSchema),
 
+  logoUrl: z.string().optional(),
+
   publishedAt: z.string().optional(),
   reviewedAt: z.string().optional(),
   nextReviewAt: z.string().optional(),

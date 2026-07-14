@@ -1,17 +1,38 @@
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
-/** Generates a clean SVG monogram logo from the casino name + brand colour. */
+/** Renders a real logo image when `logoUrl` is supplied, otherwise falls back to an SVG monogram. */
 export function CasinoLogo({
   name,
   color,
   size = 56,
   className,
+  logoUrl,
 }: {
   name: string;
   color: string;
   size?: number;
   className?: string;
+  logoUrl?: string;
 }) {
+  if (logoUrl) {
+    return (
+      <div
+        style={{ width: size, height: size }}
+        className={cn('relative shrink-0 overflow-hidden rounded-xl', className)}
+      >
+        <Image
+          src={logoUrl}
+          alt={`${name} logo`}
+          fill
+          className="object-cover"
+          sizes={`${size}px`}
+          unoptimized
+        />
+      </div>
+    );
+  }
+
   const initials = name
     .split(' ')
     .map((w) => w[0])

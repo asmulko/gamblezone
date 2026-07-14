@@ -22,6 +22,7 @@ type Row = {
   minDeposit: string;
   payout: string;
   available: boolean;
+  logoUrl?: string;
 };
 
 export function ComparisonTable({ rows }: { rows: Row[] }) {
@@ -81,7 +82,7 @@ export function ComparisonTable({ rows }: { rows: Row[] }) {
               >
                 <td className="p-4">
                   <div className="flex items-center gap-3">
-                    <CasinoLogo name={row.name} color={row.brandColor} size={40} />
+                    <CasinoLogo name={row.name} color={row.brandColor} size={40} logoUrl={row.logoUrl} />
                     <Link
                       href={`/casinos/${row.slug}`}
                       className="font-semibold text-foreground hover:text-secondary"
