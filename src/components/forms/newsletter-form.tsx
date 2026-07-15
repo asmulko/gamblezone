@@ -1,39 +1,85 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Mail, CheckCircle2 } from 'lucide-react';
 import { AgeBadge } from '@/components/ui/age-badge';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+type SubmitState = 'idle' | 'submitting' | 'success' | 'error';
+
 export function NewsletterForm() {
   const t = useTranslations('newsletter');
+  const locale = useLocale();
   const [email, setEmail] = useState('');
   const [consent, setConsent] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [done, setDone] = useState(false);
+  const [state, setState] = useState<SubmitState>('idle');
+  const [message, setMessage] = useState('');
 
-  function onSubmit(e: FormEvent) {
-    e.preventDefault();
+  async function onSubmit(event: FormEvent<HTMLFormElement>): Promise<void> {
+    event.preventDefault();
+
     if (!EMAIL_RE.test(email)) {
-      setError(t('invalidEmail'));
+      setState('error');
+      setMessage(t('invalidEmail'));
       return;
     }
+
     if (!consent) {
-      setError(t('consentRequired'));
+      setState('error');
+      setMessage(t('consentRequired'));
       return;
     }
-    // MVP: no backend. Nothing is stored or sent.
-    setError(null);
-    setDone(true);
+
+    setState('submitting');
+    setMessage('');
+
+    const formData = new FormData(event.currentTarget);
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          consent,
+          language: locale,
+          website: formData.get('website'),
+        }),
+      });
+
+      const result = (await response.json()) as {
+        success?: boolean;
+        message?: string;
+        error?: string;
+      };
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error ?? 'Subscription failed.');
+      }
+
+      setEmail('');
+      setConsent(false);
+      setState('success');
+      setMessage(result.message ?? t('success'));
+    } catch (error) {
+      setState('error');
+      setMessage(
+        error instanceof Error ? error.message : 'Subscription failed.',
+      );
+    }
   }
 
-  if (done) {
+  if (state === 'success') {
     return (
       <div className="flex items-center gap-3 rounded-2xl border border-success/30 bg-success/10 px-5 py-4 text-success">
         <CheckCircle2 size={20} />
-        <p className="text-sm font-medium">{t('success')}</p>
+        <p role="status" className="text-sm font-medium">
+          {message}
+        </p>
       </div>
     );
   }
@@ -51,21 +97,38 @@ export function NewsletterForm() {
           </label>
           <input
             id="newsletter-email"
+            name="email"
             type="email"
             inputMode="email"
             autoComplete="email"
             placeholder={t('placeholder')}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            aria-invalid={Boolean(error)}
+            aria-invalid={state === 'error'}
+            maxLength={254}
+            required
             className="h-12 w-full rounded-full border border-border bg-surface-raised pl-11 pr-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted focus:border-primary/60"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute -left-[10000px] h-px w-px overflow-hidden"
+        >
+          <label htmlFor="newsletter-website">Website</label>
+          <input
+            id="newsletter-website"
+            name="website"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
           />
         </div>
         <button
           type="submit"
+          disabled={state === 'submitting'}
           className="h-12 shrink-0 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:brightness-110 active:scale-[0.97]"
         >
-          {t('submit')}
+          {state === 'submitting' ? 'Subscribing...' : t('submit')}
         </button>
       </div>
 
@@ -74,6 +137,7 @@ export function NewsletterForm() {
           type="checkbox"
           checked={consent}
           onChange={(e) => setConsent(e.target.checked)}
+          required
           className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--primary))]"
         />
         <span className="flex items-center gap-1.5">
@@ -82,9 +146,9 @@ export function NewsletterForm() {
         </span>
       </label>
 
-      {error && (
+      {state === 'error' && (
         <p role="alert" className="text-xs font-medium text-danger">
-          {error}
+          {message}
         </p>
       )}
     </form>
