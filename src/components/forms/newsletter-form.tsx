@@ -1,10 +1,11 @@
 'use client';
 
 import Script from 'next/script';
-import { useEffect, useState, type FormEvent } from 'react';
+import { useCallback, useState, type FormEvent } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Mail, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { AgeBadge } from '@/components/ui/age-badge';
+import { useTurnstile } from './use-turnstile';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -27,23 +28,6 @@ type NewsletterResponse = {
   message?: string;
   error?: ApiError;
 };
-
-type TurnstileApi = {
-  reset: (widgetId?: string) => void;
-};
-
-declare global {
-  interface Window {
-    turnstile?: TurnstileApi;
-
-    newsletterTurnstileSuccess?: (
-      token: string,
-    ) => void;
-
-    newsletterTurnstileExpired?: () => void;
-    newsletterTurnstileError?: () => void;
-  }
-}
 
 function getResponseError(
   response: Response,
@@ -97,10 +81,8 @@ export function NewsletterForm() {
   const turnstileSiteKey =
     process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
-  useEffect(() => {
-    window.newsletterTurnstileSuccess = (
-      token: string,
-    ): void => {
+  const handleTurnstileSuccess = useCallback(
+    (token: string): void => {
       setTurnstileToken(token);
 
       setState((currentState) =>
@@ -110,27 +92,32 @@ export function NewsletterForm() {
       );
 
       setMessage('');
-    };
+    },
+    [],
+  );
 
-    window.newsletterTurnstileExpired = (): void => {
+  const handleTurnstileExpired = useCallback((): void => {
       setTurnstileToken('');
-    };
+    }, []);
 
-    window.newsletterTurnstileError = (): void => {
+  const handleTurnstileError = useCallback((): void => {
       setTurnstileToken('');
       setState('error');
 
       setMessage(
         'Security verification failed. Please try again.',
       );
-    };
-
-    return () => {
-      delete window.newsletterTurnstileSuccess;
-      delete window.newsletterTurnstileExpired;
-      delete window.newsletterTurnstileError;
-    };
   }, []);
+
+  const {
+    containerRef: turnstileContainerRef,
+    resetTurnstile: resetTurnstileWidget,
+  } = useTurnstile({
+    siteKey: turnstileSiteKey,
+    onSuccess: handleTurnstileSuccess,
+    onExpired: handleTurnstileExpired,
+    onError: handleTurnstileError,
+  });
 
   function clearError(): void {
     if (state === 'error') {
@@ -144,7 +131,7 @@ export function NewsletterForm() {
      * Reset the Cloudflare widget first, then clear
      * the local token that controls its visibility.
      */
-    window.turnstile?.reset();
+    resetTurnstileWidget();
     setTurnstileToken('');
   }
 
@@ -280,7 +267,7 @@ export function NewsletterForm() {
     <>
       <Script
         id="cloudflare-turnstile"
-        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
         strategy="afterInteractive"
       />
 
@@ -405,14 +392,7 @@ export function NewsletterForm() {
               }
             >
               <div
-                className="cf-turnstile"
-                data-sitekey={turnstileSiteKey}
-                data-callback="newsletterTurnstileSuccess"
-                data-expired-callback="newsletterTurnstileExpired"
-                data-error-callback="newsletterTurnstileError"
-                data-theme="auto"
-                data-size="normal"
-                data-appearance="interaction-only"
+                ref={turnstileContainerRef}
               />
             </div>
 

@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import {
+  getClientIpFromHeaders,
+  verifyTurnstile,
+} from "@/lib/turnstile";
 
 export const runtime = "nodejs";
 
@@ -17,111 +21,6 @@ type SubscribeBody = {
   website?: unknown;
   turnstileToken?: unknown;
 };
-
-type TurnstileVerificationResponse = {
-  success: boolean;
-  hostname?: string;
-  action?: string;
-  challenge_ts?: string;
-  "error-codes"?: string[];
-};
-
-async function verifyTurnstile(
-  token: string,
-  ipAddress: string | null,
-): Promise<boolean> {
-  const secretKey =
-    process.env.TURNSTILE_SECRET_KEY;
-
-  if (!secretKey) {
-    console.error(
-      "Missing TURNSTILE_SECRET_KEY.",
-    );
-
-    return false;
-  }
-
-  const formData = new FormData();
-
-  formData.append("secret", secretKey);
-  formData.append("response", token);
-
-  if (ipAddress) {
-    formData.append(
-      "remoteip",
-      ipAddress,
-    );
-  }
-
-  try {
-    const response = await fetch(
-      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-      {
-        method: "POST",
-        body: formData,
-        cache: "no-store",
-        signal: AbortSignal.timeout(5_000),
-      },
-    );
-
-    if (!response.ok) {
-      console.error(
-        "Turnstile verification request failed",
-        {
-          status: response.status,
-        },
-      );
-
-      return false;
-    }
-
-    const result =
-      (await response.json()) as TurnstileVerificationResponse;
-
-    if (!result.success) {
-      console.warn(
-        "Turnstile verification failed",
-        {
-          errorCodes:
-            result["error-codes"],
-        },
-      );
-
-      return false;
-    }
-
-    /*
-     * Development test keys can return a test
-     * hostname. Only enforce the real hostname
-     * in production.
-     */
-    if (
-      process.env.NODE_ENV === "production" &&
-      result.hostname !==
-        "gamblezone.vip" &&
-      result.hostname !==
-        "www.gamblezone.vip"
-    ) {
-      console.warn(
-        "Unexpected Turnstile hostname",
-        {
-          hostname: result.hostname,
-        },
-      );
-
-      return false;
-    }
-
-    return true;
-  } catch (error) {
-    console.error(
-      "Turnstile verification error",
-      error,
-    );
-
-    return false;
-  }
-}
 
 export async function POST(
   request: Request,
@@ -255,17 +154,10 @@ export async function POST(
       );
     }
 
-    const forwardedFor =
-      request.headers.get(
-        "x-forwarded-for",
-      );
-
     const ipAddress =
-      forwardedFor
-        ?.split(",")[0]
-        ?.trim() ??
-      request.headers.get("x-real-ip") ??
-      null;
+      getClientIpFromHeaders(
+        request.headers,
+      );
 
     /*
      * Turnstile tokens are single-use and
