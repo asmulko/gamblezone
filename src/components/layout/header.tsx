@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { Menu, X, Dices } from 'lucide-react';
+import { Menu, X, Dices, Gift } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link, usePathname } from '@/i18n/routing';
 import { LanguageSwitcher } from './language-switcher';
@@ -11,10 +11,11 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { key: 'casinos', href: '/casinos' },
-  { key: 'about', href: '/about' },
-  { key: 'responsibleGambling', href: '/responsible-gambling' },
-  { key: 'contact', href: '/contact' },
+  { key: 'casinos', href: '/casinos', highlighted: false },
+  { key: 'about', href: '/about', highlighted: false },
+  { key: 'freeBonus', href: '/free-bonus', highlighted: true },
+  { key: 'responsibleGambling', href: '/responsible-gambling', highlighted: false },
+  { key: 'contact', href: '/contact', highlighted: false },
 ] as const;
 
 export function Header() {
@@ -70,10 +71,16 @@ export function Header() {
               key={item.key}
               href={item.href}
               className={cn(
-                'rounded-full px-4 py-2 text-sm font-medium transition-colors hover:bg-surface-overlay',
+                'inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors hover:bg-surface-overlay',
+                item.highlighted &&
+                  'border border-accent/45 bg-accent/15 font-bold uppercase text-accent shadow-[0_0_34px_-14px_hsl(var(--accent)/0.75)] hover:bg-accent/20',
                 pathname.startsWith(item.href) ? 'text-foreground' : 'text-muted',
+                item.highlighted &&
+                  pathname.startsWith(item.href) &&
+                  'text-accent',
               )}
             >
+              {item.highlighted && <Gift size={14} />}
               {t(item.key)}
             </Link>
           ))}
@@ -115,8 +122,13 @@ export function Header() {
                 <Link
                   key={item.key}
                   href={item.href}
-                  className="rounded-xl px-4 py-3 text-sm font-medium hover:bg-surface-overlay"
+                  className={cn(
+                    'inline-flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-medium hover:bg-surface-overlay',
+                    item.highlighted &&
+                      'border border-accent/45 bg-accent/15 font-bold uppercase text-accent',
+                  )}
                 >
+                  {item.highlighted && <Gift size={15} />}
                   {t(item.key)}
                 </Link>
               ))}
