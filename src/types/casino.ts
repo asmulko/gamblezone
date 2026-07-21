@@ -17,6 +17,7 @@ export const casinoLicenseSchema = z.object({
   verificationUrl: z.string().url().optional(),
   markets: z.array(z.string()),
   verifiedAt: z.string(),
+  validSince: z.string().optional(),
 });
 
 export const casinoOfferSchema = z.object({
@@ -49,6 +50,7 @@ export const affiliateLinkSchema = z.object({
 
 export const payoutSpeedSchema = z.enum(['instant', 'fast', 'standard', 'slow']);
 export const bonusTypeSchema = z.enum(['match', 'freespins', 'cashback', 'nodeposit']);
+export const responsibleGamblingToolStatusSchema = z.record(z.boolean());
 
 export const casinoSchema = z.object({
   id: z.string(),
@@ -72,6 +74,8 @@ export const casinoSchema = z.object({
   minDeposit: moneySchema.optional(),
   minWithdrawal: moneySchema.optional(),
   withdrawalTimeText: z.string().optional(),
+  verificationSpeedText: z.string().optional(),
+  withdrawalLimitText: z.string().optional(),
   payoutSpeed: payoutSpeedSchema,
 
   paymentMethods: z.array(z.string()),
@@ -86,6 +90,7 @@ export const casinoSchema = z.object({
   reviewSummary: z.string(),
 
   responsibleGamblingTools: z.array(z.string()),
+  responsibleGamblingToolStatuses: responsibleGamblingToolStatusSchema.optional(),
   supportChannels: z.array(z.string()),
 
   affiliateLinks: z.array(affiliateLinkSchema),
@@ -104,4 +109,5 @@ export type CasinoOffer = z.infer<typeof casinoOfferSchema>;
 export type AffiliateLink = z.infer<typeof affiliateLinkSchema>;
 export type PayoutSpeed = z.infer<typeof payoutSpeedSchema>;
 export type BonusType = z.infer<typeof bonusTypeSchema>;
+export type ResponsibleGamblingToolStatus = z.infer<typeof responsibleGamblingToolStatusSchema>;
 export type Casino = z.infer<typeof casinoSchema>;

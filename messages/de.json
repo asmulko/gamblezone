@@ -14,7 +14,9 @@
     "loading": "Lädt…",
     "termsApply": "Es gelten AGB",
     "lastReviewed": "Zuletzt geprüft",
-    "skipToContent": "Zum Inhalt springen"
+    "skipToContent": "Zum Inhalt springen",
+    "yes": "Ja",
+    "no": "Nein"
   },
   "nav": {
     "home": "Start",
@@ -160,28 +162,61 @@
   },
   "casinoDescriptions": {
     "redchips": {
-      "offerTitle": "100% bis zu €2500 Willkommensbonus",
-      "offerTerms": "35-fache Umsatzbedingung auf Bonus. 20% monatlicher Cashback. 18+.",
+      "offerTitle": "20 % monatliches Cashback bis zu 7.000 USDT",
+      "offerTerms": "Monatliche Cashback-Aktion. Maximal 7.000 USDT. 18+.",
       "offerValue": "100% bis zu €2500",
-      "pros": ["24/7 Live-Chat", "Beste Sportwettenmärkte", "Schnelle Auszahlungen"]
+      "pros": [
+        "24/7-Live-Chat",
+        "Starke Sportwettenmärkte",
+        "Schnelle Verifizierung"
+      ],
+      "cons": [
+        "Bonusbedingungen variieren je nach Region",
+        "Auszahlungsgebühren können anfallen"
+      ],
+      "shortDescription": "Eine umfangreiche Casino-Lobby mit modernen Slots, Jackpots, Tischspielen und schneller Kontoverifizierung.",
+      "reviewSummary": "Das Casino bietet eine große Auswahl an Spielen und Anbietern. Favoriten lassen sich über die Menüs auswählen oder über die Suche finden. Neben aktuellen Slots und Jackpots gibt es Hunderte Tischspiele, Sofortgewinnspiele und Rubbellose."
     },
     "gamblezen": {
       "offerTitle": "500% bis zu €3625 + 350 Freispiele Willkommenspaket",
       "offerTerms": "Verteilt auf 4 Einzahlungen. 18+.",
       "offerValue": "500% bis zu €3625",
-      "pros": ["10.000+ Spiele", "Schnelle Auszahlungen", "24/7 Live-Chat"]
+      "pros": [
+        "Über 12.000 Spiele",
+        "Schnelle Auszahlungen",
+        "24/7-Live-Chat"
+      ],
+      "cons": [
+        "Niedrige Auszahlungslimits pro Transaktion",
+        "Auszahlungen werden nicht rund um die Uhr bearbeitet"
+      ]
     },
     "immerion": {
-      "offerTitle": "100% bis zu 1.000$ + 200 Freispiele",
+      "offerTitle": "250 % Bonus + 250 Freispiele",
       "offerTerms": "Mind. $15 Einzahlung. 40-fache Umsatzbedingung. 18+.",
       "offerValue": "100% bis zu 1.000$",
-      "pros": ["Niedrige Einzahlungsoptionen", "24/7 Live-Chat", "Große Spieleauswahl"]
+      "pros": [
+        "Niedrige Einzahlungsoptionen",
+        "24/7 Live-Chat",
+        "Große Spieleauswahl"
+      ],
+      "cons": [
+        "Begrenzte regionale Verfügbarkeit",
+        "Auszahlungslimit von 1.000 USD pro Tag"
+      ]
     },
     "impressario": {
-      "offerTitle": "Bis zu 10% Cashback-Bonus jeden Freitag",
+      "offerTitle": "100 % bis zu $/€1.000 + 100 Freispiele",
       "offerTerms": "1-fache Umsatzbedingung. Kein Höchstauszahlungsbetrag. 18+.",
       "offerValue": "Bis zu 10% Cashback",
-      "pros": ["0–24 Stunden Bearbeitungszeit", "Keine Zahlungsgebühren", "24/7 Live-Chat"]
+      "pros": [
+        "0–24 Stunden Bearbeitungszeit",
+        "Keine Zahlungsgebühren",
+        "24/7 Live-Chat"
+      ],
+      "cons": [
+        "Große Auswahl an Spielerschutz-Tools"
+      ]
     }
   },
   "disclosure": {
@@ -209,7 +244,11 @@
     "unavailable": "Dieser Anbieter ist für die gewählte Region nicht verfügbar.",
     "reviewSummary": "Fazit der Redaktion",
     "similar": "Ähnliche Casinos",
-    "visitAria": "{name} besuchen (öffnet in neuem Tab, gesponsert)"
+    "visitAria": "{name} besuchen (öffnet in neuem Tab, gesponsert)",
+    "verificationSpeed": "Verifizierungsgeschwindigkeit",
+    "withdrawalLimit": "Auszahlungslimit",
+    "supportedLanguages": "Sprachen",
+    "licensedSince": "Lizenziert seit"
   },
   "catalog": {
     "title": "Alle Casinos",
@@ -229,7 +268,19 @@
     "quickFacts": "Kurzfakten",
     "bonusTitle": "Willkommensbonus",
     "reviewTitle": "Unser Test",
-    "faqTitle": "Häufig gestellte Fragen"
+    "faqTitle": "Häufig gestellte Fragen",
+    "responsibleTools": {
+      "depositLimit": "Einzahlungslimit",
+      "wagerLimit": "Einsatzlimit",
+      "lossLimit": "Verlustlimit",
+      "timeSessionLimit": "Zeit-/Sitzungslimit",
+      "selfExclusion": "Selbstausschluss",
+      "coolOffTimeOut": "Abkühlphase/Auszeit",
+      "realityCheck": "Reality-Check",
+      "selfAssessment": "Selbsteinschätzungstest",
+      "withdrawalLock": "Auszahlungssperre",
+      "selfExclusionRegisterParticipation": "Teilnahme an einem Selbstausschlussregister"
+    }
   },
   "footer": {
     "about": "GambleZone ist ein unabhängiger Katalog und Vergleich lizenzierter Online-Casinos mit transparenten Informationen zu Boni, Bedingungen und Risiken. Wir sind kein Casino.",
@@ -278,12 +329,42 @@
       "effectiveDate": "Datum des Inkrafttretens: 14. Juli 2026",
       "intro": "Bei GambleZone glauben wir an Transparenz und Ehrlichkeit gegenüber unseren Besuchern.",
       "sections": [
-        { "paragraphs": ["GambleZone nimmt an verschiedenen Affiliate-Marketing-Programmen teil. Wenn Sie auf bestimmte Links klicken und eine qualifizierende Aktion ausführen (z. B. Registrierung oder Einzahlung), kann GambleZone eine Provision erhalten – ohne zusätzliche Kosten für Sie.", "Diese Provisionen unterstützen den Betrieb von GambleZone und ermöglichen uns, kostenlose Inhalte, Bewertungen und Vergleiche anzubieten."] },
-        { "heading": "Redaktionelle Unabhängigkeit", "paragraphs": ["Affiliate-Partnerschaften beeinflussen unsere Meinungen nicht. Wir streben nach fairen, genauen und unvoreingenommenen Informationen basierend auf Recherchen und Erfahrungen unseres Teams."] },
-        { "heading": "Drittanbieter-Websites", "paragraphs": ["Links auf GambleZone führen zu unabhängig betriebenen Websites Dritter. Wir übernehmen keine Verantwortung für deren Inhalte oder Datenschutzpraktiken."] },
-        { "heading": "Glücksspiel-Verantwortung", "paragraphs": ["Online-Glücksspiel birgt finanzielle Risiken. GambleZone empfiehlt, nur innerhalb der eigenen finanziellen Möglichkeiten zu spielen und nur, wenn das gesetzliche Mindestalter erreicht wurde."] },
-        { "heading": "Änderungen", "paragraphs": ["GambleZone behält sich das Recht vor, diese Offenlegung jederzeit zu aktualisieren."] },
-        { "heading": "Kontakt", "paragraphs": ["Bei Fragen wenden Sie sich bitte über die Kontaktseite an GambleZone."] }
+        {
+          "paragraphs": [
+            "GambleZone nimmt an verschiedenen Affiliate-Marketing-Programmen teil. Wenn Sie auf bestimmte Links klicken und eine qualifizierende Aktion ausführen (z. B. Registrierung oder Einzahlung), kann GambleZone eine Provision erhalten – ohne zusätzliche Kosten für Sie.",
+            "Diese Provisionen unterstützen den Betrieb von GambleZone und ermöglichen uns, kostenlose Inhalte, Bewertungen und Vergleiche anzubieten."
+          ]
+        },
+        {
+          "heading": "Redaktionelle Unabhängigkeit",
+          "paragraphs": [
+            "Affiliate-Partnerschaften beeinflussen unsere Meinungen nicht. Wir streben nach fairen, genauen und unvoreingenommenen Informationen basierend auf Recherchen und Erfahrungen unseres Teams."
+          ]
+        },
+        {
+          "heading": "Drittanbieter-Websites",
+          "paragraphs": [
+            "Links auf GambleZone führen zu unabhängig betriebenen Websites Dritter. Wir übernehmen keine Verantwortung für deren Inhalte oder Datenschutzpraktiken."
+          ]
+        },
+        {
+          "heading": "Glücksspiel-Verantwortung",
+          "paragraphs": [
+            "Online-Glücksspiel birgt finanzielle Risiken. GambleZone empfiehlt, nur innerhalb der eigenen finanziellen Möglichkeiten zu spielen und nur, wenn das gesetzliche Mindestalter erreicht wurde."
+          ]
+        },
+        {
+          "heading": "Änderungen",
+          "paragraphs": [
+            "GambleZone behält sich das Recht vor, diese Offenlegung jederzeit zu aktualisieren."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "Bei Fragen wenden Sie sich bitte über die Kontaktseite an GambleZone."
+          ]
+        }
       ]
     },
     "privacy": {
@@ -291,15 +372,66 @@
       "effectiveDate": "Datum des Inkrafttretens: 14. Juli 2026",
       "intro": "Willkommen auf unserer Website. Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen erheben, nutzen und schützen, wenn Sie unsere Affiliate-Website besuchen.",
       "sections": [
-        { "heading": "Erhobene Informationen", "paragraphs": ["Wir können nicht-personenbezogene Daten erfassen, wie Ihre IP-Adresse, Browser-Typ, Gerätedaten, besuchte Seiten und Verweildauer. Wenn Sie uns kontaktieren, können wir auch freiwillig bereitgestellte Informationen wie Ihren Namen und Ihre E-Mail-Adresse erheben."] },
-        { "heading": "Verwendung Ihrer Daten", "paragraphs": ["Die erfassten Daten können genutzt werden, um:"], "bullets": ["Unsere Website und das Nutzererlebnis zu verbessern.", "Website-Traffic und Performance zu analysieren.", "Auf Ihre Anfragen zu antworten.", "Gesetzliche Pflichten zu erfüllen."] },
-        { "heading": "Affiliate-Links", "paragraphs": ["Unsere Website enthält Affiliate-Links zu Glücksspielanbietern. Wenn Sie auf diese klicken und sich registrieren oder eine Einzahlung tätigen, erhalten wir möglicherweise eine Provision ohne zusätzliche Kosten für Sie. Wir übernehmen keine Verantwortung für die Datenschutzpraktiken von Drittanbieter-Websites."] },
-        { "heading": "Cookies", "paragraphs": ["Wir verwenden Cookies und ähnliche Technologien, um Ihr Surferlebnis zu verbessern und unsere Affiliate-Partnerschaften zu unterstützen. Sie können Cookies über Ihre Browser-Einstellungen deaktivieren."] },
-        { "heading": "Drittanbieter-Dienste", "paragraphs": ["Wir nutzen möglicherweise Drittanbieter für Analysen und Affiliate-Tracking. Diese Dienste erheben Daten gemäß ihren eigenen Datenschutzrichtlinien."] },
-        { "heading": "Datensicherheit", "paragraphs": ["Wir ergreifen angemessene Maßnahmen zum Schutz der erfassten Daten. Keine Methode der Datenübertragung ist jedoch vollständig sicher."] },
-        { "heading": "Datenschutz von Minderjährigen", "paragraphs": ["Unsere Website richtet sich an Nutzer ab 18 Jahren. Wir erfassen wissentlich keine personenbezogenen Daten von Minderjährigen."] },
-        { "heading": "Änderungen dieser Richtlinie", "paragraphs": ["Wir können diese Datenschutzerklärung aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum veröffentlicht."] },
-        { "heading": "Kontakt", "paragraphs": ["Bei Fragen kontaktieren Sie uns bitte über die Kontaktseite unserer Website."] }
+        {
+          "heading": "Erhobene Informationen",
+          "paragraphs": [
+            "Wir können nicht-personenbezogene Daten erfassen, wie Ihre IP-Adresse, Browser-Typ, Gerätedaten, besuchte Seiten und Verweildauer. Wenn Sie uns kontaktieren, können wir auch freiwillig bereitgestellte Informationen wie Ihren Namen und Ihre E-Mail-Adresse erheben."
+          ]
+        },
+        {
+          "heading": "Verwendung Ihrer Daten",
+          "paragraphs": [
+            "Die erfassten Daten können genutzt werden, um:"
+          ],
+          "bullets": [
+            "Unsere Website und das Nutzererlebnis zu verbessern.",
+            "Website-Traffic und Performance zu analysieren.",
+            "Auf Ihre Anfragen zu antworten.",
+            "Gesetzliche Pflichten zu erfüllen."
+          ]
+        },
+        {
+          "heading": "Affiliate-Links",
+          "paragraphs": [
+            "Unsere Website enthält Affiliate-Links zu Glücksspielanbietern. Wenn Sie auf diese klicken und sich registrieren oder eine Einzahlung tätigen, erhalten wir möglicherweise eine Provision ohne zusätzliche Kosten für Sie. Wir übernehmen keine Verantwortung für die Datenschutzpraktiken von Drittanbieter-Websites."
+          ]
+        },
+        {
+          "heading": "Cookies",
+          "paragraphs": [
+            "Wir verwenden Cookies und ähnliche Technologien, um Ihr Surferlebnis zu verbessern und unsere Affiliate-Partnerschaften zu unterstützen. Sie können Cookies über Ihre Browser-Einstellungen deaktivieren."
+          ]
+        },
+        {
+          "heading": "Drittanbieter-Dienste",
+          "paragraphs": [
+            "Wir nutzen möglicherweise Drittanbieter für Analysen und Affiliate-Tracking. Diese Dienste erheben Daten gemäß ihren eigenen Datenschutzrichtlinien."
+          ]
+        },
+        {
+          "heading": "Datensicherheit",
+          "paragraphs": [
+            "Wir ergreifen angemessene Maßnahmen zum Schutz der erfassten Daten. Keine Methode der Datenübertragung ist jedoch vollständig sicher."
+          ]
+        },
+        {
+          "heading": "Datenschutz von Minderjährigen",
+          "paragraphs": [
+            "Unsere Website richtet sich an Nutzer ab 18 Jahren. Wir erfassen wissentlich keine personenbezogenen Daten von Minderjährigen."
+          ]
+        },
+        {
+          "heading": "Änderungen dieser Richtlinie",
+          "paragraphs": [
+            "Wir können diese Datenschutzerklärung aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum veröffentlicht."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "Bei Fragen kontaktieren Sie uns bitte über die Kontaktseite unserer Website."
+          ]
+        }
       ]
     },
     "cookies": {
@@ -307,12 +439,53 @@
       "effectiveDate": "Datum des Inkrafttretens: 14. Juli 2026",
       "intro": "Diese Cookie-Richtlinie erläutert, wie unsere Website Cookies und ähnliche Technologien verwendet, um Ihr Surferlebnis zu verbessern.",
       "sections": [
-        { "heading": "Was sind Cookies?", "paragraphs": ["Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie helfen, Einstellungen zu speichern, Performance zu verbessern und das Besucherverhalten zu analysieren."] },
-        { "heading": "Wie wir Cookies verwenden", "paragraphs": ["Wir verwenden Cookies, um:"], "bullets": ["Den ordnungsgemäßen Betrieb der Website sicherzustellen.", "Ihre Einstellungen zu speichern.", "Website-Traffic zu analysieren.", "Die Wirksamkeit unserer Affiliate-Aktivitäten zu messen.", "Das Nutzererlebnis zu verbessern."] },
-        { "heading": "Cookie-Typen", "paragraphs": ["Essentielle Cookies: Notwendig für den Betrieb, können nicht deaktiviert werden.", "Analyse-Cookies: Helfen uns, die Nutzung der Website zu verstehen.", "Affiliate-Tracking-Cookies: Ermöglichen die Verfolgung von Empfehlungen an Partner.", "Werbe-Cookies: Partner können diese für relevante Werbung nutzen.", "Drittanbieter-Cookies: Können durch externe Dienste gesetzt werden."] },
-        { "heading": "Cookie-Verwaltung", "paragraphs": ["Die meisten Browser ermöglichen die Kontrolle über Cookies. Das Deaktivieren bestimmter Cookies kann die Funktionalität beeinträchtigen."] },
-        { "heading": "Änderungen", "paragraphs": ["Wir können diese Cookie-Richtlinie aktualisieren. Änderungen werden auf dieser Seite veröffentlicht."] },
-        { "heading": "Kontakt", "paragraphs": ["Bei Fragen kontaktieren Sie uns bitte über die Kontaktseite."] }
+        {
+          "heading": "Was sind Cookies?",
+          "paragraphs": [
+            "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie helfen, Einstellungen zu speichern, Performance zu verbessern und das Besucherverhalten zu analysieren."
+          ]
+        },
+        {
+          "heading": "Wie wir Cookies verwenden",
+          "paragraphs": [
+            "Wir verwenden Cookies, um:"
+          ],
+          "bullets": [
+            "Den ordnungsgemäßen Betrieb der Website sicherzustellen.",
+            "Ihre Einstellungen zu speichern.",
+            "Website-Traffic zu analysieren.",
+            "Die Wirksamkeit unserer Affiliate-Aktivitäten zu messen.",
+            "Das Nutzererlebnis zu verbessern."
+          ]
+        },
+        {
+          "heading": "Cookie-Typen",
+          "paragraphs": [
+            "Essentielle Cookies: Notwendig für den Betrieb, können nicht deaktiviert werden.",
+            "Analyse-Cookies: Helfen uns, die Nutzung der Website zu verstehen.",
+            "Affiliate-Tracking-Cookies: Ermöglichen die Verfolgung von Empfehlungen an Partner.",
+            "Werbe-Cookies: Partner können diese für relevante Werbung nutzen.",
+            "Drittanbieter-Cookies: Können durch externe Dienste gesetzt werden."
+          ]
+        },
+        {
+          "heading": "Cookie-Verwaltung",
+          "paragraphs": [
+            "Die meisten Browser ermöglichen die Kontrolle über Cookies. Das Deaktivieren bestimmter Cookies kann die Funktionalität beeinträchtigen."
+          ]
+        },
+        {
+          "heading": "Änderungen",
+          "paragraphs": [
+            "Wir können diese Cookie-Richtlinie aktualisieren. Änderungen werden auf dieser Seite veröffentlicht."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "Bei Fragen kontaktieren Sie uns bitte über die Kontaktseite."
+          ]
+        }
       ]
     },
     "terms": {
@@ -320,17 +493,72 @@
       "effectiveDate": "Datum des Inkrafttretens: 14. Juli 2026",
       "intro": "Willkommen bei GambleZone. Durch die Nutzung von GambleZone stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie nicht einverstanden sind, nutzen Sie GambleZone bitte nicht.",
       "sections": [
-        { "heading": "Zweck der Website", "paragraphs": ["GambleZone stellt Informationen, Bewertungen und Vergleiche zu Online-Glücksspielanbietern zur Verfügung. Die Inhalte dienen nur zu allgemeinen Informationszwecken."] },
-        { "heading": "Affiliate-Offenlegung", "paragraphs": ["GambleZone enthält Affiliate-Links. Wenn Sie auf diese klicken und sich registrieren, erhalten wir möglicherweise eine Provision ohne Mehrkosten für Sie."] },
-        { "heading": "Zugangsvoraussetzungen", "paragraphs": ["GambleZone richtet sich an Personen ab 18 Jahren. Es liegt in Ihrer Verantwortung sicherzustellen, dass Online-Glücksspiel an Ihrem Wohnort legal ist."] },
-        { "heading": "Verantwortungsvolles Spielen", "paragraphs": ["GambleZone unterstützt verantwortungsvolles Spielen. Glücksspiel sollte als Unterhaltung und nicht als Einkommensquelle betrachtet werden."] },
-        { "heading": "Geistiges Eigentum", "paragraphs": ["Alle Inhalte auf GambleZone sind Eigentum von GambleZone und dürfen ohne vorherige schriftliche Genehmigung nicht kopiert oder verbreitet werden."] },
-        { "heading": "Drittanbieter-Websites", "paragraphs": ["GambleZone übernimmt keine Verantwortung für Inhalte oder Datenschutzpraktiken verlinkter Drittanbieter-Websites."] },
-        { "heading": "Haftungsausschluss", "paragraphs": ["GambleZone übernimmt keine Gewähr für die Vollständigkeit oder Richtigkeit der bereitgestellten Informationen. Angebote können sich ohne Vorankündigung ändern."] },
-        { "heading": "Haftungsbeschränkung", "paragraphs": ["Im gesetzlich zulässigen Umfang haftet GambleZone nicht für direkte oder Folgeschäden aus der Nutzung."] },
-        { "heading": "Änderungen", "paragraphs": ["GambleZone behält sich das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern."] },
-        { "heading": "Anwendbares Recht", "paragraphs": ["Diese Bedingungen unterliegen dem Recht der Rechtsordnung des Betreibers."] },
-        { "heading": "Kontakt", "paragraphs": ["Bei Fragen wenden Sie sich bitte über die Kontaktseite an GambleZone."] }
+        {
+          "heading": "Zweck der Website",
+          "paragraphs": [
+            "GambleZone stellt Informationen, Bewertungen und Vergleiche zu Online-Glücksspielanbietern zur Verfügung. Die Inhalte dienen nur zu allgemeinen Informationszwecken."
+          ]
+        },
+        {
+          "heading": "Affiliate-Offenlegung",
+          "paragraphs": [
+            "GambleZone enthält Affiliate-Links. Wenn Sie auf diese klicken und sich registrieren, erhalten wir möglicherweise eine Provision ohne Mehrkosten für Sie."
+          ]
+        },
+        {
+          "heading": "Zugangsvoraussetzungen",
+          "paragraphs": [
+            "GambleZone richtet sich an Personen ab 18 Jahren. Es liegt in Ihrer Verantwortung sicherzustellen, dass Online-Glücksspiel an Ihrem Wohnort legal ist."
+          ]
+        },
+        {
+          "heading": "Verantwortungsvolles Spielen",
+          "paragraphs": [
+            "GambleZone unterstützt verantwortungsvolles Spielen. Glücksspiel sollte als Unterhaltung und nicht als Einkommensquelle betrachtet werden."
+          ]
+        },
+        {
+          "heading": "Geistiges Eigentum",
+          "paragraphs": [
+            "Alle Inhalte auf GambleZone sind Eigentum von GambleZone und dürfen ohne vorherige schriftliche Genehmigung nicht kopiert oder verbreitet werden."
+          ]
+        },
+        {
+          "heading": "Drittanbieter-Websites",
+          "paragraphs": [
+            "GambleZone übernimmt keine Verantwortung für Inhalte oder Datenschutzpraktiken verlinkter Drittanbieter-Websites."
+          ]
+        },
+        {
+          "heading": "Haftungsausschluss",
+          "paragraphs": [
+            "GambleZone übernimmt keine Gewähr für die Vollständigkeit oder Richtigkeit der bereitgestellten Informationen. Angebote können sich ohne Vorankündigung ändern."
+          ]
+        },
+        {
+          "heading": "Haftungsbeschränkung",
+          "paragraphs": [
+            "Im gesetzlich zulässigen Umfang haftet GambleZone nicht für direkte oder Folgeschäden aus der Nutzung."
+          ]
+        },
+        {
+          "heading": "Änderungen",
+          "paragraphs": [
+            "GambleZone behält sich das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern."
+          ]
+        },
+        {
+          "heading": "Anwendbares Recht",
+          "paragraphs": [
+            "Diese Bedingungen unterliegen dem Recht der Rechtsordnung des Betreibers."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "Bei Fragen wenden Sie sich bitte über die Kontaktseite an GambleZone."
+          ]
+        }
       ]
     },
     "contact": {

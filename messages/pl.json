@@ -14,7 +14,9 @@
     "loading": "Ładowanie…",
     "termsApply": "Obowiązują warunki",
     "lastReviewed": "Ostatnia weryfikacja",
-    "skipToContent": "Przejdź do treści"
+    "skipToContent": "Przejdź do treści",
+    "yes": "Tak",
+    "no": "Nie"
   },
   "nav": {
     "home": "Start",
@@ -159,28 +161,61 @@
   },
   "casinoDescriptions": {
     "redchips": {
-      "offerTitle": "100% do €2500 Bonus powitalny",
-      "offerTerms": "Obrót 35x od bonusu. 20% miesięczny cashback. 18+.",
+      "offerTitle": "20% miesięcznego cashbacku do 7000 USDT",
+      "offerTerms": "Miesięczna promocja cashback. Maksymalnie 7000 USDT. 18+.",
       "offerValue": "100% do €2500",
-      "pros": ["Czat 24/7", "Najlepsze rynki zakładów sportowych", "Szybkie wypłaty"]
+      "pros": [
+        "Czat na żywo 24/7",
+        "Bogata oferta zakładów sportowych",
+        "Szybka weryfikacja"
+      ],
+      "cons": [
+        "Warunki bonusów zależą od regionu",
+        "Mogą obowiązywać opłaty za wypłatę"
+      ],
+      "shortDescription": "Rozbudowane lobby z nowoczesnymi slotami, jackpotami, grami stołowymi i szybką weryfikacją konta.",
+      "reviewSummary": "Kasyno oferuje szeroki wybór gier i dostawców. Gry można dodawać do ulubionych, wyszukiwać i przeglądać według kategorii, w tym sloty, jackpoty, gry stołowe, gry instant-win oraz zdrapki."
     },
     "gamblezen": {
       "offerTitle": "500% do €3625 + 350 Darmowych Spinów Pakiet Powitalny",
       "offerTerms": "Rozłożone na 4 wpłaty. 18+.",
       "offerValue": "500% do €3625",
-      "pros": ["Ponad 10 000 gier", "Szybkie wypłaty", "Czat 24/7"]
+      "pros": [
+        "Ponad 12 000 gier",
+        "Szybkie wypłaty",
+        "Czat na żywo 24/7"
+      ],
+      "cons": [
+        "Niskie limity wypłat na transakcję",
+        "Wypłaty nie są przetwarzane 24/7"
+      ]
     },
     "immerion": {
-      "offerTitle": "100% do 1000$ + 200 Darmowych Spinów",
+      "offerTitle": "250% bonusu + 250 darmowych spinów",
       "offerTerms": "Min. wpłata $15. Obrót 40x. 18+.",
       "offerValue": "100% do 1000$",
-      "pros": ["Niski minimalny depozyt", "Czat 24/7", "Szeroka gama gier"]
+      "pros": [
+        "Niski minimalny depozyt",
+        "Czat 24/7",
+        "Szeroka gama gier"
+      ],
+      "cons": [
+        "Ograniczona dostępność regionalna",
+        "Dzienny limit wypłat 1000 USD"
+      ]
     },
     "impressario": {
-      "offerTitle": "Do 10% Cashback każdy piątek",
+      "offerTitle": "100% do $/€1000 + 100 darmowych spinów",
       "offerTerms": "Obrót 1x. Brak limitu wypłaty. 18+.",
       "offerValue": "Do 10% Cashback",
-      "pros": ["Czas oczekiwania 0–24 godziny", "Brak opłat za płatności", "Czat 24/7"]
+      "pros": [
+        "Czas oczekiwania 0–24 godziny",
+        "Brak opłat za płatności",
+        "Czat 24/7"
+      ],
+      "cons": [
+        "Szeroki zakres narzędzi odpowiedzialnej gry"
+      ]
     }
   },
   "disclosure": {
@@ -208,7 +243,11 @@
     "unavailable": "Ten operator jest niedostępny w wybranym regionie.",
     "reviewSummary": "Werdykt redakcji",
     "similar": "Podobne kasyna",
-    "visitAria": "Odwiedź {name} (otwiera się w nowej karcie, sponsorowane)"
+    "visitAria": "Odwiedź {name} (otwiera się w nowej karcie, sponsorowane)",
+    "verificationSpeed": "Czas weryfikacji",
+    "withdrawalLimit": "Limit wypłat",
+    "supportedLanguages": "Języki",
+    "licensedSince": "Licencja od"
   },
   "catalog": {
     "title": "Wszystkie kasyna",
@@ -228,7 +267,19 @@
     "quickFacts": "Szybkie fakty",
     "bonusTitle": "Bonus powitalny",
     "reviewTitle": "Nasza recenzja",
-    "faqTitle": "Najczęściej zadawane pytania"
+    "faqTitle": "Najczęściej zadawane pytania",
+    "responsibleTools": {
+      "depositLimit": "Limit wpłat",
+      "wagerLimit": "Limit stawek",
+      "lossLimit": "Limit strat",
+      "timeSessionLimit": "Limit czasu/sesji",
+      "selfExclusion": "Samowykluczenie",
+      "coolOffTimeOut": "Przerwa/czasowe wykluczenie",
+      "realityCheck": "Przypomnienie o czasie gry",
+      "selfAssessment": "Test samooceny",
+      "withdrawalLock": "Blokada wypłat",
+      "selfExclusionRegisterParticipation": "Udział w rejestrze samowykluczeń"
+    }
   },
   "footer": {
     "about": "GambleZone to niezależny katalog i porównanie licencjonowanych kasyn online z przejrzystymi informacjami o bonusach, warunkach i ryzyku. Nie jesteśmy kasynem.",
@@ -277,12 +328,42 @@
       "effectiveDate": "Data wejścia w życie: 14 lipca 2026",
       "intro": "W GambleZone wierzymy w przejrzystość i uczciwość wobec naszych użytkowników.",
       "sections": [
-        { "paragraphs": ["GambleZone uczestniczy w różnych programach marketingu afiliacyjnego. Gdy klikniesz określone linki i wykonasz kwalifikującą czynność (np. rejestrację lub wpłatę), GambleZone może otrzymać prowizję bez dodatkowych kosztów dla Ciebie.", "Prowizje te wspierają działanie GambleZone i pozwalają nam oferować bezpłatne treści, recenzje i porównania."] },
-        { "heading": "Niezależność redakcyjna", "paragraphs": ["Partnerstwa afiliacyjne nie wpływają na nasze opinie. Dążymy do dostarczania rzetelnych, dokładnych i bezstronnych informacji."] },
-        { "heading": "Strony trzecie", "paragraphs": ["Linki na GambleZone prowadzą do niezależnie działających stron trzecich. Nie ponosimy odpowiedzialności za ich treści ani praktyki dotyczące prywatności."] },
-        { "heading": "Odpowiedzialna gra", "paragraphs": ["Hazard online wiąże się z ryzykiem finansowym. GambleZone zachęca do gry tylko w ramach własnych możliwości finansowych i wyłącznie po osiągnięciu wymaganego wieku."] },
-        { "heading": "Zmiany", "paragraphs": ["GambleZone zastrzega sobie prawo do aktualizacji tej informacji w dowolnym czasie."] },
-        { "heading": "Kontakt", "paragraphs": ["Jeśli masz pytania, skontaktuj się z nami przez stronę kontaktową."] }
+        {
+          "paragraphs": [
+            "GambleZone uczestniczy w różnych programach marketingu afiliacyjnego. Gdy klikniesz określone linki i wykonasz kwalifikującą czynność (np. rejestrację lub wpłatę), GambleZone może otrzymać prowizję bez dodatkowych kosztów dla Ciebie.",
+            "Prowizje te wspierają działanie GambleZone i pozwalają nam oferować bezpłatne treści, recenzje i porównania."
+          ]
+        },
+        {
+          "heading": "Niezależność redakcyjna",
+          "paragraphs": [
+            "Partnerstwa afiliacyjne nie wpływają na nasze opinie. Dążymy do dostarczania rzetelnych, dokładnych i bezstronnych informacji."
+          ]
+        },
+        {
+          "heading": "Strony trzecie",
+          "paragraphs": [
+            "Linki na GambleZone prowadzą do niezależnie działających stron trzecich. Nie ponosimy odpowiedzialności za ich treści ani praktyki dotyczące prywatności."
+          ]
+        },
+        {
+          "heading": "Odpowiedzialna gra",
+          "paragraphs": [
+            "Hazard online wiąże się z ryzykiem finansowym. GambleZone zachęca do gry tylko w ramach własnych możliwości finansowych i wyłącznie po osiągnięciu wymaganego wieku."
+          ]
+        },
+        {
+          "heading": "Zmiany",
+          "paragraphs": [
+            "GambleZone zastrzega sobie prawo do aktualizacji tej informacji w dowolnym czasie."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "Jeśli masz pytania, skontaktuj się z nami przez stronę kontaktową."
+          ]
+        }
       ]
     },
     "privacy": {
@@ -290,15 +371,66 @@
       "effectiveDate": "Data wejścia w życie: 14 lipca 2026",
       "intro": "Witamy na naszej stronie. Twoja prywatność jest dla nas ważna. Niniejsza Polityka prywatności wyjaśnia, jak zbieramy, wykorzystujemy i chronimy Twoje informacje.",
       "sections": [
-        { "heading": "Zbierane informacje", "paragraphs": ["Możemy zbierać informacje nieosobowe, takie jak adres IP, typ przeglądarki, dane urządzenia i odwiedzane strony."] },
-        { "heading": "Jak wykorzystujemy informacje", "paragraphs": ["Zebrane dane możemy wykorzystywać do:"], "bullets": ["Poprawy strony i doświadczenia użytkownika.", "Analizy ruchu i wydajności.", "Odpowiadania na zapytania.", "Wypełniania obowiązków prawnych."] },
-        { "heading": "Linki afiliacyjne", "paragraphs": ["Nasza strona zawiera linki afiliacyjne. Klikając je i wykonując kwalifikującą czynność, możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie."] },
-        { "heading": "Pliki cookie", "paragraphs": ["Stosujemy pliki cookie w celu poprawy Twojego doświadczenia. Możesz je wyłączyć w ustawieniach przeglądarki."] },
-        { "heading": "Usługi stron trzecich", "paragraphs": ["Możemy korzystać z zewnętrznych narzędzi analitycznych i śledzenia afiliacyjnego."] },
-        { "heading": "Bezpieczeństwo danych", "paragraphs": ["Podejmujemy rozsądne środki w celu ochrony zebranych danych."] },
-        { "heading": "Prywatność nieletnich", "paragraphs": ["Nasza strona jest przeznaczona dla osób powyżej 18 roku życia. Nie zbieramy świadomie danych od nieletnich."] },
-        { "heading": "Zmiany polityki", "paragraphs": ["Możemy aktualizować tę politykę. Zmiany zostaną opublikowane na tej stronie."] },
-        { "heading": "Kontakt", "paragraphs": ["W razie pytań skontaktuj się z nami przez stronę kontaktową."] }
+        {
+          "heading": "Zbierane informacje",
+          "paragraphs": [
+            "Możemy zbierać informacje nieosobowe, takie jak adres IP, typ przeglądarki, dane urządzenia i odwiedzane strony."
+          ]
+        },
+        {
+          "heading": "Jak wykorzystujemy informacje",
+          "paragraphs": [
+            "Zebrane dane możemy wykorzystywać do:"
+          ],
+          "bullets": [
+            "Poprawy strony i doświadczenia użytkownika.",
+            "Analizy ruchu i wydajności.",
+            "Odpowiadania na zapytania.",
+            "Wypełniania obowiązków prawnych."
+          ]
+        },
+        {
+          "heading": "Linki afiliacyjne",
+          "paragraphs": [
+            "Nasza strona zawiera linki afiliacyjne. Klikając je i wykonując kwalifikującą czynność, możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie."
+          ]
+        },
+        {
+          "heading": "Pliki cookie",
+          "paragraphs": [
+            "Stosujemy pliki cookie w celu poprawy Twojego doświadczenia. Możesz je wyłączyć w ustawieniach przeglądarki."
+          ]
+        },
+        {
+          "heading": "Usługi stron trzecich",
+          "paragraphs": [
+            "Możemy korzystać z zewnętrznych narzędzi analitycznych i śledzenia afiliacyjnego."
+          ]
+        },
+        {
+          "heading": "Bezpieczeństwo danych",
+          "paragraphs": [
+            "Podejmujemy rozsądne środki w celu ochrony zebranych danych."
+          ]
+        },
+        {
+          "heading": "Prywatność nieletnich",
+          "paragraphs": [
+            "Nasza strona jest przeznaczona dla osób powyżej 18 roku życia. Nie zbieramy świadomie danych od nieletnich."
+          ]
+        },
+        {
+          "heading": "Zmiany polityki",
+          "paragraphs": [
+            "Możemy aktualizować tę politykę. Zmiany zostaną opublikowane na tej stronie."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "W razie pytań skontaktuj się z nami przez stronę kontaktową."
+          ]
+        }
       ]
     },
     "cookies": {
@@ -306,12 +438,53 @@
       "effectiveDate": "Data wejścia w życie: 14 lipca 2026",
       "intro": "Niniejsza Polityka plików cookie wyjaśnia, jak nasza strona wykorzystuje pliki cookie, aby poprawić Twoje doświadczenie.",
       "sections": [
-        { "heading": "Czym są pliki cookie?", "paragraphs": ["Pliki cookie to małe pliki tekstowe zapisywane na Twoim urządzeniu podczas odwiedzania strony."] },
-        { "heading": "Jak wykorzystujemy pliki cookie", "paragraphs": ["Stosujemy pliki cookie, aby:"], "bullets": ["Zapewnić prawidłowe działanie strony.", "Zapamiętać Twoje ustawienia.", "Analizować ruch na stronie.", "Mierzyć skuteczność działań afiliacyjnych.", "Poprawiać ogólne doświadczenie użytkownika."] },
-        { "heading": "Rodzaje plików cookie", "paragraphs": ["Niezbędne: konieczne do działania strony.", "Analityczne: pomagają rozumieć korzystanie ze strony.", "Afiliacyjne: śledzenie poleceń dla partnerów.", "Reklamowe: używane przez partnerów do trafnych reklam.", "Zewnętrzne: umieszczane przez zewnętrzne serwisy."] },
-        { "heading": "Zarządzanie plikami cookie", "paragraphs": ["Możesz kontrolować pliki cookie w ustawieniach przeglądarki."] },
-        { "heading": "Zmiany", "paragraphs": ["Możemy aktualizować tę politykę w dowolnym czasie."] },
-        { "heading": "Kontakt", "paragraphs": ["W razie pytań skontaktuj się z nami przez stronę kontaktową."] }
+        {
+          "heading": "Czym są pliki cookie?",
+          "paragraphs": [
+            "Pliki cookie to małe pliki tekstowe zapisywane na Twoim urządzeniu podczas odwiedzania strony."
+          ]
+        },
+        {
+          "heading": "Jak wykorzystujemy pliki cookie",
+          "paragraphs": [
+            "Stosujemy pliki cookie, aby:"
+          ],
+          "bullets": [
+            "Zapewnić prawidłowe działanie strony.",
+            "Zapamiętać Twoje ustawienia.",
+            "Analizować ruch na stronie.",
+            "Mierzyć skuteczność działań afiliacyjnych.",
+            "Poprawiać ogólne doświadczenie użytkownika."
+          ]
+        },
+        {
+          "heading": "Rodzaje plików cookie",
+          "paragraphs": [
+            "Niezbędne: konieczne do działania strony.",
+            "Analityczne: pomagają rozumieć korzystanie ze strony.",
+            "Afiliacyjne: śledzenie poleceń dla partnerów.",
+            "Reklamowe: używane przez partnerów do trafnych reklam.",
+            "Zewnętrzne: umieszczane przez zewnętrzne serwisy."
+          ]
+        },
+        {
+          "heading": "Zarządzanie plikami cookie",
+          "paragraphs": [
+            "Możesz kontrolować pliki cookie w ustawieniach przeglądarki."
+          ]
+        },
+        {
+          "heading": "Zmiany",
+          "paragraphs": [
+            "Możemy aktualizować tę politykę w dowolnym czasie."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "W razie pytań skontaktuj się z nami przez stronę kontaktową."
+          ]
+        }
       ]
     },
     "terms": {
@@ -319,17 +492,72 @@
       "effectiveDate": "Data wejścia w życie: 14 lipca 2026",
       "intro": "Witamy w GambleZone. Korzystając z GambleZone, akceptujesz niniejsze Warunki użytkowania.",
       "sections": [
-        { "heading": "Cel strony", "paragraphs": ["GambleZone dostarcza treści informacyjne, recenzje i porównania dotyczące operatorów hazardu online."] },
-        { "heading": "Ujawnienie afiliacji", "paragraphs": ["GambleZone zawiera linki afiliacyjne. Możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie."] },
-        { "heading": "Wymagania wiekowe", "paragraphs": ["GambleZone jest przeznaczony dla osób powyżej 18 roku życia. Upewnij się, że hazard online jest legalny w Twoim miejscu zamieszkania."] },
-        { "heading": "Odpowiedzialna gra", "paragraphs": ["GambleZone wspiera odpowiedzialną grę. Hazard powinien być traktowany jako rozrywka, a nie źródło dochodu."] },
-        { "heading": "Własność intelektualna", "paragraphs": ["Wszystkie treści GambleZone są własnością GambleZone i nie mogą być kopiowane bez zgody."] },
-        { "heading": "Strony trzecie", "paragraphs": ["GambleZone nie ponosi odpowiedzialności za treści ani praktyki zewnętrznych stron."] },
-        { "heading": "Wyłączenie odpowiedzialności", "paragraphs": ["GambleZone nie gwarantuje dokładności informacji. Oferty mogą się zmieniać bez uprzedzenia."] },
-        { "heading": "Ograniczenie odpowiedzialności", "paragraphs": ["W zakresie dopuszczalnym prawem GambleZone nie ponosi odpowiedzialności za szkody wynikłe z korzystania z serwisu."] },
-        { "heading": "Zmiany", "paragraphs": ["GambleZone zastrzega sobie prawo do modyfikacji Warunków w dowolnym momencie."] },
-        { "heading": "Prawo właściwe", "paragraphs": ["Warunki podlegają obowiązującemu prawu jurysdykcji operatora."] },
-        { "heading": "Kontakt", "paragraphs": ["W razie pytań skontaktuj się z nami przez stronę kontaktową."] }
+        {
+          "heading": "Cel strony",
+          "paragraphs": [
+            "GambleZone dostarcza treści informacyjne, recenzje i porównania dotyczące operatorów hazardu online."
+          ]
+        },
+        {
+          "heading": "Ujawnienie afiliacji",
+          "paragraphs": [
+            "GambleZone zawiera linki afiliacyjne. Możemy otrzymać prowizję bez dodatkowych kosztów dla Ciebie."
+          ]
+        },
+        {
+          "heading": "Wymagania wiekowe",
+          "paragraphs": [
+            "GambleZone jest przeznaczony dla osób powyżej 18 roku życia. Upewnij się, że hazard online jest legalny w Twoim miejscu zamieszkania."
+          ]
+        },
+        {
+          "heading": "Odpowiedzialna gra",
+          "paragraphs": [
+            "GambleZone wspiera odpowiedzialną grę. Hazard powinien być traktowany jako rozrywka, a nie źródło dochodu."
+          ]
+        },
+        {
+          "heading": "Własność intelektualna",
+          "paragraphs": [
+            "Wszystkie treści GambleZone są własnością GambleZone i nie mogą być kopiowane bez zgody."
+          ]
+        },
+        {
+          "heading": "Strony trzecie",
+          "paragraphs": [
+            "GambleZone nie ponosi odpowiedzialności za treści ani praktyki zewnętrznych stron."
+          ]
+        },
+        {
+          "heading": "Wyłączenie odpowiedzialności",
+          "paragraphs": [
+            "GambleZone nie gwarantuje dokładności informacji. Oferty mogą się zmieniać bez uprzedzenia."
+          ]
+        },
+        {
+          "heading": "Ograniczenie odpowiedzialności",
+          "paragraphs": [
+            "W zakresie dopuszczalnym prawem GambleZone nie ponosi odpowiedzialności za szkody wynikłe z korzystania z serwisu."
+          ]
+        },
+        {
+          "heading": "Zmiany",
+          "paragraphs": [
+            "GambleZone zastrzega sobie prawo do modyfikacji Warunków w dowolnym momencie."
+          ]
+        },
+        {
+          "heading": "Prawo właściwe",
+          "paragraphs": [
+            "Warunki podlegają obowiązującemu prawu jurysdykcji operatora."
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "W razie pytań skontaktuj się z nami przez stronę kontaktową."
+          ]
+        }
       ]
     },
     "contact": {

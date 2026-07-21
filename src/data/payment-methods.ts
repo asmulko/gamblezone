@@ -17,7 +17,9 @@ export const paymentMethods: PaymentMethod[] = [
   { id: 'crypto', name: 'Crypto', accent: '#f7931a' },
   { id: 'banktransfer', name: 'Bank Transfer', accent: '#2563eb' },
   { id: 'gigadat', name: 'Gigadat', accent: '#e11d48' },
-  { id: 'jeton', name: 'Jeton', accent: '#0d9488' },
+  { id: 'jeton', name: 'Jeton Wallet', accent: '#0d9488' },
+  { id: 'jcb', name: 'JCB', accent: '#0b7abf' },
+  { id: 'discover', name: 'Discover', accent: '#f58220' },
 ];
 
 export const paymentMethodMap = new Map(paymentMethods.map((m) => [m.id, m]));

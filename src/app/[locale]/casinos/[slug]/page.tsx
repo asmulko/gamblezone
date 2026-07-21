@@ -13,6 +13,8 @@ import {
   Headphones,
   ShieldCheck,
   Gamepad2,
+  Languages,
+  BadgeCheck,
 } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
@@ -32,6 +34,19 @@ import {
 } from '@/lib/casinos';
 import { casinos } from '@/data/casinos';
 import { formatDate } from '@/lib/utils';
+
+const responsibleToolTranslationKeys: Record<string, string> = {
+  'Deposit Limit Tool': 'depositLimit',
+  'Wager Limit Tool': 'wagerLimit',
+  'Loss Limit Tool': 'lossLimit',
+  'Time/Session Limit Tool': 'timeSessionLimit',
+  'Self-Exclusion Tool': 'selfExclusion',
+  'Cool Off/Time-Out Tool': 'coolOffTimeOut',
+  'Reality Check Tool': 'realityCheck',
+  'Self-Assessment Test': 'selfAssessment',
+  'Withdrawal Lock': 'withdrawalLock',
+  'Self-Exclusion Register Participation': 'selfExclusionRegisterParticipation',
+};
 
 export function generateStaticParams() {
   return casinos.flatMap((c) =>
@@ -78,6 +93,9 @@ export default async function CasinoDetailPage({
     shortTerms: (i18n.offerTerms as string) ?? rawOffer.shortTerms,
   } : rawOffer;
   const displayPros = (i18n?.pros as string[] | undefined) ?? casino.pros;
+  const displayCons = (i18n?.cons as string[] | undefined) ?? casino.cons;
+  const displayShortDescription = (i18n?.shortDescription as string | undefined) ?? casino.shortDescription;
+  const displayReviewSummary = (i18n?.reviewSummary as string | undefined) ?? casino.reviewSummary;
 
   const available = isAvailableInMarket(casino);
   const similar = getSimilarCasinos(casino);
@@ -86,6 +104,8 @@ export default async function CasinoDetailPage({
     { icon: Coins, label: t('minDeposit'), value: casino.minDeposit ? `€${casino.minDeposit.amount}` : '—' },
     { icon: Wallet, label: t('minWithdrawal'), value: casino.minWithdrawal ? `€${casino.minWithdrawal.amount}` : '—' },
     { icon: Timer, label: t('withdrawalTime'), value: casino.withdrawalTimeText ?? '—' },
+    ...(casino.verificationSpeedText ? [{ icon: BadgeCheck, label: t('verificationSpeed'), value: casino.verificationSpeedText }] : []),
+    ...(casino.withdrawalLimitText ? [{ icon: Wallet, label: t('withdrawalLimit'), value: casino.withdrawalLimitText }] : []),
     { icon: CalendarClock, label: t('foundedYear'), value: casino.foundedYear?.toString() ?? '—' },
   ];
 
@@ -148,7 +168,7 @@ export default async function CasinoDetailPage({
       <div className="container-page grid gap-10 py-12 lg:grid-cols-[1fr_320px]">
         <div className="flex flex-col gap-10">
           <Reveal>
-            <p className="text-lg text-muted">{casino.shortDescription}</p>
+            <p className="text-lg text-muted">{displayShortDescription}</p>
           </Reveal>
 
           {/* Bonus */}
@@ -182,7 +202,7 @@ export default async function CasinoDetailPage({
             <div className="rounded-3xl border border-danger/25 bg-danger/5 p-6">
               <h3 className="mb-3 font-bold text-danger">{t('cons')}</h3>
               <ul className="flex flex-col gap-2">
-                {casino.cons.map((p) => (
+                {displayCons.map((p) => (
                   <li key={p} className="flex items-start gap-2 text-sm">
                     <X size={16} className="mt-0.5 shrink-0 text-danger" />
                     {p}
@@ -195,7 +215,7 @@ export default async function CasinoDetailPage({
           {/* Review summary */}
           <Reveal className="flex flex-col gap-3">
             <h2 className="text-xl font-bold">{td('reviewTitle')}</h2>
-            <p className="leading-relaxed text-muted">{casino.reviewSummary}</p>
+            <p className="leading-relaxed text-muted">{displayReviewSummary}</p>
           </Reveal>
 
           {/* Payments */}
@@ -233,11 +253,25 @@ export default async function CasinoDetailPage({
             <h2 className="flex items-center gap-2 text-xl font-bold">
               <ShieldCheck size={20} className="text-warning" /> {t('responsibleTools')}
             </h2>
-            <div className="flex flex-wrap gap-2">
-              {casino.responsibleGamblingTools.map((tool) => (
-                <Badge key={tool} tone="warning">{tool}</Badge>
-              ))}
-            </div>
+            {casino.responsibleGamblingToolStatuses ? (
+              <div className="overflow-hidden rounded-2xl border border-border">
+                {Object.entries(casino.responsibleGamblingToolStatuses).map(([tool, enabled]) => (
+                  <div key={tool} className="flex items-center justify-between gap-4 border-b border-border px-4 py-3 text-sm last:border-b-0">
+                    <span>{td(`responsibleTools.${responsibleToolTranslationKeys[tool]}`)}</span>
+                    <span className={`inline-flex items-center gap-1 font-semibold ${enabled ? 'text-success' : 'text-muted'}`}>
+                      {enabled ? <Check size={15} /> : <X size={15} />}
+                      {enabled ? tc('yes') : tc('no')}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-wrap gap-2">
+                {casino.responsibleGamblingTools.map((tool) => (
+                  <Badge key={tool} tone="warning">{tool}</Badge>
+                ))}
+              </div>
+            )}
           </Reveal>
         </div>
 
@@ -260,6 +294,12 @@ export default async function CasinoDetailPage({
                 </dt>
                 <dd className="font-semibold">{casino.supportedCurrencies.join(', ')}</dd>
               </div>
+              <div className="flex items-start justify-between gap-3 text-sm">
+                <dt className="inline-flex items-center gap-2 text-muted">
+                  <Languages size={15} className="text-secondary" /> {t('supportedLanguages')}
+                </dt>
+                <dd className="max-w-[55%] text-right font-semibold">{casino.supportedLanguages.join(', ')}</dd>
+              </div>
               <div className="flex items-center justify-between gap-3 text-sm">
                 <dt className="inline-flex items-center gap-2 text-muted">
                   <Headphones size={15} className="text-secondary" /> {t('supportChannels')}
@@ -275,6 +315,9 @@ export default async function CasinoDetailPage({
               {casino.licenses.map((l) => (
                 <li key={l.authority} className="text-sm">
                   <p className="font-semibold">{l.authority}</p>
+                  {l.validSince && (
+                    <p className="text-xs text-muted">{t('licensedSince')}: {formatDate(l.validSince, locale)}</p>
+                  )}
                   {l.licenseNumber && (
                     <p className="text-xs text-muted">{l.licenseNumber}</p>
                   )}
