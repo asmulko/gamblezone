@@ -44,7 +44,7 @@ export function CasinoCard({
             <h3 className="font-display text-lg font-bold leading-tight">
               <Link
                 href={`/casinos/${casino.slug}`}
-                className="after:absolute after:inset-0"
+                className="relative z-10"
               >
                 {casino.name}
               </Link>
@@ -96,7 +96,7 @@ export function CasinoCard({
         <Badge tone="muted">{casino.gameTypes.length}+ {tc('gameTypes')}</Badge>
       </div>
 
-      <div className="relative z-10 flex flex-col gap-2 sm:flex-row">
+      <div className="relative z-20 flex flex-col gap-2 sm:flex-row">
         {available ? (
           <AffiliateCTA
             slug={casino.slug}

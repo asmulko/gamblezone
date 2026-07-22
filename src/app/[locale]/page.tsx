@@ -171,7 +171,7 @@ function FeaturedCasinoCard({
         <div className="flex min-w-0 flex-1 flex-col gap-0.5">
           <Link
             href={`/casinos/${casino.slug}`}
-            className="font-display font-bold after:absolute after:inset-0"
+            className="relative z-10 font-display font-bold"
           >
             {casino.name}
           </Link>
@@ -192,7 +192,7 @@ function FeaturedCasinoCard({
         </div>
         {/* CTA — visible on sm+ only */}
         {available && (
-          <div className="relative z-10 hidden shrink-0 sm:block">
+          <div className="relative z-20 hidden shrink-0 sm:block">
             <AffiliateCTA
               slug={casino.slug}
               placement={placement}
@@ -212,7 +212,7 @@ function FeaturedCasinoCard({
           <p className="text-[10px] uppercase tracking-wide text-muted">{tc('editorialScore')}</p>
         </div>
         {available && (
-          <div className="relative z-10">
+          <div className="relative z-20">
             <AffiliateCTA
               slug={casino.slug}
               placement={placement}
@@ -273,7 +273,7 @@ function CompactCasinoRow({
       <div className="flex min-w-0 flex-1 flex-col gap-0.5">
         <Link
           href={`/casinos/${casino.slug}`}
-          className="text-sm font-bold after:absolute after:inset-0"
+          className="relative z-10 text-sm font-bold"
         >
           {casino.name}
         </Link>
@@ -290,7 +290,7 @@ function CompactCasinoRow({
         </p>
       </div>
       {available && (
-        <div className="relative z-10 shrink-0">
+        <div className="relative z-20 shrink-0">
           <AffiliateCTA
             slug={casino.slug}
             placement={placement}

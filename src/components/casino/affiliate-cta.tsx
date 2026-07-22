@@ -1,9 +1,10 @@
 import { ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { getActiveAffiliateLink, getCasinoBySlug } from '@/lib/casinos';
 
 /**
- * All outbound links route through the internal /go redirect handler.
- * We never link directly to an operator, and mark links sponsored + nofollow.
+ * Affiliate CTAs link directly to the configured affiliate destination.
+ * Normal casino/review links are handled by their own internal Link components.
  */
 export function AffiliateCTA({
   slug,
@@ -24,10 +25,12 @@ export function AffiliateCTA({
   size?: 'sm' | 'md' | 'lg';
   className?: string;
 }) {
-  const href = `/go/${slug}?campaign=${encodeURIComponent(campaign)}&placement=${encodeURIComponent(placement)}`;
+  const casino = getCasinoBySlug(slug);
+  const affiliateLink = casino ? getActiveAffiliateLink(casino) : undefined;
+  const href = affiliateLink?.destinationUrl ?? `/en/casinos/${slug}`;
 
   const base =
-    'inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 active:scale-[0.97] [touch-action:manipulation] focus-visible:outline-none';
+    'relative z-30 pointer-events-auto inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 active:scale-[0.97] [touch-action:manipulation] focus-visible:outline-none';
   const variants = {
     primary:
       'bg-primary text-primary-foreground shadow-glow hover:brightness-110',
@@ -45,7 +48,7 @@ export function AffiliateCTA({
     <a
       href={href}
       target="_blank"
-      rel="sponsored nofollow noopener"
+      rel="sponsored nofollow noopener noreferrer"
       aria-label={ariaLabel ?? label}
       className={cn(base, variants[variant], sizes[size], className)}
     >

@@ -19,7 +19,8 @@ const ALLOWED_HOSTS = new Set<string>([
   'impressariocasino.com', 'www.impressariocasino.com',
   'gamblezenpartners.com', 'www.gamblezenpartners.com',
   'gamblezen87.com', 'www.gamblezen87.com',
-  'immerion4.com', 'www.immerion4.com'
+  'immerion4.com', 'www.immerion4.com',
+  'playrainbet.com', 'www.playrainbet.com'
 ]);
 
 function isAllowedDestination(url: string): boolean {
