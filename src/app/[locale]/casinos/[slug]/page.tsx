@@ -281,18 +281,18 @@ export default async function CasinoDetailPage({
             <h2 className="mb-4 font-bold">{td('quickFacts')}</h2>
             <dl className="flex flex-col gap-3">
               {facts.map((f) => (
-                <div key={f.label} className="flex items-center justify-between gap-3 text-sm">
+                <div key={f.label} className="flex items--start justify-between gap-3 text-sm">
                   <dt className="inline-flex items-center gap-2 text-muted">
                     <f.icon size={15} className="text-secondary" /> {f.label}
                   </dt>
-                  <dd className="font-semibold tabular-nums">{f.value}</dd>
+                  <dd className="font-semibold tabular-nums text-right">{f.value}</dd>
                 </div>
               ))}
-              <div className="flex items-center justify-between gap-3 text-sm">
+              <div className="flex items-start justify-between gap-3 text-sm">
                 <dt className="inline-flex items-center gap-2 text-muted">
                   <Coins size={15} className="text-secondary" /> {t('supportedCurrencies')}
                 </dt>
-                <dd className="font-semibold">{casino.supportedCurrencies.join(', ')}</dd>
+                <dd className="font-semibold text-right">{casino.supportedCurrencies.join(', ')}</dd>
               </div>
               <div className="flex items-start justify-between gap-3 text-sm">
                 <dt className="inline-flex items-center gap-2 text-muted">
