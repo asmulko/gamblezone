@@ -139,6 +139,26 @@ const rawCasinos: Casino[] = [
     offers: [{ id: 'orb1', casinoId: 'rb1', market: 'INT', title: 'Up to 250% across 3 deposits + 60 Free Spins', shortTerms: 'First deposit 100% + 20 FS, second 50% + 20 FS, third 100% + 20 FS. Min. deposit $30, max. $700 per tier. 40× wagering. 18+.', valueText: 'Up to 250% + 60 Free Spins', wageringText: '40× deposit + bonus', minDepositText: '$30', status: 'active', verifiedAt: now }],
     publishedAt: now, reviewedAt: now, nextReviewAt: nextReview, logoUrl: '/logos/rainbet.jpg',
   },
+  {
+    id: 'lu1', slug: 'lussurio', name: 'Lussurio Casino', brandColor: '#d4af37', status: 'active',
+    foundedYear: 2026, operatorName: 'Goodwin N.V.',
+    licenses: [{ authority: 'Curaçao Gaming Control Board', licenseNumber: 'OGL/2024/758/0228', markets: ['INT'], verifiedAt: now }],
+    supportedMarkets: ['INT'], blockedMarkets: ['US', 'NL', 'RU', 'UA', 'AE', 'IR'], supportedLanguages: ['English', 'German', 'Spanish', 'Portuguese', 'Polish'], supportedCurrencies: ['EUR', 'USD', 'GBP', 'CAD', 'BTC', 'ETH', 'LTC', 'DOGE', 'TRX', 'USDT'],
+    rating: 4.7, editorialScore: 9.1,
+    minDeposit: { amount: 10, currency: 'EUR' }, minWithdrawal: { amount: 25, currency: 'EUR' }, withdrawalTimeText: '0–72 hours', verificationSpeedText: '0–24 hours', payoutSpeed: 'fast',
+    paymentMethods: ['visa','mastercard','skrill','neteller','paysafecard','applepay','googlepay','crypto','banktransfer'],
+    gameProviders: ['Pragmatic Play','Evolution Gaming','Play’n GO','Hacksaw Gaming','BGaming','Nolimit City','Relax Gaming','NetEnt','Wazdan','Red Tiger Gaming','Quickspin','Yggdrasil Gaming','Push Gaming','3 Oaks Gaming','Games Global','Stakelogic'],
+    gameTypes: ['Slots','Live casino','Table games','Jackpots','Game shows'],
+    pros: ['10,000+ slots and live games','Wide range of fiat and crypto payment methods','Large multi-deposit welcome package','Many responsible-gambling controls'],
+    cons: ['Withdrawal processing may take up to 72 hours','Withdrawal limits apply','Bonus terms and country availability vary'],
+    bonusType: 'match', shortDescription: 'A new Curaçao-licensed casino with a large welcome package, broad payment coverage and a catalogue of slots and live games.',
+    reviewSummary: 'Lussurio Casino combines a large games lobby with both crypto and traditional payment methods. It advertises a 550% welcome package with free spins, while its banking setup and safer-gambling tools are comparatively extensive. Players should check the exact bonus and withdrawal conditions available in their country.',
+    responsibleGamblingTools: ['Deposit limits','Loss limits','Wager limits','Time / session limits','Cool off / Time-out','Reality check','Self-exclusion','Self-assessment test','Withdrawal lock'],
+    responsibleGamblingToolStatuses: toolStatuses({ 'Deposit Limit Tool': true, 'Wager Limit Tool': true, 'Loss Limit Tool': true, 'Time/Session Limit Tool': true, 'Self-Exclusion Tool': true, 'Cool Off/Time-Out Tool': true, 'Reality Check Tool': true, 'Self-Assessment Test': true, 'Withdrawal Lock': true }),
+    supportChannels: ['Live chat 24/7','Email'], affiliateLinks: [{ id: 'allu1', casinoId: 'lu1', market: 'INT', campaign: 'welcome01', destinationUrl: 'https://lussurio1.com/', enabled: true, rel: 'sponsored nofollow', createdAt: now, updatedAt: now }],
+    offers: [{ id: 'olu1', casinoId: 'lu1', market: 'INT', title: '550% up to $4,000 + 400 Free Spins', shortTerms: 'Multi-deposit welcome package. Terms, eligible countries and wagering requirements apply. 18+.', valueText: '550% up to $4,000 + 400 Free Spins', wageringText: 'Terms apply', minDepositText: '€10', status: 'active', verifiedAt: now }],
+    publishedAt: now, reviewedAt: now, nextReviewAt: nextReview, logoUrl: '/logos/lussurio.png',
+  },
 ];
 
 export const casinos: Casino[] = rawCasinos.map((c) => casinoSchema.parse(c));
