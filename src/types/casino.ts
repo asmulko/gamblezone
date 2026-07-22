@@ -78,7 +78,9 @@ export const casinoSchema = z.object({
   withdrawalLimitText: z.string().optional(),
   payoutSpeed: payoutSpeedSchema,
 
+  casinoTypes: z.array(z.string()).optional(),
   paymentMethods: z.array(z.string()),
+  withdrawalMethods: z.array(z.string()).optional(),
   gameProviders: z.array(z.string()),
   gameTypes: z.array(z.string()),
 

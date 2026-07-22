@@ -222,33 +222,30 @@
       "offerTitle": "Hasta un 250 % en 3 depósitos + 60 tiradas gratis",
       "offerTerms": "Primer depósito: 100 % + 20 tiradas, segundo: 50 % + 20 tiradas, tercero: 100 % + 20 tiradas. Depósito mínimo de 30 $ y máximo de 700 $ por nivel. Requisito de apuesta de 40×. 18+.",
       "pros": [
-        "Más de 8.000 juegos de casino",
-        "Retiros rápidos con criptomonedas",
-        "Juegos originales verificablemente justos",
-        "Programa completo de VIP y rakeback"
+        "Chat en vivo 24/7",
+        "Sin comisiones de retiro",
+        "Límites mínimos de retiro bajos"
       ],
       "cons": [
-        "Restringido en varios mercados importantes",
-        "El bono de bienvenida exige apostar 40×",
-        "Pueden aplicarse comisiones de red cripto"
+        "Acceso limitado a herramientas de juego responsable"
       ],
-      "shortDescription": "Casino y casa de apuestas centrado en criptomonedas, con miles de juegos, pagos rápidos, originales verificablemente justos y un amplio programa de recompensas.",
-      "reviewSummary": "Rainbet combina más de 8.000 juegos con apuestas deportivas, pagos en criptomonedas y títulos propios verificablemente justos. Destacan la rapidez de los retiros cripto y su sistema de recompensas, aunque conviene revisar las restricciones territoriales y el requisito de apuesta de 40× del bono estándar."
+      "shortDescription": "Casino y casa de apuestas compatible con criptomonedas, con juegos instantáneos, casino en vivo y numerosos métodos de pago.",
+      "reviewSummary": "Rainbet está operado por RBGAMING N.V. bajo una licencia de Anjouan Gaming Board. Admite una amplia selección de pagos fiat y cripto y ofrece casino, crupieres en vivo y apuestas deportivas. Destacan el chat 24/7, la ausencia de comisiones de retiro y los mínimos de retiro bajos, aunque las herramientas de juego responsable se limitan principalmente a la autoexclusión."
     },
     "lussurio": {
       "offerTitle": "550% hasta $4.000 + 400 tiradas gratis",
-      "shortDescription": "Un casino nuevo con licencia de Curaçao, gran paquete de bienvenida, numerosos métodos de pago y una amplia selección de slots y juegos en vivo.",
-      "reviewSummary": "Lussurio Casino combina una gran colección de juegos con pagos tanto en criptomonedas como tradicionales. Anuncia un paquete de bienvenida del 550% con tiradas gratis y ofrece una gama amplia de opciones bancarias y de juego responsable. Conviene revisar las condiciones exactas del bono y de los retiros según el país.",
+      "shortDescription": "Casino con licencia de Curaçao destacado en 2026, amplio catálogo de proveedores, depósito mínimo bajo y completas herramientas de juego responsable.",
+      "reviewSummary": "Lussurio Casino está operado por Goodwin N.V. y cuenta con licencia de Curacao Gaming Control Board. Admite un depósito mínimo de 10 $, un retiro mínimo de 25 $ y numerosos métodos con tarjeta, monederos, transferencia y criptomonedas. Sus herramientas incluyen límites de depósito, apuesta, pérdida y sesión, pausas, recordatorios de realidad, autoevaluación y autoexclusión.",
       "pros": [
-        "Large games catalogue",
-        "Fiat and crypto payment options",
-        "Multi-deposit welcome package",
-        "Responsible-gambling tools"
+        "Amplio catálogo de juegos",
+        "Pagos fiat y cripto",
+        "Depósito mínimo bajo de 10 $",
+        "Amplios controles de juego responsable"
       ],
       "cons": [
-        "Withdrawals can take up to 72 hours",
-        "Withdrawal limits may apply",
-        "Terms vary by country"
+        "Los retiros pueden tardar hasta 72 horas",
+        "El retiro mínimo es de 25 $",
+        "Las condiciones varían según el país"
       ]
     },
     "nv-casino": {
@@ -256,18 +253,15 @@
       "offerTerms": "Paquete de bienvenida en cuatro etapas. Activa cada etapa antes de depositar. Apuesta 40× para bonos en efectivo y 30× para ganancias de giros gratis; plazo de cinco días. 18+.",
       "offerValue": "Hasta 2.000 € + 225 giros gratis",
       "pros": [
-        "Más de 10.000 juegos anunciados",
-        "Amplia cobertura de pagos fiat y cripto",
-        "Chat en vivo y correo 24/7",
-        "Programa VIP de 59 niveles con cashback semanal"
+        "Miles de juegos disponibles",
+        "Chat en vivo 24/7",
+        "Numerosas ofertas de bonos"
       ],
       "cons": [
-        "Apuesta 40× en bonos en efectivo",
-        "Los retiros grandes pueden tardar más en aprobarse",
-        "Los métodos de pago varían según el país"
+        "Retiros lentos"
       ],
-      "shortDescription": "Casino y casa de apuestas con licencia de Curazao, enorme catálogo, amplio soporte cripto y bono de bienvenida por etapas.",
-      "reviewSummary": "NV Casino, operado por Nixxe B.V., reúne tragamonedas, casino en vivo, juegos instantáneos y apuestas deportivas. Su web oficial anuncia más de 10.000 juegos, más de 100 proveedores, un paquete de bienvenida de hasta 2.000 € más 225 giros gratis y un sistema VIP de 59 niveles. Destacan la caja variada y la asistencia continua, aunque conviene revisar con cuidado los requisitos de apuesta y los plazos de retiro según el importe."
+      "shortDescription": "Casino y casa de apuestas con licencia de Curaçao, miles de juegos, amplia cobertura de pagos y bonos frecuentes.",
+      "reviewSummary": "NV Casino está operado por Nixxe B.V. bajo una licencia de Curacao Gaming Control Board. Ofrece juego instantáneo, móvil, casino en vivo, apuestas deportivas y pagos con criptomonedas. Cuenta con miles de juegos, chat 24/7 y numerosas promociones, aunque los retiros pueden ser lentos."
     }
   },
   "disclosure": {
@@ -299,7 +293,10 @@
     "verificationSpeed": "Velocidad de verificación",
     "withdrawalLimit": "Límite de retiro",
     "supportedLanguages": "Idiomas",
-    "licensedSince": "Con licencia desde"
+    "licensedSince": "Con licencia desde",
+    "depositMethods": "Métodos de depósito",
+    "withdrawalMethods": "Métodos de retiro",
+    "casinoTypes": "Tipos de casino"
   },
   "catalog": {
     "title": "Todos los casinos",

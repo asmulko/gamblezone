@@ -219,12 +219,31 @@ export default async function CasinoDetailPage({
           </Reveal>
 
           {/* Payments */}
-          <Reveal className="flex flex-col gap-3">
-            <h2 className="flex items-center gap-2 text-xl font-bold">
-              <Wallet size={20} className="text-secondary" /> {t('paymentMethods')}
-            </h2>
-            <PaymentMethods ids={casino.paymentMethods} />
+          <Reveal className="grid gap-6 sm:grid-cols-2">
+            <div className="flex flex-col gap-3">
+              <h2 className="flex items-center gap-2 text-xl font-bold">
+                <Wallet size={20} className="text-secondary" /> {t('depositMethods')}
+              </h2>
+              <PaymentMethods ids={casino.paymentMethods} />
+            </div>
+            {casino.withdrawalMethods?.length ? (
+              <div className="flex flex-col gap-3">
+                <h2 className="flex items-center gap-2 text-xl font-bold">
+                  <Wallet size={20} className="text-secondary" /> {t('withdrawalMethods')}
+                </h2>
+                <PaymentMethods ids={casino.withdrawalMethods} />
+              </div>
+            ) : null}
           </Reveal>
+
+          {casino.casinoTypes?.length ? (
+            <Reveal className="flex flex-col gap-3">
+              <h2 className="text-xl font-bold">{t('casinoTypes')}</h2>
+              <div className="flex flex-wrap gap-2">
+                {casino.casinoTypes.map((type) => <Badge key={type} tone="secondary">{type}</Badge>)}
+              </div>
+            </Reveal>
+          ) : null}
 
           {/* Games */}
           <Reveal className="grid gap-6 sm:grid-cols-2">

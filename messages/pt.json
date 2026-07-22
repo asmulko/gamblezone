@@ -222,33 +222,30 @@
       "offerTitle": "Até 250% em 3 depósitos + 60 rodadas grátis",
       "offerTerms": "Primeiro depósito: 100% + 20 rodadas, segundo: 50% + 20 rodadas, terceiro: 100% + 20 rodadas. Depósito mínimo de US$ 30 e máximo de US$ 700 por etapa. Requisito de apostas de 40×. 18+.",
       "pros": [
-        "Mais de 8.000 jogos de cassino",
-        "Saques rápidos em criptomoedas",
-        "Jogos originais comprovadamente justos",
-        "Programa completo de VIP e rakeback"
+        "Chat ao vivo 24/7",
+        "Sem taxas de saque",
+        "Limites mínimos de saque baixos"
       ],
       "cons": [
-        "Restrito em vários mercados importantes",
-        "Bônus de boas-vindas exige apostas de 40×",
-        "Taxas de rede cripto podem ser aplicadas"
+        "Acesso limitado a ferramentas de jogo responsável"
       ],
-      "shortDescription": "Cassino e casa de apostas focado em criptomoedas, com milhares de jogos, pagamentos rápidos, originais comprovadamente justos e um amplo programa de recompensas.",
-      "reviewSummary": "A Rainbet reúne mais de 8.000 jogos, apostas esportivas, caixa em criptomoedas e títulos próprios comprovadamente justos. Os principais destaques são os saques cripto rápidos e o sistema de recompensas em camadas; ainda assim, é importante verificar as restrições regionais e o requisito de apostas de 40× do bônus padrão."
+      "shortDescription": "Cassino e casa de apostas compatível com criptomoedas, jogos instantâneos, cassino ao vivo e ampla cobertura de pagamentos.",
+      "reviewSummary": "A Rainbet é operada pela RBGAMING N.V. sob licença da Anjouan Gaming Board. Aceita diversos pagamentos fiat e cripto e oferece cassino, jogos ao vivo e apostas esportivas. Os destaques são chat 24 horas, ausência de taxas de saque e mínimos baixos, mas as ferramentas de jogo responsável ficam principalmente limitadas à autoexclusão."
     },
     "lussurio": {
       "offerTitle": "550% até US$ 4.000 + 400 rodadas grátis",
-      "shortDescription": "Um novo cassino licenciado em Curaçao, com grande pacote de boas-vindas, ampla cobertura de pagamentos e muitos slots e jogos ao vivo.",
-      "reviewSummary": "O Lussurio Casino combina uma grande biblioteca de jogos com pagamentos em criptomoedas e métodos tradicionais. O site anuncia um pacote de boas-vindas de 550% com rodadas grátis e disponibiliza uma gama ampla de opções de pagamento e jogo responsável. Confira os termos do bônus e dos saques para o seu país.",
+      "shortDescription": "Cassino licenciado em Curaçao, em destaque em 2026, com muitos provedores, depósito mínimo baixo e amplas ferramentas de jogo responsável.",
+      "reviewSummary": "O Lussurio Casino é operado pela Goodwin N.V. e possui licença da Curacao Gaming Control Board. Aceita depósito mínimo de US$ 10, saque mínimo de US$ 25 e diversos cartões, carteiras, transferências e criptomoedas. As ferramentas incluem limites de depósito, aposta, perda e sessão, pausas, alertas de realidade, autoavaliação e autoexclusão.",
       "pros": [
-        "Large games catalogue",
-        "Fiat and crypto payment options",
-        "Multi-deposit welcome package",
-        "Responsible-gambling tools"
+        "Grande catálogo de jogos",
+        "Pagamentos fiat e cripto",
+        "Depósito mínimo baixo de US$ 10",
+        "Amplos controles de jogo responsável"
       ],
       "cons": [
-        "Withdrawals can take up to 72 hours",
-        "Withdrawal limits may apply",
-        "Terms vary by country"
+        "Saques podem levar até 72 horas",
+        "Saque mínimo de US$ 25",
+        "Os termos variam por país"
       ]
     },
     "nv-casino": {
@@ -256,18 +253,15 @@
       "offerTerms": "Pacote de boas-vindas em quatro etapas. Ative cada etapa antes do depósito. Rollover de 40× nos bônus em dinheiro e 30× nos ganhos das rodadas grátis; prazo de cinco dias. 18+.",
       "offerValue": "Até €2.000 + 225 rodadas grátis",
       "pros": [
-        "Mais de 10.000 jogos anunciados",
-        "Ampla variedade de pagamentos fiat e cripto",
-        "Chat ao vivo e e-mail 24/7",
-        "Programa VIP de 59 níveis com cashback semanal"
+        "Milhares de jogos disponíveis",
+        "Chat ao vivo 24/7",
+        "Muitas ofertas de bônus"
       ],
       "cons": [
-        "Rollover de 40× nos bônus em dinheiro",
-        "Saques maiores podem demorar mais para aprovação",
-        "Os métodos de pagamento variam por país"
+        "Saques lentos"
       ],
-      "shortDescription": "Cassino e casa de apostas licenciados em Curaçao, com enorme catálogo, amplo suporte a criptomoedas e bônus de boas-vindas em etapas.",
-      "reviewSummary": "O NV Casino é operado pela Nixxe B.V. e reúne slots, cassino ao vivo, jogos instantâneos e apostas esportivas. O site oficial anuncia mais de 10.000 jogos, mais de 100 provedores, um pacote de boas-vindas de até €2.000 mais 225 rodadas grátis e um sistema VIP de 59 níveis. A variedade do caixa e o suporte 24 horas são pontos fortes, mas os requisitos de apostas e os prazos de saque por valor merecem atenção."
+      "shortDescription": "Cassino e casa de apostas licenciado em Curaçao, com milhares de jogos, ampla cobertura de pagamentos e bônus frequentes.",
+      "reviewSummary": "O NV Casino é operado pela Nixxe B.V. sob licença da Curacao Gaming Control Board. Oferece jogo instantâneo, mobile, cassino ao vivo, apostas esportivas e pagamentos em criptomoedas. Há milhares de jogos, chat 24 horas e diversas promoções, mas os saques podem ser lentos."
     }
   },
   "disclosure": {
@@ -299,7 +293,10 @@
     "verificationSpeed": "Velocidade de verificação",
     "withdrawalLimit": "Limite de levantamento",
     "supportedLanguages": "Idiomas",
-    "licensedSince": "Licenciado desde"
+    "licensedSince": "Licenciado desde",
+    "depositMethods": "Métodos de depósito",
+    "withdrawalMethods": "Métodos de saque",
+    "casinoTypes": "Tipos de cassino"
   },
   "catalog": {
     "title": "Todos os casinos",

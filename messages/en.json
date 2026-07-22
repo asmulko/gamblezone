@@ -228,32 +228,29 @@
       "offerTitle": "Up to 250% across 3 deposits + 60 Free Spins",
       "offerTerms": "First deposit 100% + 20 free spins, second 50% + 20 free spins, third 100% + 20 free spins. Minimum deposit $30 and maximum $700 per tier. 40× wagering applies. 18+.",
       "pros": [
-        "8,000+ casino games",
-        "Fast crypto withdrawals",
-        "Provably fair original games",
-        "Layered VIP and rakeback rewards"
+        "24/7 live chat",
+        "No withdrawal fees",
+        "Low minimum withdrawal thresholds"
       ],
       "cons": [
-        "Restricted in several major markets",
-        "Welcome bonus carries 40× wagering",
-        "Crypto network fees may apply"
+        "Limited access to responsible gambling tools"
       ],
-      "shortDescription": "A crypto-first casino and sportsbook with thousands of games, fast payouts, provably fair originals and a deep rewards programme.",
-      "reviewSummary": "Rainbet combines an 8,000+ game catalogue with a sportsbook, crypto cashier and provably fair in-house titles. Its strongest points are rapid crypto processing and a layered rewards system, while players should carefully review regional restrictions and the 40× wagering terms attached to the standard welcome offer."
+      "shortDescription": "A crypto-friendly casino and sportsbook with instant-play games, live casino titles and broad payment support.",
+      "reviewSummary": "Rainbet is operated by RBGAMING N.V. under an Anjouan Gaming Board licence. It supports a broad selection of fiat and crypto payments and offers casino, live dealer and sports products. Its strongest practical features are round-the-clock live chat, no withdrawal fees and low minimum cash-out thresholds, although its responsible-gambling controls are limited mainly to self-exclusion."
     },
     "lussurio": {
       "offerTitle": "550% up to $4,000 + 400 Free Spins",
-      "shortDescription": "A new Curaçao-licensed casino with a large welcome package, broad payment coverage and a catalogue of slots and live games.",
-      "reviewSummary": "Lussurio Casino combines a large games lobby with both crypto and traditional payment methods. It advertises a 550% welcome package with free spins, while its banking setup and safer-gambling tools are comparatively extensive. Players should check the exact bonus and withdrawal conditions available in their country.",
+      "shortDescription": "A 2026-featured Curaçao-licensed casino with a large provider catalogue, low minimum deposit and extensive safer-gambling controls.",
+      "reviewSummary": "Lussurio Casino is operated by Goodwin N.V. and carries a Curacao Gaming Control Board licence. It supports a $10 minimum deposit, a $25 minimum withdrawal and a large range of card, e-wallet, bank and cryptocurrency options. Its provider catalogue is extensive and its responsible-gambling setup includes deposit, wager, loss and session limits, time-outs, reality checks, self-assessment and self-exclusion.",
       "pros": [
         "Large games catalogue",
         "Fiat and crypto payment options",
-        "Multi-deposit welcome package",
-        "Responsible-gambling tools"
+        "Low $10 minimum deposit",
+        "Extensive responsible-gambling controls"
       ],
       "cons": [
         "Withdrawals can take up to 72 hours",
-        "Withdrawal limits may apply",
+        "Minimum withdrawal is $25",
         "Terms vary by country"
       ]
     },
@@ -262,18 +259,15 @@
       "offerTerms": "Four-stage welcome package. Activate each stage before depositing. 40× wagering on cash bonuses and 30× on free-spin winnings; five-day wagering period. 18+.",
       "offerValue": "Up to €2,000 + 225 Free Spins",
       "pros": [
-        "10,000+ games advertised",
-        "Wide fiat and crypto payment coverage",
-        "24/7 live chat and email support",
-        "59-level VIP programme with weekly cashback"
+        "Home to thousands of games",
+        "24/7 live chat",
+        "Plenty of bonus offers"
       ],
       "cons": [
-        "40× wagering on cash bonuses",
-        "Large withdrawals may take longer to approve",
-        "Payment availability varies by country"
+        "Slow withdrawals"
       ],
-      "shortDescription": "A Curaçao-licensed casino and sportsbook with a huge game lobby, extensive crypto support and a multi-stage welcome package.",
-      "reviewSummary": "NV Casino is operated by Nixxe B.V. and combines slots, live casino, instant games and sports betting. Its official site advertises more than 10,000 games, 100+ providers, a four-stage welcome offer up to €2,000 plus 225 free spins and a 59-level VIP system. The broad cashier and round-the-clock support stand out, although players should examine the wagering and amount-based withdrawal timelines carefully."
+      "shortDescription": "A Curaçao-licensed casino and sportsbook with thousands of games, broad payment coverage and frequent bonus offers.",
+      "reviewSummary": "NV Casino is operated by Nixxe B.V. under a Curacao Gaming Control Board licence. It supports instant play, mobile gaming, live casino, sports betting and cryptocurrency payments. The site offers thousands of games, 24/7 live chat and numerous promotions, but withdrawal processing may be slow."
     }
   },
   "disclosure": {
@@ -305,7 +299,10 @@
     "verificationSpeed": "Verification speed",
     "withdrawalLimit": "Withdrawal limit",
     "supportedLanguages": "Languages",
-    "licensedSince": "Licensed since"
+    "licensedSince": "Licensed since",
+    "depositMethods": "Deposit methods",
+    "withdrawalMethods": "Withdrawal methods",
+    "casinoTypes": "Casino types"
   },
   "catalog": {
     "title": "All casinos",
