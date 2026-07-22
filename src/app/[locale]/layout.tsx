@@ -6,6 +6,8 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
+import { pageMetadata } from '@/lib/seo';
+import { JsonLd } from '@/components/seo/json-ld';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import '../globals.css';
@@ -42,31 +44,15 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(siteConfig.url),
+    ...pageMetadata({
+      locale,
+      title: t('homeTitle'),
+      description: t('homeDescription'),
+    }),
+    applicationName: siteConfig.name,
     title: {
       default: t('homeTitle'),
       template: `%s`,
-    },
-    description: t('homeDescription'),
-    applicationName: siteConfig.name,
-    openGraph: {
-      type: 'website',
-      siteName: siteConfig.name,
-      title: t('homeTitle'),
-      description: t('homeDescription'),
-      locale,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: t('homeTitle'),
-      description: t('homeDescription'),
-    },
-    robots: { index: true, follow: true },
-    alternates: {
-      canonical: `${siteConfig.url}/${locale}`,
-      languages: {
-        ...Object.fromEntries(routing.locales.map((l) => [l, `${siteConfig.url}/${l}`])),
-        'x-default': `${siteConfig.url}/en`,
-      },
     },
   };
 }
@@ -92,29 +78,32 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${inter.variable} ${sora.variable}`}>
       <body className="min-h-dvh bg-background font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify([
-                {
-                  '@context': 'https://schema.org',
-                  '@type': 'Organization',
-                  name: siteConfig.name,
-                  url: siteConfig.url,
-                  contactPoint: {
-                    '@type': 'ContactPoint',
-                    email: siteConfig.contactEmail,
-                    contactType: 'customer service',
-                  },
+          <JsonLd
+            data={[
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Organization',
+                '@id': `${siteConfig.url}/#organization`,
+                name: siteConfig.name,
+                url: siteConfig.url,
+                logo: `${siteConfig.url}/icon.svg`,
+                foundingDate: String(siteConfig.foundedYear),
+                contactPoint: {
+                  '@type': 'ContactPoint',
+                  email: siteConfig.contactEmail,
+                  contactType: 'customer service',
                 },
-                {
-                  '@context': 'https://schema.org',
-                  '@type': 'WebSite',
-                  name: siteConfig.name,
-                  url: siteConfig.url,
-                },
-              ]),
-            }}
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                '@id': `${siteConfig.url}/#website`,
+                name: siteConfig.name,
+                url: siteConfig.url,
+                publisher: { '@id': `${siteConfig.url}/#organization` },
+                inLanguage: locale,
+              },
+            ]}
           />
           <a
             href="#main"

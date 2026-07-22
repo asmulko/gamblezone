@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Mail } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
+import { pageMetadata } from '@/lib/seo';
 import { Reveal } from '@/components/motion/reveal';
 import { ContactForm } from '@/components/forms/contact-form';
 
@@ -13,8 +14,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'pages.contact' });
-  return { title: `${t('title')} — GambleZone` };
+  return pageMetadata({ locale, path: '/contact', title: `${t('title')} | GambleZone`, description: t('intro') });
 }
+
 
 const LEGAL_EMAILS = [
   'manager@gamblezone.vip',

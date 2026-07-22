@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Gift, MessageCircle } from 'lucide-react';
 import { setRequestLocale } from 'next-intl/server';
+import { pageMetadata } from '@/lib/seo';
 import type { Locale } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
@@ -9,10 +10,15 @@ import { Badge } from '@/components/ui/badge';
 import { Stagger, StaggerItem } from '@/components/motion/reveal';
 import { getActiveOffer, getAllCasinos } from '@/lib/casinos';
 
-export const metadata: Metadata = {
-  title: 'Free Bonus - GambleZone',
-  description: 'Want a free bonus? Send us a message and choose from our listed casinos.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale,
+    path: '/free-bonus',
+    title: 'Free Bonus | GambleZone',
+    description: 'Choose a listed casino and contact GambleZone for current free-bonus details and eligibility information.',
+  });
+}
 
 export default async function FreeBonusPage({
   params,

@@ -1,8 +1,16 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ScrollText } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
 import { Stagger, StaggerItem } from '@/components/motion/reveal';
+import { pageMetadata } from '@/lib/seo';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'guides' });
+  return pageMetadata({ locale, path: '/guides', title: `${t('title')} | GambleZone`, description: t('subtitle') });
+}
 
 export default async function GuidesPage({
   params,

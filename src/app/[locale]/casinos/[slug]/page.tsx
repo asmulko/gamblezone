@@ -34,6 +34,9 @@ import {
 } from '@/lib/casinos';
 import { casinos } from '@/data/casinos';
 import { formatDate } from '@/lib/utils';
+import { pageMetadata, absoluteUrl, localizedPath } from '@/lib/seo';
+import { siteConfig } from '@/config/site';
+import { JsonLd } from '@/components/seo/json-ld';
 
 const responsibleToolTranslationKeys: Record<string, string> = {
   'Deposit Limit Tool': 'depositLimit',
@@ -59,13 +62,22 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: Locale; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const casino = getCasinoBySlug(slug);
   if (!casino) return {};
-  return {
-    title: `${casino.name} — GambleZone`,
-    description: casino.shortDescription,
-  };
+
+  const year = new Date().getFullYear();
+  const title = `${casino.name} Review ${year} — Bonus, Games & Rating | GambleZone`;
+  const description = casino.shortDescription;
+
+  return pageMetadata({
+    locale,
+    path: `/casinos/${casino.slug}`,
+    title,
+    description,
+    type: 'article',
+    image: casino.logoUrl ?? '/icon.svg',
+  });
 }
 
 export default async function CasinoDetailPage({
@@ -99,6 +111,61 @@ export default async function CasinoDetailPage({
 
   const available = isAvailableInMarket(casino);
   const similar = getSimilarCasinos(casino);
+  const pageUrl = absoluteUrl(localizedPath(locale, `/casinos/${casino.slug}`));
+  const reviewDate = casino.reviewedAt ?? new Date().toISOString();
+  const reviewJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    '@id': `${pageUrl}#review`,
+    url: pageUrl,
+    name: `${casino.name} Casino Review`,
+    headline: `${casino.name} Casino Review`,
+    reviewBody: displayReviewSummary,
+    datePublished: reviewDate,
+    dateModified: reviewDate,
+    inLanguage: locale,
+    author: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: { '@id': `${siteConfig.url}/#organization` },
+    itemReviewed: {
+      '@type': 'Organization',
+      name: casino.name,
+      url: pageUrl,
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: casino.editorialScore,
+      bestRating: 10,
+      worstRating: 0,
+    },
+  };
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: absoluteUrl(localizedPath(locale)),
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Casinos',
+        item: absoluteUrl(localizedPath(locale, '/casinos')),
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: casino.name,
+        item: pageUrl,
+      },
+    ],
+  };
 
   const facts = [
     { icon: Coins, label: t('minDeposit'), value: casino.minDeposit ? `€${casino.minDeposit.amount}` : '—' },
@@ -111,6 +178,7 @@ export default async function CasinoDetailPage({
 
   return (
     <>
+      <JsonLd data={[reviewJsonLd, breadcrumbJsonLd]} />
       <div className="relative overflow-hidden border-b border-border">
         <div className="aurora opacity-60" aria-hidden="true" />
         <div className="container-page relative z-10 py-10">

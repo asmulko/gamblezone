@@ -4,6 +4,7 @@ import { ArrowRight, Scale, Eye, Sparkles, ShieldCheck, Briefcase, Mail } from '
 import type { Locale } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
+import { pageMetadata } from '@/lib/seo';
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal';
 import { Button } from '@/components/ui/button';
 
@@ -23,7 +24,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'pages.about' });
-  return { title: `${t('title')} — GambleZone`, description: t('lead') };
+  return pageMetadata({ locale, path: '/about', title: `${t('title')} | GambleZone`, description: t('lead') });
 }
 
 export default async function AboutPage({

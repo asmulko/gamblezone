@@ -4,6 +4,7 @@ import type { Locale } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal';
 import { methodologyWeights } from '@/lib/casinos';
+import { pageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  return { title: t('methodologyTitle') };
+  return pageMetadata({ locale, path: '/methodology', title: t('methodologyTitle'), description: 'Learn how GambleZone independently evaluates casino safety, bonuses, payments, games and responsible gambling features.' });
 }
 
 export default async function MethodologyPage({

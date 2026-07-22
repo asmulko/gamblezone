@@ -4,6 +4,7 @@ import { AlertTriangle, ExternalLink, LifeBuoy, Wrench } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { PageHeader } from '@/components/layout/page-header';
 import { Reveal } from '@/components/motion/reveal';
+import { pageMetadata } from '@/lib/seo';
 
 const supportOrgs = [
   {
@@ -45,7 +46,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  return { title: t('responsibleTitle') };
+  return pageMetadata({ locale, path: '/responsible-gambling', title: t('responsibleTitle'), description: 'Responsible gambling information, warning signs, player protection tools and independent support resources.' });
 }
 
 export default async function ResponsibleGamblingPage({

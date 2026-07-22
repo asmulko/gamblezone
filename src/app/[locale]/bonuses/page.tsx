@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Gift } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
@@ -7,6 +8,18 @@ import { AffiliateCTA } from '@/components/casino/affiliate-cta';
 import { Badge } from '@/components/ui/badge';
 import { Stagger, StaggerItem } from '@/components/motion/reveal';
 import { getAllCasinos, getActiveOffer, isAvailableInMarket } from '@/lib/casinos';
+import { pageMetadata } from '@/lib/seo';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  return pageMetadata({
+    locale,
+    path: '/bonuses',
+    title: `${t('nav.bonuses')} | GambleZone`,
+    description: t('guides.items.bonuses.excerpt'),
+  });
+}
 
 export default async function BonusesPage({
   params,
