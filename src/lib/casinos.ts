@@ -8,7 +8,7 @@ export function getAllCasinos(): Casino[] {
     .sort((a, b) => b.editorialScore - a.editorialScore);
 }
 
-export function getTopCasinos(limit = 6): Casino[] {
+export function getTopCasinos(limit = 8): Casino[] {
   return getAllCasinos().slice(0, limit);
 }
 

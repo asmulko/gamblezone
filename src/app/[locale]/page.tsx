@@ -25,7 +25,7 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   const t = await getTranslations();
-  const casinos = getTopCasinos(6);
+  const casinos = getTopCasinos(8);
   const topThree = casinos.slice(0, 3);
   const rest = casinos.slice(3);
 
