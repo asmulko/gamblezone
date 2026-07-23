@@ -13,7 +13,7 @@ import { SectionHeading } from '@/components/ui/section-heading';
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal';
 import { Button } from '@/components/ui/button';
 import { getTopCasinos, getActiveOffer, isAvailableInMarket } from '@/lib/casinos';
-import { paymentMethods } from '@/data/payment-methods';
+import { discoveryPaymentMethods } from '@/data/payment-methods';
 import type { Casino } from '@/types/casino';
 
 export default async function HomePage({
@@ -77,7 +77,7 @@ export default async function HomePage({
           subtitle={t('payments.subtitle')}
         />
         <Reveal className="mt-10 flex flex-wrap justify-center gap-3">
-          {paymentMethods.map((m) => (
+          {discoveryPaymentMethods.map((m) => (
             <PaymentChip key={m.id} id={m.id} />
           ))}
         </Reveal>
@@ -203,8 +203,8 @@ function FeaturedCasinoCard({
         )}
       </div>
 
-      {/* Mobile-only: score + CTA row */}
-      <div className="mt-3 flex items-center justify-between sm:hidden">
+      {/* Mobile-only: score + full-width CTA */}
+      <div className="mt-3 flex flex-col gap-3 sm:hidden">
         <div>
           <p className="text-2xl font-bold tabular-nums text-secondary">
             {casino.editorialScore.toFixed(1)}
@@ -212,13 +212,13 @@ function FeaturedCasinoCard({
           <p className="text-[10px] uppercase tracking-wide text-muted">{tc('editorialScore')}</p>
         </div>
         {available && (
-          <div className="relative z-20">
+          <div className="relative z-20 w-full">
             <AffiliateCTA
               slug={casino.slug}
               placement={placement}
               label={t('openSite')}
               ariaLabel={tc('visitAria', { name: casino.name })}
-              size="sm"
+              className="w-full"
             />
           </div>
         )}
@@ -290,13 +290,13 @@ function CompactCasinoRow({
         </p>
       </div>
       {available && (
-        <div className="relative z-20 shrink-0">
+        <div className="relative z-20 basis-full sm:basis-auto sm:shrink-0">
           <AffiliateCTA
             slug={casino.slug}
             placement={placement}
             label={t('openSite')}
             ariaLabel={tc('visitAria', { name: casino.name })}
-            size="sm"
+            className="w-full sm:w-auto"
           />
         </div>
       )}

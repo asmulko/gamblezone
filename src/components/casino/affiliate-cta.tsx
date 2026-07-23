@@ -30,7 +30,7 @@ export function AffiliateCTA({
   const href = affiliateLink?.destinationUrl ?? `/en/casinos/${slug}`;
 
   const base =
-    'relative z-30 pointer-events-auto inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 active:scale-[0.97] [touch-action:manipulation] focus-visible:outline-none';
+    'relative z-30 pointer-events-auto inline-flex min-w-[9.5rem] items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 active:scale-[0.97] [touch-action:manipulation] focus-visible:outline-none';
   const variants = {
     primary:
       'bg-primary text-primary-foreground shadow-glow hover:brightness-110',

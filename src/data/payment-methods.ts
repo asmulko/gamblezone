@@ -44,3 +44,29 @@ export const paymentMethods: PaymentMethod[] = [
 ];
 
 export const paymentMethodMap = new Map(paymentMethods.map((m) => [m.id, m]));
+
+
+/** Individual crypto assets are grouped into one generic Crypto option in discovery UIs. */
+export const cryptoPaymentMethodIds = new Set([
+  'crypto',
+  'bitcoin',
+  'ethereum',
+  'tether',
+  'litecoin',
+  'tron',
+  'dai',
+  'dogecoin',
+  'cardano',
+  'binance',
+  'usdcoin',
+  'ripple',
+]);
+
+export function isCryptoPaymentMethod(id: string) {
+  return cryptoPaymentMethodIds.has(id);
+}
+
+/** Homepage/filter list: fiat and wallet methods plus one consolidated Crypto chip. */
+export const discoveryPaymentMethods = paymentMethods.filter(
+  (method) => method.id === 'crypto' || !isCryptoPaymentMethod(method.id),
+);

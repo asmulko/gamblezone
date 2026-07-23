@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { RotateCcw, SlidersHorizontal } from 'lucide-react';
 import { CasinoCard } from '@/components/casino/casino-card';
 import { cn } from '@/lib/utils';
-import { paymentMethodMap } from '@/data/payment-methods';
+import { isCryptoPaymentMethod, paymentMethodMap } from '@/data/payment-methods';
 import type { Casino } from '@/types/casino';
 
 const bonusLabels: Record<string, string> = {
@@ -25,12 +25,11 @@ const payoutLabels: Record<string, string> = {
 
 type Filters = {
   payment: string;
-  currency: string;
   bonus: string;
   payout: string;
 };
 
-const initial: Filters = { payment: '', currency: '', bonus: '', payout: '' };
+const initial: Filters = { payment: '', bonus: '', payout: '' };
 
 export function CasinoCatalog({ casinos }: { casinos: Casino[] }) {
   const t = useTranslations('catalog');
@@ -38,18 +37,17 @@ export function CasinoCatalog({ casinos }: { casinos: Casino[] }) {
 
   const options = useMemo(() => {
     const payment = new Set<string>();
-    const currency = new Set<string>();
     const bonus = new Set<string>();
     const payout = new Set<string>();
     for (const c of casinos) {
-      c.paymentMethods.forEach((p) => payment.add(p));
-      c.supportedCurrencies.forEach((cur) => currency.add(cur));
+      c.paymentMethods.forEach((method) => {
+        payment.add(isCryptoPaymentMethod(method) ? 'crypto' : method);
+      });
       bonus.add(c.bonusType);
       payout.add(c.payoutSpeed);
     }
     return {
       payment: [...payment],
-      currency: [...currency],
       bonus: [...bonus],
       payout: [...payout],
     };
@@ -58,8 +56,13 @@ export function CasinoCatalog({ casinos }: { casinos: Casino[] }) {
   const filtered = useMemo(
     () =>
       casinos.filter((c) => {
-        if (filters.payment && !c.paymentMethods.includes(filters.payment)) return false;
-        if (filters.currency && !c.supportedCurrencies.includes(filters.currency)) return false;
+        if (filters.payment) {
+          const matchesPayment =
+            filters.payment === 'crypto'
+              ? c.paymentMethods.some(isCryptoPaymentMethod)
+              : c.paymentMethods.includes(filters.payment);
+          if (!matchesPayment) return false;
+        }
         if (filters.bonus && c.bonusType !== filters.bonus) return false;
         if (filters.payout && c.payoutSpeed !== filters.payout) return false;
         return true;
@@ -96,12 +99,6 @@ export function CasinoCatalog({ casinos }: { casinos: Casino[] }) {
             options={options.payment}
             onChange={(v) => setFilters((f) => ({ ...f, payment: v }))}
             getLabel={(id) => paymentMethodMap.get(id)?.name ?? id}
-          />
-          <FilterGroup
-            label={t('filterCurrency')}
-            value={filters.currency}
-            options={options.currency}
-            onChange={(v) => setFilters((f) => ({ ...f, currency: v }))}
           />
           <FilterGroup
             label={t('filterBonus')}
