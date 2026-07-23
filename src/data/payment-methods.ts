@@ -37,6 +37,11 @@ export const paymentMethods: PaymentMethod[] = [
   { id: 'paypal', name: 'PayPal', accent: '#64748b' },
   { id: 'rapidtransfer', name: 'Rapid Transfer', accent: '#64748b' },
   { id: 'mifinity', name: 'MiFinity', accent: '#64748b' },
+  { id: 'cashtocode', name: 'CashtoCode', accent: '#64748b' },
+  { id: 'revolut', name: 'Revolut', accent: '#64748b' },
+  { id: 'zimpler', name: 'Zimpler', accent: '#64748b' },
+  { id: 'sirumobile', name: 'Siru Mobile', accent: '#64748b' },
+  { id: 'bitcoincash', name: 'Bitcoin Cash', accent: '#64748b' },
   { id: 'maestro', name: 'Maestro', accent: '#64748b' },
   { id: 'sofort', name: 'Sofort', accent: '#64748b' },
   { id: 'khipu', name: 'Khipu', accent: '#64748b' },
@@ -60,6 +65,7 @@ export const cryptoPaymentMethodIds = new Set([
   'binance',
   'usdcoin',
   'ripple',
+  'bitcoincash',
 ]);
 
 export function isCryptoPaymentMethod(id: string) {
