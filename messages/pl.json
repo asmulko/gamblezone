@@ -674,5 +674,25 @@
     "casinosDescription": "Przeglądaj i filtruj nasze niezależnie ocenione licencjonowane kasyna online.",
     "methodologyTitle": "Jak oceniamy kasyna — GambleZone",
     "responsibleTitle": "Odpowiedzialna gra — GambleZone"
+  },
+  "casinoDetails": {
+    "bigclash": {
+      "offerTitle": "100% do 500 € + 200 darmowych spinów",
+      "offerTerms": "Minimalny depozyt 10 € dla większości metod. Obowiązują wymagania obrotu, kwalifikujące się gry i ograniczenia regionalne. 18+.",
+      "offerValue": "100% do 500 € + 200 darmowych spinów",
+      "pros": [
+        "Ogromny wybór gier i dostawców",
+        "Wielojęzyczny czat na żywo 24/7",
+        "Płatności fiat i kryptowalutami",
+        "Kasyno, kasyno na żywo i zakłady sportowe na jednym koncie"
+      ],
+      "cons": [
+        "Niskie limity wypłat na początkowych poziomach VIP",
+        "Wypłaty nie są przetwarzane w weekendy",
+        "Weryfikacja może potrwać dłużej w złożonych przypadkach"
+      ],
+      "shortDescription": "Kasyno i bukmacher uruchomiony w 2025 roku z tysiącami gier, szeroką obsługą kryptowalut, wielojęzyczną pomocą 24/7 i systemem nagród inspirowanym MMA.",
+      "reviewSummary": "BigClash Casino jest prowadzone przez NovaForge Ltd i wystartowało w 2025 roku. Łączy duże lobby kasynowe, gry na żywo, jackpoty, sporty wirtualne, esport i zakłady sportowe. Minimalne wpłaty i wypłaty wynoszą 10 € dla większości metod. Największe zalety to ogromny katalog dostawców, wielojęzyczne wsparcie 24/7 i szeroka oferta; minusami są niskie początkowe limity wypłat oraz obsługa finansowa wyłącznie w dni robocze."
+    }
   }
 }

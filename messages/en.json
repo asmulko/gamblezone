@@ -681,5 +681,25 @@
     "casinosDescription": "Browse and filter our independently reviewed licensed online casinos.",
     "methodologyTitle": "How we rate casinos — GambleZone",
     "responsibleTitle": "Responsible gambling — GambleZone"
+  },
+  "casinoDetails": {
+    "bigclash": {
+      "offerTitle": "100% up to €500 + 200 Free Spins",
+      "offerTerms": "Minimum deposit €10 for most methods. Wagering requirements, eligible games and regional restrictions apply. 18+.",
+      "offerValue": "100% up to €500 + 200 Free Spins",
+      "pros": [
+        "Huge game and provider selection",
+        "24/7 multilingual live chat",
+        "Fiat and cryptocurrency payments",
+        "Casino, live casino and sportsbook in one account"
+      ],
+      "cons": [
+        "Low withdrawal limits at entry VIP levels",
+        "Withdrawals are not processed on weekends",
+        "Verification can take longer in complex cases"
+      ],
+      "shortDescription": "A 2025 casino and sportsbook with thousands of games, broad crypto support, 24/7 multilingual assistance and an MMA-inspired rewards system.",
+      "reviewSummary": "BigClash Casino is operated by NovaForge Ltd and launched in 2025. It combines a large casino lobby, live dealer games, jackpots, virtual sports, esports and a full sportsbook. Deposits and withdrawals start from €10 for most methods. Its main strengths are its huge provider catalogue, multilingual 24/7 support and wide product range, while entry-level withdrawal limits and business-day-only finance processing are notable drawbacks."
+    }
   }
 }

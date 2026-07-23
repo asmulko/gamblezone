@@ -675,5 +675,25 @@
     "casinosDescription": "Durchsuche und filtere unsere unabhängig getesteten lizenzierten Online-Casinos.",
     "methodologyTitle": "So bewerten wir Casinos – GambleZone",
     "responsibleTitle": "Verantwortungsvolles Spielen – GambleZone"
+  },
+  "casinoDetails": {
+    "bigclash": {
+      "offerTitle": "100 % bis zu 500 € + 200 Freispiele",
+      "offerTerms": "Mindesteinzahlung 10 € bei den meisten Methoden. Umsatzbedingungen, zugelassene Spiele und regionale Einschränkungen gelten. 18+.",
+      "offerValue": "100 % bis zu 500 € + 200 Freispiele",
+      "pros": [
+        "Sehr große Spiel- und Anbieterauswahl",
+        "Mehrsprachiger 24/7-Live-Chat",
+        "Fiat- und Kryptowährungszahlungen",
+        "Casino, Live-Casino und Sportwetten in einem Konto"
+      ],
+      "cons": [
+        "Niedrige Auszahlungslimits auf den ersten VIP-Stufen",
+        "Am Wochenende werden keine Auszahlungen bearbeitet",
+        "Die Verifizierung kann in komplexen Fällen länger dauern"
+      ],
+      "shortDescription": "Ein 2025 gestartetes Casino und Sportwettenangebot mit Tausenden Spielen, breiter Krypto-Unterstützung, mehrsprachiger 24/7-Hilfe und MMA-inspiriertem Belohnungssystem.",
+      "reviewSummary": "BigClash Casino wird von NovaForge Ltd betrieben und startete 2025. Das Angebot verbindet eine große Casino-Lobby, Live-Dealer-Spiele, Jackpots, virtuelle Sportarten, E-Sport und ein vollständiges Sportwettenangebot. Ein- und Auszahlungen beginnen bei den meisten Methoden ab 10 €. Stärken sind die enorme Anbieterauswahl, der mehrsprachige 24/7-Support und das breite Produktangebot; niedrige Auszahlungslimits auf Einstiegsstufen und die Bearbeitung nur an Werktagen sind Nachteile."
+    }
   }
 }

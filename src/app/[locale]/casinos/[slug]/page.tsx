@@ -368,7 +368,7 @@ export default async function CasinoDetailPage({
             <h2 className="mb-4 font-bold">{td('quickFacts')}</h2>
             <dl className="flex flex-col gap-3">
               {facts.map((f) => (
-                <div key={f.label} className="flex items--start justify-between gap-3 text-sm">
+                <div key={f.label} className="flex items-start justify-between gap-3 text-sm">
                   <dt className="inline-flex items-center gap-2 text-muted">
                     <f.icon size={15} className="text-secondary" /> {f.label}
                   </dt>
@@ -387,7 +387,7 @@ export default async function CasinoDetailPage({
                 </dt>
                 <dd className="max-w-[55%] text-right font-semibold">{casino.supportedLanguages.join(', ')}</dd>
               </div>
-              <div className="flex items-center justify-between gap-3 text-sm">
+              <div className="flex items-start justify-between gap-3 text-sm">
                 <dt className="inline-flex items-center gap-2 text-muted">
                   <Headphones size={15} className="text-secondary" /> {t('supportChannels')}
                 </dt>
